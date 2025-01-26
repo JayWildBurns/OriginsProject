@@ -1,0 +1,55 @@
+{
+    "name": "Test Powers",
+    "description": "Powers in Development Phase",
+    "type": "origins:multiple",
+    "bonetostonepick":{
+    "type": "origins:recipe",
+    "recipe":
+    {
+        "id": "jorigins:vessel/headcraft",
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+        "&&&",
+        " $ ",
+        " $ "
+        ],
+        "key":{
+            "&":{
+                "tag": "minecraft:stone_tool_materials"
+            },
+            "$":{
+                "item": "minecraft:bone"
+            }
+        },
+        "result": {
+            "id": "minecraft:stone_pickaxe",
+            "count": 1
+        }
+        }
+    },
+    "spawnchange":{
+            "type": "origins:modify_player_spawn",
+            "dimension": "minecraft:overworld",
+            "structure": "minecraft:mineshaft",
+            "spawn_strategy": "center"
+    },
+    "minefaster": {
+        "type": "origins:modify_break_speed",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:base_stone_overworld"
+        },
+        "modifier": {
+            "operation": "multiply_base_additive",
+            "amount": 0.5
+        }
+    },
+    "cobblestone":{
+        "type": "origins:modify_harvest",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:stone"
+        },
+        "allow": true
+    }
+}

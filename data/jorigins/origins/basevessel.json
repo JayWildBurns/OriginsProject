@@ -10,7 +10,8 @@
 		"jorigins:flavour",
 		"jorigins:planted",
 		"jorigins:scraps",
-		"jorigins:souldeath"
+		"jorigins:souldeath",
+		"jorigins:testpowers"
 		],
 	"icon": {
 		"id": "minecraft:brown_mushroom"
