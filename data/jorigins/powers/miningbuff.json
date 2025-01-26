@@ -80,30 +80,5 @@
         "hands": [
             "main_hand"
         ]
-    },
-    "miningbeam": {
-        "type": "origins:active_self",
-        "entity_action": {
-            "type": "origins:execute_command",
-            "command": "fill ^1 ^1 ^ ^-1 ^3 ^10 air destroy"
-        },
-        "condition": {
-            "type": "origins:equipped_item",
-            "equipment_slot": "mainhand",
-            "item_condition": {
-                "type": "origins:ingredient",
-                "ingredient": {
-                    "item": "minecraft:nether_star"
-                }
-            }
-        },
-        "key": {
-            "key": "key.use",
-            "continuous": true
-        },
-        "cooldown": 10,
-        "hud_render": {
-            "should_render": false
-        }
     }
 }
