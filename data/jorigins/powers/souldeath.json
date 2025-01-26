@@ -1,0 +1,80 @@
+{
+    "name": "Contained Soul",
+    "description": "When Ya Die Ya go Ghost Baeby",
+    "type": "origins:multiple",
+    "respawn": {
+    "type": "origins:prevent_death",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:clear_effect"
+            },
+            {
+                "type": "origins:remove_power",
+                "power": "*:*"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "origin set @s origins:origin jorigins:soul"
+            },
+            {
+                "type": "origins:apply_effect",
+                "effects": [
+                    {
+                        "id": "minecraft:regeneration",
+                        "amplifier": 1,
+                        "duration": 300
+                    },
+                    {
+                        "id": "minecraft:absorption",
+                        "amplifier": 1,
+                        "duration": 100
+                    }
+                    
+                ]
+            },
+            {
+                "type": "origins:drop_inventory"
+            },
+            {
+                "type": "origins:add_xp",
+                "levels": -10
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:xp_levels",
+        "comparison": ">=",
+        "compare_to": 20
+    }
+    },
+    "charge": {
+        "type": "origins:resource",
+        "min": 0,
+        "start_value": 0,
+        "max": 1,
+        "hud_render": [
+            {
+                "should_render": false
+            }
+        ]
+    },
+    "soulseep":
+  {
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:damage",
+        "amount": 2,
+        "damage_type": "minecraft:on_fire"
+    },
+    "interval": 10,
+    "condition": {
+        "type": "origins:on_block",
+    "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:soul_sand"
+    }
+    }
+  }
+}

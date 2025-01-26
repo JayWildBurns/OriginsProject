@@ -1,0 +1,33 @@
+{
+    "name": "PowersinProgress",
+    "description": "A couple of test powers for the next run",
+    "type": "origins:multiple",
+    "powera" :
+    {
+        "type": "origins:modify_player_spawn",
+        "dimension": "minecraft:overworld",
+        "structure": "minecraft:mineshaft",
+        "spawn_strategy": "center"
+    },
+    "durability":
+    {
+        "type": "origins:modify_break_speed",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "mineable/pickaxe"
+        },
+        "modifier": {
+            "operation": "add_base_late",
+            "value": 0
+        }
+    },
+    "enchantmenttest":
+    {
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:silk_touch",
+        "modifier": {
+            "operation": "set_total",
+            "value": 1
+        }
+    }
+}

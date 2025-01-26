@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"jorigins:zombify"
+		],
+	"icon": {
+		"id": "minecraft:dirt"
+	},
+	"unchoosable": true,
+	"order": 12,
+	"impact": 2,
+	"name": "Cured Vessel",
+	"description": "You've managed to cure your host body. It's not quite as strong as a regular human, but you maintain some soul powers."
+}

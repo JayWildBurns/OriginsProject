@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:water_bucket"
+        },
+        "title": "Like A Stone",
+        "description": "Sink underwater as the Vessel Origin",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "enterwater": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:water"
+            }
+        }
+    },
+    "rewards": {
+        "experience": 2
+    },
+    "parent": "jorigins:root"
+}

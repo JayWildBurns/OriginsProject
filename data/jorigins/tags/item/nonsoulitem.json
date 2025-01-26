@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:bow",
+        "minecraft:crossbow",
+        "minecraft:shield",
+        "minecraft:snowball",
+        "minecraft:egg",
+        "minecraft:wind_charge",
+        "minecraft:fishing_rod"
+    ]
+}

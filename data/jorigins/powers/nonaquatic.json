@@ -1,0 +1,47 @@
+{
+    "name": "Non Aquatic",
+    "description": "Your body sinks in water",
+    "type": "origins:multiple",
+    "dense": {
+      "type": "origins:ignore_water"
+    },
+    "airmodifications": {
+      "type": "origins:attribute",
+      "modifier": {
+          "id": "jorigins:breathless",
+          "attribute": "minecraft:generic.oxygen_bonus",
+          "amount": 10,
+          "operation": "add_value"
+      }
+    },
+    "fall":
+    {
+      "type": "origins:modify_falling",
+      "velocity": 0.01,
+      "take_fall_damage": false,
+      "condition": {
+        "type": "origins:in_block",
+        "block_condition": {
+          "type": "origins:block",
+          "block": "minecraft:water"
+        }
+      }
+    },
+    "slower": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "id": "jorigins:decreased_speed",
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "add_multiplied_total",
+      "amount": -0.15
+    },
+    "tick_rate": 30,
+    "condition": {
+      "type": "origins:in_block",
+      "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:water"
+      }
+    }
+  }
+  }

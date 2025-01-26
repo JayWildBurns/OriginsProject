@@ -1,0 +1,208 @@
+{
+    "name": "Feeding on Scraps",
+    "description": "Your unique biology means you lose hunger faster. However, you can eat most plant material as well, which also has a chance to heal you",
+    "type": "origins:multiple",
+    "repair_low":{
+      "type": "origins:edible_item",
+      "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "tag": "jorigins:vesseledible_low"
+         }
+      },
+      "food_component": {
+         "nutrition": 1.0,
+          "saturation": 1.0,
+          "eat_seconds": 2.0,
+          "can_always_eat": false
+      },
+      "use_action": "eat",
+      "consuming_time_modifier": {
+         "operation": "multiply_total_multiplicative",
+          "value": 50
+      },
+      "priority": 10,
+      "entity_action": {
+        "type": "origins:chance",
+        "success_action": {
+          "type": "origins:heal",
+          "amount": 1
+        },
+        "chance": 0.2
+      }
+    },
+    "repair_high":{
+      "type": "origins:edible_item",
+      "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "tag": "jorigins:vesseledible_high"
+         }
+      },
+      "food_component": {
+         "nutrition": 1.0,
+          "saturation": 2.0,
+          "eat_seconds": 2.0,
+          "can_always_eat": false
+      },
+      "use_action": "eat",
+      "consuming_time_modifier": {
+         "operation": "multiply_total_multiplicative",
+          "value": 50
+      },
+      "priority": 10,
+      "entity_action": {
+        "type": "origins:chance",
+        "success_action": {
+          "type": "origins:heal",
+          "amount": 1
+        },
+        "chance": 0.7
+      }
+    },
+    "exhaust":{
+      "type": "origins:modify_exhaustion",
+      "modifier": {
+          "id": "jorigins:hungry",
+          "operation": "multiply_base_additive",
+          "amount": 3.0
+      },
+      "condition":
+      {
+        "type": "origins:and",
+          "conditions": [
+            {
+              "type": "origins:food_level",
+              "comparison": ">=",
+              "compare_to": 5
+            }
+          ]
+      }
+    },
+    "repair_coal":{
+      "type": "origins:edible_item",
+      "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "item": "minecraft:coal"
+         }
+      },
+      "food_component": {
+         "nutrition": 1.0,
+          "saturation": 2.0,
+          "eat_seconds": 2.0,
+          "can_always_eat": false
+      },
+      "use_action": "eat",
+      "consuming_time_modifier": {
+         "operation": "multiply_total_multiplicative",
+          "value": 50
+      },
+      "priority": 10,
+      "entity_action": {
+        "type": "origins:chance",
+        "success_action": {
+          "type": "origins:heal",
+          "amount": 1
+        },
+        "chance": 0.5
+      }
+    },
+    "bonemeal_meal":{
+      "type": "origins:edible_item",
+      "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "item": "minecraft:bone_meal"
+         }
+      },
+      "food_component": {
+         "nutrition": 0.0,
+          "saturation": 0.0,
+          "eat_seconds": 2.0,
+          "can_always_eat": true
+      },
+      "use_action": "eat",
+      "consuming_time_modifier": {
+         "operation": "multiply_total_multiplicative",
+          "value": 50
+      },
+      "priority": 10,
+      "entity_action": {
+        "type": "origins:and",
+        "actions":[
+          {
+            "type": "origins:chance",
+            "success_action": {
+              "type": "origins:give",
+              "stack": {
+                "id": "minecraft:brown_mushroom",
+                "amount": 1
+              }
+            },
+            "chance": 0.3
+          },
+          {
+            "type": "origins:exhaust",
+            "amount": 1
+          }
+        ]
+     }
+  },
+  "lowtext": {
+      "type": "origins:tooltip",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "jorigins:vesseledible_low"
+        }
+      },
+      "text":
+      {
+        "text": "A small Snack",
+        "color": "green"
+      } 
+    },
+    "largetext": {
+      "type": "origins:tooltip",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "jorigins:vesseledible_high"
+        }
+      },
+      "text":
+      {
+        "text": "A healthy meal",
+        "color": "green"
+      } 
+    },
+    "coaltext": {
+      "type": "origins:tooltip",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:coal"
+        }
+      },
+      "text":
+      {
+        "text": "It's made of dead things!",
+        "color": "blue"
+      } 
+    },
+    "bonemealtext": {
+      "type": "origins:tooltip",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:bone_meal"
+        }
+      },
+      "text":
+      {
+        "text": "Grows your mushrooms, costs hunger",
+        "color": "blue"
+      } 
+    }
+}

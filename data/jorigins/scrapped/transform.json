@@ -1,0 +1,95 @@
+{
+    "name": "Transformable",
+    "description": "Your mushroom colony can take on the effects of some other substances, if ingested.",
+    "type": "origins:multiple",
+    "transform_sculk":{
+      "type": "origins:edible_item",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:sculk_vein"
+                }
+            },
+            "food_component": {
+                "nutrition": 4.0,
+                "saturation": 0.4,
+                "eat_seconds": 2.8,
+                "can_always_eat": true
+            },
+            "priority": 5,
+            "use_action": "eat",
+            "entity_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s origins:origin jorigins:sculkvessel"
+                    },
+                    {
+                        "type": "origins:play_sound",
+                        "sound": "minecraft:entity.zombie_villager.converted"
+                    }
+                ]
+            }
+    },
+    "transform_warped":{
+      "type": "origins:edible_item",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:warped_fungus"
+                }
+            },
+            "food_component": {
+                "nutrition": 4.0,
+                "saturation": 0.4,
+                "eat_seconds": 2.8,
+                "can_always_eat": true
+            },
+            "priority": 5,
+            "use_action": "eat",
+            "entity_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s origins:origin jorigins:warpedvessel"
+                    },
+                    {
+                        "type": "origins:play_sound",
+                        "sound": "minecraft:entity.zombie_villager.converted"
+                    }
+                ]
+            }
+    },
+    "transform_crimson":{
+      "type": "origins:edible_item",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:crimson_fungus"
+                }
+            },
+            "food_component": {
+                "nutrition": 4.0,
+                "saturation": 0.4,
+                "eat_seconds": 2.8,
+                "can_always_eat": true
+            },
+            "priority": 5,
+            "use_action": "eat",
+            "entity_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:execute_command",
+                        "command": "origin set @s origins:origin jorigins:crimsonvessel"
+                    },
+                    {
+                        "type": "origins:play_sound",
+                        "sound": "minecraft:entity.zombie_villager.converted"
+                    }
+                ]
+            }
+    }
+}

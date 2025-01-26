@@ -1,0 +1,40 @@
+{
+  "name": "WarpedEffect",
+  "description": "Eating a Warped mushroom grants fire immunity and walk on lava",
+  "type": "origins:multiple",
+  "resource": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 60,
+    "start_value": 60,
+    "hud_render": {
+        "should_render": false
+    },
+    "min_action": {
+        "type": "origins:remove_power",
+        "power": "*:*"
+    }
+  },
+  "countdown":{
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "jorigins:warpedeffect_resource",
+      "change": -1
+    },
+    "interval": 20
+  },
+  "lavawalk" :{
+    "type": "origins:walk_on_fluid",
+    "fluid": "minecraft:lava",
+    "condition": {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:lava",
+        "comparison": "<=",
+        "compare_to": 0.4
+    }
+  },
+  "fireimmunity":{
+    "type": "origins:fire_immunity"
+  }
+}

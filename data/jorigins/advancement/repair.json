@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:rotten_flesh"
+        },
+        "title": "D.I.Y: it's in our D.N.A",
+        "description": "Repair yourself with Rotten Flesh",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "command": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "jorigins:root"
+}

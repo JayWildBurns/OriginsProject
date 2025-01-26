@@ -1,0 +1,351 @@
+{
+  "name": "Sunlight Sensitivity",
+  "description": "Standing in sunlight for long periods of time can cause you to ignite. Helmets slow the effect.",
+  "type": "origins:multiple",
+  "exposure_level": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 10,
+      "hud_render": [
+          {
+              "should_render": false
+          }
+      ]
+  },
+  "increase_exposure": {
+      "type": "origins:action_over_time",
+      "entity_action": {
+          "type": "origins:if_else_list",
+          "actions": [
+              {
+                  "condition": {
+                      "type": "origins:equipped_item",
+                      "equipment_slot": "head",
+                      "item_condition": {
+                          "type": "origins:armor_value",
+                          "comparison": ">",
+                          "compare_to": 0
+                      },
+                      "inverted": true
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:sunlight_exposure_level",
+                      "change": 2,
+                      "operation": "add"
+                  }
+              },
+              {
+                  "condition": {
+                      "type": "origins:equipped_item",
+                      "equipment_slot": "head",
+                      "item_condition": {
+                          "type": "origins:armor_value",
+                          "comparison": ">",
+                          "compare_to": 0
+                      },
+                      "inverted": false
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:sunlight_exposure_level",
+                      "change": 1,
+                      "operation": "add"
+                  }
+              }
+          ]
+      },
+      "interval": 40,
+      "condition": {
+          "type": "origins:exposed_to_sun"
+      }
+  },
+  "decrease_exposure": {
+      "type": "origins:action_over_time",
+      "entity_action": {
+          "type": "origins:change_resource",
+          "resource": "jorigins:sunlight_exposure_level",
+          "change": -1,
+          "operation": "add"
+      },
+      "interval": 40,
+      "condition": {
+          "type": "origins:exposed_to_sun",
+          "inverted": true
+      }
+  },
+  "total_sunlight": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 105,
+      "hud_render": [
+          {
+              "sprite_location": "jresource:resourcecustom.png",
+              "bar_index": 0,
+              "should_render": true,
+              "condition": {
+                  "type": "origins:resource",
+                  "resource": "jorigins:sunlight_total_sunlight",
+                  "comparison": ">=",
+                  "compare_to": 15
+              }
+          },
+          {
+              "should_render": false,
+              "bar_index": 4
+          }
+      ]
+  },
+  "sunlight_change": {
+      "type": "origins:action_over_time",
+      "entity_action": {
+          "type": "origins:if_else_list",
+          "actions": [
+              {
+                  "condition": {
+                      "type": "origins:resource",
+                      "resource": "jorigins:sunlight_exposure_level",
+                      "comparison": "==",
+                      "compare_to": 10
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:sunlight_total_sunlight",
+                      "change": 10,
+                      "operation": "add"
+                  }
+              },
+              {
+                  "condition": {
+                      "type": "origins:resource",
+                      "resource": "jorigins:sunlight_exposure_level",
+                      "comparison": "==",
+                      "compare_to": 9
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:sunlight_total_sunlight",
+                      "change": 9,
+                      "operation": "add"
+                  }
+              },
+              {
+                  "condition": {
+                      "type": "origins:resource",
+                      "resource": "jorigins:sunlight_exposure_level",
+                      "comparison": "==",
+                      "compare_to": 8
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:sunlight_total_sunlight",
+                      "change": 8,
+                      "operation": "add"
+                  }
+              },
+              {
+                  "condition": {
+                      "type": "origins:resource",
+                      "resource": "jorigins:sunlight_exposure_level",
+                      "comparison": "==",
+                      "compare_to": 7
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:sunlight_total_sunlight",
+                      "change": 7,
+                      "operation": "add"
+                  }
+              },
+              {
+                  "condition": {
+                      "type": "origins:resource",
+                      "resource": "jorigins:sunlight_exposure_level",
+                      "comparison": "==",
+                      "compare_to": 6
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:sunlight_total_sunlight",
+                      "change": 6,
+                      "operation": "add"
+                  }
+              },
+              {
+                  "condition": {
+                      "type": "origins:resource",
+                      "resource": "jorigins:sunlight_exposure_level",
+                      "comparison": "==",
+                      "compare_to": 5
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:sunlight_total_sunlight",
+                      "change": 5,
+                      "operation": "add"
+                  }
+              },
+              {
+                  "condition": {
+                      "type": "origins:resource",
+                      "resource": "jorigins:sunlight_exposure_level",
+                      "comparison": "==",
+                      "compare_to": 4
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:sunlight_total_sunlight",
+                      "change": 4,
+                      "operation": "add"
+                  }
+              },
+              {
+                  "condition": {
+                      "type": "origins:resource",
+                      "resource": "jorigins:sunlight_exposure_level",
+                      "comparison": "==",
+                      "compare_to": 3
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:sunlight_total_sunlight",
+                      "change": 3,
+                      "operation": "add"
+                  }
+              },
+              {
+                  "condition": {
+                      "type": "origins:resource",
+                      "resource": "jorigins:sunlight_exposure_level",
+                      "comparison": "==",
+                      "compare_to": 2
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:sunlight_total_sunlight",
+                      "change": 2,
+                      "operation": "add"
+                  }
+              },
+              {
+                  "condition": {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                          "type": "origins:resource",
+                          "resource": "jorigins:sunlight_exposure_level",
+                          "comparison": "==",
+                          "compare_to": 1
+                        },
+                        {
+                            "type": "origins:resource",
+                            "resource": "jorigins:sunlight_total_sunlight",
+                            "comparison": ">=",
+                            "compare_to": 1
+                        }
+                      ]
+                    },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:sunlight_total_sunlight",
+                      "change": 1,
+                      "operation": "add"
+                  }
+              }
+          ]
+      },
+      "interval": 20,
+      "condition": {
+          "type": "origins:exposed_to_sun"
+      }
+  },
+  "sunlight_decay": {
+    "type": "origins:action_over_time",
+      "entity_action": {
+          "type": "origins:change_resource",
+            "resource": "jorigins:sunlight_total_sunlight",
+            "change": -1,
+            "operation": "add"
+      },
+      "interval": 40,
+      "condition": {
+          "type": "origins:resource",
+        "resource": "jorigins:sunlight_exposure_level",
+        "comparison": "==",
+        "compare_to": 0
+      }
+    },
+  "ignition":
+  {
+    "type": "origins:burn",
+      "interval": 30,
+      "burn_duration": 5,
+      "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:resource",
+            "resource": "jorigins:sunlight_total_sunlight",
+            "comparison": ">=",
+            "compare_to": 75
+          },
+          {
+            "type": "origins:exposed_to_sun"
+          }
+        ]
+      }
+  },
+  "clear":
+  {
+        "type": "origins:action_on_death",
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "resource set @s jorigins:sunlight_exposure_level 0",
+                        "permission_level": 4
+                    }
+                },
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "resource set @s jorigins:sunlight_total_sunlight 0",
+                        "permission_level": 4
+                    }
+                }
+            ]
+        }
+  },
+  "damagehelm":
+  {
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:equipped_item_action",
+        "equipment_slot": "head",
+        "item_action": {
+            "type": "origins:damage",
+            "amount": 2,
+            "ignore_unbreaking": false
+        }
+    },
+    "interval": 40,
+    "condition": {
+        "type": "origins:and",
+    "conditions": [
+        {
+            "type": "origins:exposed_to_sun"
+        },
+        {
+            "type": "origins:resource",
+            "resource": "jorigins:sunlight_exposure_level",
+            "comparison": ">=",
+            "compare_to": 4
+        }
+    ]
+    }
+  }
+}

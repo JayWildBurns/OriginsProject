@@ -1,0 +1,49 @@
+{
+    "name": "Zombify",
+    "description": "On Death, you will once again be zombified...",
+    "type": "origins:multiple",
+    "onelife": {
+    "type": "origins:prevent_death",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:clear_effect"
+            },
+            {
+                "type": "origins:remove_power",
+                "power": "*:*"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "origin set @s origins:origin jorigins:basevessel"
+            },
+            
+            {
+                "type": "origins:apply_effect",
+                "effects": [
+                    {
+                        "id": "minecraft:regeneration",
+                        "amplifier": 1,
+                        "duration": 300
+                    },
+                    {
+                        "id": "minecraft:fire_resistance",
+                        "duration": 200
+                    },
+                    {
+                        "id": "minecraft:absorption",
+                        "amplifier": 1,
+                        "duration": 100
+                    }
+                    
+                ]
+            },
+            {
+                "type": "origins:grant_advancement",
+                "advancement": "jorigins:gone"
+            }
+        ]
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+    "name": "Vessel Health",
+    "description": "Your body does not heal naturally. Craft Rotten flesh with mushrooms and meat and use that to repair yourself.",
+    "type": "origins:multiple",
+    "disableregen":{
+      "type": "origins:disable_regen"
+    },
+    "rottenrepair":{
+      "type": "origins:edible_item",
+      "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "item": "minecraft:rotten_flesh"
+         }
+      },
+      "food_component": {
+         "nutrition": 4.0,
+          "saturation": 0.4,
+          "eat_seconds": 1.6,
+          "can_always_eat": true
+      },
+      "use_action": "eat",
+      "consuming_time_modifier": {
+         "operation": "multiply_total_multiplicative",
+          "value": 50
+      },
+      "priority": 10,
+      "entity_action": {
+        "type": "origins:and",
+        "actions":
+        [
+          {
+            "type": "origins:grant_advancement",
+            "advancement": "jorigins:repair"
+          },
+          {
+            "type": "origins:heal",
+            "amount": 2
+          }
+        ]
+      }
+    },
+    "rottentext": {
+      "type": "origins:tooltip",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:rotten_flesh"
+        }
+      },
+      "text":
+      {
+        "text": "Waste not, want not",
+        "color": "dark_red"
+      } 
+    },
+    "fleshrecipe":{
+      "type": "origins:recipe",
+    "recipe": {
+        "id": "origins:vessel/fleshcraft",
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "tag": "jorigins:rawmeat"
+          },
+          {
+            "tag": "jorigins:mushroom"
+          }
+        ],
+        "result": {
+            "id": "minecraft:rotten_flesh",
+            "count": 1
+        }
+    }
+  },
+  "mushroomtext": {
+      "type": "origins:tooltip",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "jorigins:mushroom"
+        }
+      },
+      "text":
+      {
+        "text": "Turns Raw meat into Rotten Flesh",
+        "color": "gold"
+      } 
+    }
+  }

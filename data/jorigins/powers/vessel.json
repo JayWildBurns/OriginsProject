@@ -1,0 +1,32 @@
+{
+    "name": "Zombified Body",
+    "description": "Your Body is that of an undead. This grants you immunity to some effects and minor night vision. It does not make you immune to drowning or the wither",
+    "type": "origins:multiple",
+    "invertheals":{
+      "type": "origins:modify_type_tag",
+      "tag": "minecraft:inverted_healing_and_harm"
+    },
+    "regenimmune":{
+      "type": "origins:modify_type_tag",
+      "tag": "minecraft:ignores_poison_and_regen"
+    },
+    "smite":{
+      "type": "origins:modify_type_tag",
+      "tag": "minecraft:sensitive_to_smite"
+    },
+    "hungerless": {
+      "type": "origins:effect_immunity",
+      "effects": [
+          "minecraft:hunger"
+      ]
+    },
+    "nightvision": {
+      "type": "origins:night_vision",
+      "strength": 0.15,
+      "condition": {
+        "type": "origins:brightness",
+        "comparison": "<=",
+        "compare_to": 0.408
+      }
+    }
+  }

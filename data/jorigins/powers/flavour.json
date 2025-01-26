@@ -1,0 +1,14 @@
+{
+    "name": "Flavour",
+    "description": "Multiple Minor Flavour Effects",
+    "type": "origins:multiple",
+    "root": {
+    "type": "origins:action_on_callback",
+    "execute_chosen_when_orb": true,
+    "hidden": true,
+      "entity_action_gained": {
+        "type": "origins:grant_advancement",
+        "advancement": "jorigins:root"
+     }
+    }
+}

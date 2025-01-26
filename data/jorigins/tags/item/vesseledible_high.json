@@ -1,0 +1,18 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:glow_lichen",
+        "minecraft:sweet_berries",
+        "minecraft:glow_berries",
+        "minecraft:carrot",
+        "minecraft:potato",
+        "minecraft:beetroot",
+        "minecraft:baked_potato",
+        "minecraft:poisonous_potato",
+        "minecraft:sweet_berries",
+        "minecraft:sugar_cane",
+        "minecraft:cactus",
+        "minecraft:melon_slice",
+        "minecraft:pumpkin_pie"
+    ]
+}

@@ -1,0 +1,93 @@
+{
+  "name": "Planted",
+  "description": "With the right setup, you can prepare a second body to return to...",
+  "type": "origins:multiple",
+  "poweractive": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 1,
+      "hud_render": {
+          "should_render": false
+      },
+      "start_value": 1,
+      "min_action": {
+          "type": "origins:execute_command",
+          "command": "function jorigins:headon",
+          "permission_level": 4
+      },
+      "max_action": {
+          "type": "origins:execute_command",
+          "command": "function jorigins:headoff",
+          "permission_level": 4
+      }
+  },
+  "plant": {
+      "type": "origins:active_self",
+      "entity_action": {
+          "type": "origins:if_else_list",
+          "actions": [
+              {
+                  "condition": {
+                      "type": "origins:and",
+                      "conditions": [
+                          {
+                              "type": "origins:on_block",
+                              "block_condition": {
+                                  "type": "origins:in_tag",
+                                  "tag": "minecraft:dirt"
+                              }
+                          },
+                          {
+                              "type": "origins:resource",
+                              "resource": "jorigins:planted_poweractive",
+                              "comparison": "==",
+                              "compare_to": 1
+                          }
+                      ]
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:planted_poweractive",
+                      "change": 0,
+                      "operation": "set"
+                  }
+              },
+              {
+                  "condition": {
+                      "type": "origins:and",
+                      "conditions": [
+                          {
+                              "type": "origins:resource",
+                              "resource": "jorigins:planted_poweractive",
+                              "comparison": "==",
+                              "compare_to": 0
+                          }
+                      ]
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:planted_poweractive",
+                      "change": 1,
+                      "operation": "set"
+                  }
+              }
+          ]
+      },
+      "cooldown": 20,
+      "hud_render": {
+          "should_render": false
+      },
+      "key": {
+    "key": "key.origins.primary_active"
+}
+  },
+  "disable":
+  {
+      "type": "origins:action_on_callback",
+      "entity_action_lost": {
+          "type": "origins:execute_command",
+          "command": "kill @e[tag =VesselHead]"
+      },
+      "execute_chosen_when_orb": true
+  }
+}

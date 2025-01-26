@@ -1,0 +1,29 @@
+{
+    "replace": false,
+    "values": [
+        "#minecraft:leaves",
+        "#minecraft:saplings",
+        "#minecraft:flowers",
+        "minecraft:vine",
+        "minecraft:glow_lichen",
+        "minecraft:moss_block",
+        "minecraft:moss_carpet",
+        "minecraft:fern",
+        "minecraft:big_dripleaf",
+        "minecraft:small_dripleaf",
+        "minecraft:hanging_roots",
+        "minecraft:cocoa_beans",
+        "minecraft:wheat_seeds",
+        "minecraft:wheat",
+        "minecraft:pumpkin_seeds",
+        "minecraft:melon_seeds",
+        "minecraft:beetroot_seeds",
+        "minecraft:lily_pad",
+        "minecraft:kelp",
+        "minecraft:wheat_seeds",
+        "minecraft:seagrass",
+        "minecraft:sea_pickle",
+        "minecraft:dried_kelp",
+        "minecraft:bamboo"
+    ]
+}

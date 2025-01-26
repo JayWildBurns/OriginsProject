@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"jorigins:soul/soulform",
+		"jorigins:soul/reform"
+		],
+	"icon": {
+		"id": "minecraft:dirt"
+	},
+	"order": 12,
+	"impact": 2,
+	"unchoosable": false,
+	"name": "Unbounded Soul",
+	"description": "Test."
+}

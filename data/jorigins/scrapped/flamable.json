@@ -1,0 +1,149 @@
+{
+    "name": "Flamable - name pending",
+    "description": "Your body is vunerable to sunlight.",
+    "type": "origins:multiple",
+    "exposure_level": {
+      "type": "origins:resource",
+        "min": 0,
+        "max": 4,
+        "hud_render": [
+          {
+            "should_render": false
+          }
+        ]
+    },
+    "exposure_change":
+    {
+      "type": "origins:action_over_time",
+      "entity_action":
+      {
+          "type": "origins:if_else_list",
+          "actions": [
+              {
+                  "condition": {
+                      "type": "origins:and",
+                      "conditions": [
+                          {
+                              "type": "origins:exposed_to_sun"
+                          },
+                          {
+                              "type": "origins:equipped_item",
+                              "equipment_slot": "head",
+                              "item_condition": {
+                                "type": "origins:armor_value",
+                                "comparison": ">",
+                                "compare_to": 0
+                              },
+                              "inverted": true
+                          }
+                      ]
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:flamable_exposure_level",
+                      "change": 4,
+                      "operation": "set"
+                  }
+              },
+              {
+                "condition": {
+                  "type": "origins:and",
+                  "conditions": [
+                      {
+                          "type": "origins:exposed_to_sun"
+                      },
+                      {
+                          "type": "origins:equipped_item",
+                          "equipment_slot": "head",
+                          "item_condition": {
+                            "type": "origins:armor_value",
+                            "comparison": ">",
+                            "compare_to": 0
+                          },
+                          "inverted": false
+                      }
+                  ]
+                },
+                "action": {
+                  "type": "origins:change_resource",
+                  "resource": "jorigins:flamable_exposure_level",
+                  "change": 3,
+                  "operation": "set"
+                	}
+              },
+              {
+                "condition": {
+                  "type": "origins:or",
+                  "conditions": [
+                      {
+                        "type": "origins:biome",
+                        "condition": {
+                          "type": "origins:temperature",
+                          "comparison": ">=",
+                          "compare_to": 2
+                        }
+                      },
+                      {
+                          "type": "origins:block_in_radius",
+                          "block_condition": {
+                            "type": "origins:fluid",
+                            "fluid_condition": {
+                              "type": "origins:in_tag",
+                              "tag": "minecraft:lava"
+                            }
+                          },
+                          "radius": 2,
+                          "shape": "cube",
+                          "comparison": ">=",
+                          "compare_to": 1
+                      }
+                  ]
+                },
+                "action": {
+                  "type": "origins:change_resource",
+                  "resource": "jorigins:flamable_exposure_level",
+                  "change": 2,
+                  "operation": "set"
+                	}
+              },
+              {
+                "condition": {
+                  "type": "origins:or",
+                  "conditions": [
+                      {
+                        "type": "origins:biome",
+                        "condition": {
+                          "type": "origins:temperature",
+                          "comparison": "<=",
+                          "compare_to": 0
+                        }
+                      },
+                      {
+                        "type": "origins:distance_from_coordinates",
+                        "offset": {
+                        "x": 0,
+                        "y": -64,
+                        "z": 0
+                        },
+                        "shape": "cube",
+                        "ignore_x": true,
+                        "ignore_z": true,
+                        "comparison": "<",
+                        "compare_to": 63,
+                        "inverted": true
+                      }
+                  ]
+                },
+                "action": {
+                  "type": "origins:change_resource",
+                  "resource": "jorigins:flamable_exposure_level",
+                  "change": 0,
+                  "operation": "set"
+                	}
+              }
+          ]
+        },
+        "interval": 10
+    }
+
+  }

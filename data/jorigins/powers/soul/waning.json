@@ -1,0 +1,33 @@
+{
+    "name": "Waning",
+    "description": "Without a body, you'll slowly run out of energy and fade away.",
+    "type": "origins:multiple",
+    "lose_energy": {
+      "type": "origins:action_over_time",
+      "entity_action": {
+          "type": "origins:add_xp",
+        "points": -2
+      },
+      "interval": 20,
+      "condition": {
+        "type": "origins:and",
+    "conditions": [
+        {
+            "type": "origins:block_in_radius",
+            "block_condition": {
+                "type": "origins:in_tag",
+                "tag": "jorigins:soulenergy"
+            },
+            "radius": 1,
+            "shape": "cube",
+            "comparison": ">=",
+            "compare_to": 1,
+            "inverted": true
+        },
+        {
+            "type": "origins:moving"
+        }
+    ]
+      }
+  }
+}

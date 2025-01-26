@@ -1,0 +1,1 @@
+summon allay ~ ~ ~ {CustomName:'[{"text":"WildMagicBurst"}]',Glowing:1b,Invulnerable:1b,LeftHanded:1b,NoAI:1b,PersistenceRequired:1b,Silent:1b,Motion:[0d,1000d],Tags:["soul"]}

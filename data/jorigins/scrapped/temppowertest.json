@@ -1,0 +1,34 @@
+{
+  "name": "TempPower",
+  "description": "Power that ungrants after some time",
+  "type": "origins:multiple",
+  "resource": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 20,
+    "start_value": 20,
+    "hud_render": {
+        "should_render": false
+    },
+    "min_action": {
+        "type": "origins:remove_power",
+        "power": "*:*"
+    }
+  },
+  "countdown":{
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "jorigins:temppowertest_resource",
+      "change": -1
+    },
+    "interval": 20
+  },
+  "proof" :{
+    "type": "origins:self_glow",
+    "use_teams": false,
+    "red": 1.0,
+    "green": 0.0,
+    "blue": 0.0
+  }
+}

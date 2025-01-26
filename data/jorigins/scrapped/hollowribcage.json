@@ -1,0 +1,35 @@
+{
+    "name": "Hollow Ribcage",
+    "description": "Organs? Who needs them? You've got extra space to carry more",
+    "type": "origins:multiple",
+    "chest2": {
+        "type": "origins:inventory",
+        "container_type": "chest",
+        "drop_on_death": true,
+        "recoverable": true,
+        "title": "example2",
+        "key": {
+            "key": "key.hotbar.9"
+        }
+    },
+    "dylanpower": {
+        "type": "origins:action_on_key_press",
+        "entity_action": {
+          "type": "origins:execute_command",
+          "command": "execute as @s run say it works!"
+        },
+        "cooldown": 10,
+        "hud_render": {
+          "should_render": true,
+          "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+          "bar_index": 0
+        },
+        "key": "key.origins.primary_active",
+        "condition": {
+          "type": "origins:command",
+          "command": "execute if score @s Test1 = @s Test2",
+          "comparison": "==",
+          "compare_to": 1
+        }
+      }
+}

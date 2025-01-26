@@ -1,0 +1,23 @@
+{
+	"powers": [
+		"jorigins:vessel",
+		"jorigins:sunlight",
+		"jorigins:vesselhealth",
+		"jorigins:nonaquatic",
+		"jorigins:outcast",
+		"jorigins:cureable",
+		"jorigins:passivezombie",
+		"jorigins:flavour",
+		"jorigins:planted",
+		"jorigins:scraps",
+		"jorigins:miningbuff",
+		"jorigins:souldeath"
+		],
+	"icon": {
+		"id": "minecraft:brown_mushroom"
+	},
+	"order": 12,
+	"impact": 2,
+	"name": "Vessel",
+	"description": "A Soul returned to the mortal plane, you inhabit a zombified body stitched together with a colony of mushrooms."
+}

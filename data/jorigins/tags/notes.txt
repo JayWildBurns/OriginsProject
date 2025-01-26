@@ -1,0 +1,9 @@
+game_events used for vibrations mostly
+functions - if you have a function tag and run that tag it'll run all the functions in that tag at once... interesting...
+/function #namespace:functiontag
+
+
+Other folders
+functions
+game_events
+worldgen
