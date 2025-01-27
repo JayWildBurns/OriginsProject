@@ -65,7 +65,7 @@
       "modifier": {
           "id": "jorigins:hungry",
           "operation": "multiply_base_additive",
-          "amount": 3.0
+          "amount": 2.0
       },
       "condition":
       {
