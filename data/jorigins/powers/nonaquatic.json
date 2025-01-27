@@ -28,21 +28,20 @@
       }
     },
     "slower": {
-    "type": "origins:conditioned_attribute",
-    "modifier": {
-      "id": "jorigins:decreased_speed",
-      "attribute": "minecraft:generic.movement_speed",
-      "operation": "add_multiplied_total",
-      "amount": -0.15
-    },
+      "type": "origins:conditioned_attribute",
+      "modifier": {
+        "id": "jorigins:decreased_speed",
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "add_multiplied_total",
+        "amount": -0.15
+      },
     "tick_rate": 30,
-    "condition": {
-      "type": "origins:in_block",
-      "block_condition": {
-        "type": "origins:block",
-        "block": "minecraft:water"
+      "condition": {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": ">=",
+        "compare_to": 2
       }
-    }
     },
     "higher": {
       "type": "origins:conditioned_attribute",
@@ -54,11 +53,10 @@
       },
       "tick_rate": 30,
       "condition": {
-        "type": "origins:in_block",
-        "block_condition": {
-          "type": "origins:block",
-          "block": "minecraft:water"
-        }
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": ">=",
+        "compare_to": 2
       }
-      }
+    }
   }
