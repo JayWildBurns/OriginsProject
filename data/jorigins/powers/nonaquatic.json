@@ -43,5 +43,22 @@
         "block": "minecraft:water"
       }
     }
-  }
+    },
+    "higher": {
+      "type": "origins:conditioned_attribute",
+      "modifier": {
+        "id": "jorigins:decreased_speed",
+        "attribute": "minecraft:generic.jump_strength",
+        "operation": "add_multiplied_total",
+        "amount": 0.25
+      },
+      "tick_rate": 30,
+      "condition": {
+        "type": "origins:in_block",
+        "block_condition": {
+          "type": "origins:block",
+          "block": "minecraft:water"
+        }
+      }
+      }
   }
