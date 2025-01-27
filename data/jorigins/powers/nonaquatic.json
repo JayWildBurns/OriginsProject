@@ -26,37 +26,5 @@
           "block": "minecraft:water"
         }
       }
-    },
-    "slower": {
-      "type": "origins:conditioned_attribute",
-      "modifier": {
-        "id": "jorigins:decreased_speed",
-        "attribute": "minecraft:generic.movement_speed",
-        "operation": "add_multiplied_total",
-        "amount": -0.15
-      },
-    "tick_rate": 30,
-      "condition": {
-        "type": "origins:fluid_height",
-        "fluid": "minecraft:water",
-        "comparison": ">=",
-        "compare_to": 2
-      }
-    },
-    "higher": {
-      "type": "origins:conditioned_attribute",
-      "modifier": {
-        "id": "jorigins:decreased_speed",
-        "attribute": "minecraft:generic.jump_strength",
-        "operation": "add_multiplied_total",
-        "amount": 0.25
-      },
-      "tick_rate": 30,
-      "condition": {
-        "type": "origins:fluid_height",
-        "fluid": "minecraft:water",
-        "comparison": ">=",
-        "compare_to": 2
-      }
     }
   }
