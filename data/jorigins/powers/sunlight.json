@@ -80,7 +80,7 @@
       "max": 105,
       "hud_render": [
           {
-              "sprite_location": "jresource:resourcecustom.png",
+              "sprite_location": "*:resourcecustom.png",
               "bar_index": 0,
               "should_render": true,
               "condition": {

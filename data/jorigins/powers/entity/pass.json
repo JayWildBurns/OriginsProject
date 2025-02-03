@@ -1,0 +1,16 @@
+{
+    "name": "EntityPower",
+    "description": "Prevents Collisions",
+    "type": "origins:multiple",
+    "soul_look":{
+      "type": "origins:model_color",
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.8
+  },
+  "uncollidable":
+  {
+      "type": "origins:prevent_entity_collision"
+  }
+}

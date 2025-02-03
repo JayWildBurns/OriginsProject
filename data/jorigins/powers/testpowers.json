@@ -51,5 +51,19 @@
             "block": "minecraft:stone"
         },
         "allow": true
-    }
+    },
+    "testmiku": {
+    "type": "origins:overlay",
+    "hidden": true,
+    "sprite": "*:test",
+    "strength": 0.6,
+    "draw_mode": "texture",
+    "draw_phase": "below_hud",
+    "visible_in_third_person": true,
+    "condition": {
+        "type": "origins:brightness",
+        "comparison": "<=",
+        "compare_to": 0.408
+      }
+  }
 }
