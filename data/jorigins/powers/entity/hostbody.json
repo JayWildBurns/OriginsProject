@@ -9,15 +9,37 @@
       "blue": 1,
       "alpha": 0.8
   },
-  "distancecheck":{
-      "type": "origins:action_over_time",
+  "ownerset":{
+      "type": "origins:entity_set"
+  },
+  "setup":
+	{
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:selector_action",
+    		"selector": "@p",
+    		"bientity_action": {
+            	"type": "origins:add_to_entity_set",
+                "set": "jorigins:entity/hostbody_ownerset"
+    		}
+		},
+		"execute_chosen_when_orb": false
+	},
+  "updateposition": {
+    "type": "origins:action_over_time",
     "entity_action": {
-        "type": "origins:set_on_fire",
-        "duration": 4
+        "type": "origins:action_on_entity_set",
+        "set": "jorigins:entity/hostbody_ownerset",
+        "bientity_action": {
+        "type": "origins:target_action",
+          "action": {
+            "type": "origins:execute_command",
+			      "command": "function jorigins:updatecoords",
+            "permission_level": 4
+          }
+        }
     },
-    "interval": 20,
-    "condition": {
-        "type": "origins:on_fire"
-    }
+    "interval": 40
   }
+
 }
