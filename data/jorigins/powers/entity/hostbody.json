@@ -16,12 +16,22 @@
 	{
 		"type": "origins:action_on_callback",
 		"entity_action_gained": {
+      "type": "origins:and",
+    "actions": [
+    {
 			"type": "origins:selector_action",
     		"selector": "@p",
     		"bientity_action": {
             	"type": "origins:add_to_entity_set",
                 "set": "jorigins:entity/hostbody_ownerset"
     		}
+      },
+      {
+        "type": "origins:execute_command",
+      "command": "attribute @s minecraft:generic.movement_speed base set 0",
+      "permission_level": 4
+      }
+      ]
 		},
 		"execute_chosen_when_orb": false
 	},
@@ -40,6 +50,13 @@
         }
     },
     "interval": 40
-  }
+  },
+  "revert": {
+    "type": "origins:action_when_damage_taken",
+    "entity_action": {
+					"type": "origins:execute_command",
+					"command": "function jorigins:astralend"
+				}
+	}
 
 }
