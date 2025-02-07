@@ -1,6 +1,17 @@
 {
-  "pack": {
-    "pack_format": 48,
-    "description": "Version 2 of Jayden's Origin"
-  }
+	"pack": {
+		"pack_format": 48,
+		"description": "Version 2 of Jayden's Origin"
+	},
+	"overlays": {
+		"entries": [
+			{
+				"directory": "animated_java",
+				"formats": {
+					"min_inclusive": 48,
+					"max_inclusive": 56
+				}
+			}
+		]
+	}
 }
