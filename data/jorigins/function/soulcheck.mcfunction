@@ -1,0 +1,1 @@
+execute unless entity @e[type=minecraft:armor_stand,sort=nearest,limit=1, distance=..20, tag=VesselHead] run function jorigins:astralend

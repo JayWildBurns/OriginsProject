@@ -1,0 +1,23 @@
+{
+    "name": "Host Body",
+    "description": "Granted to a specific entity. You should not have this power.",
+    "type": "origins:multiple",
+    "soul_look":{
+      "type": "origins:model_color",
+      "red": 1,
+      "green": 1,
+      "blue": 1,
+      "alpha": 0.8
+  },
+  "distancecheck":{
+      "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:set_on_fire",
+        "duration": 4
+    },
+    "interval": 20,
+    "condition": {
+        "type": "origins:on_fire"
+    }
+  }
+}

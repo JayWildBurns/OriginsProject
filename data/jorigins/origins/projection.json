@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"jorigins:soul/astralform"
+		],
+	"icon": {
+		"id": "minecraft:stone"
+	},
+	"order": 12,
+	"impact": 2,
+	"unchoosable": false,
+	"name": "Projection",
+	"description": "Test."
+}

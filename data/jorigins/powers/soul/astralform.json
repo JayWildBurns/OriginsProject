@@ -1,0 +1,42 @@
+{
+	"name": "Astral Form",
+	"description": "Temporary",
+	"type": "origins:multiple",
+	"plant": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function jorigins:astralend",
+			"permission_level": 4
+		},
+		"cooldown": 20,
+		"hud_render": {
+			"should_render": false
+		},
+		"key": {
+	  		"key": "key.origins.primary_active"
+  		}
+	},
+	"revert": {
+		"type": "origins:action_on_death",
+		"bientity_action": {
+			"type": "origins:target_action",
+			"action": [
+				{
+					"type": "origins:execute_command",
+					"command": "function jorigins:astralend",
+					"permission_level": 4
+				}
+			]
+		}
+	},
+	"distance_check":{
+	"type": "origins:action_over_time",
+  	"entity_action": {
+    	"type": "origins:execute_command",
+    	"command": "function jorigins:soulcheck",
+    	"permission_level": 4
+  	},
+  "interval": 10
+	}
+}

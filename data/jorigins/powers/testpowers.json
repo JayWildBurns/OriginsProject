@@ -63,7 +63,7 @@
     "condition": {
         "type": "origins:brightness",
         "comparison": "<=",
-        "compare_to": 0.408
+        "compare_to": 0.1
       }
   }
 }
