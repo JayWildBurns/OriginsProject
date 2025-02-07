@@ -43,9 +43,20 @@
         "bientity_action": {
         "type": "origins:target_action",
           "action": {
+            
+            "type": "origins:and",
+    "actions": [
+    {
             "type": "origins:execute_command",
 			      "command": "function jorigins:updatecoords",
             "permission_level": 4
+    },
+    {
+      "type": "origins:execute_command",
+			      "command": "execute at @e[type=armor_stand,limit=1,tag=HostBody] run tp @e[limit=1,sort=nearest,type=item_display] ~ ~ ~ ~ 0",
+            "permission_level": 4
+    }
+  ]
           }
         }
     },
@@ -58,5 +69,4 @@
 					"command": "function jorigins:astralend"
 				}
 	}
-
 }
