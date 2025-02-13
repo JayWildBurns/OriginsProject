@@ -2,8 +2,6 @@
   "replace": false,
   "origins": [
   "jorigins:basevessel",
-  "jorigins:curedvessel",
-  "jorigins:soul",
-  "jorigins:projection"
+  "jorigins:curedvessel"
   ]
 }
