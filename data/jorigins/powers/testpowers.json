@@ -65,5 +65,37 @@
         "comparison": "<=",
         "compare_to": 0.1
       }
+  },
+  "ribcage":{
+        "type": "origins:inventory",
+        "container_type": "generic_9x4",
+        "drop_on_death": true,
+        "key": {
+            "key": "key.hotbar.9"
+        }
+  },
+  "spoiledfood_inventory":{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:modify_inventory",
+        "entity_action": {
+            "type": "origins:give",
+            "stack": {
+                "id": "minecraft:rotten_flesh",
+                "amount": 1
+            }
+        },
+        "item_action": {
+            "type": "origins:consume",
+            "amount": 1
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "jorigins:spoilable"
+            }
+        }
+    },
+    "interval": 80
   }
 }
