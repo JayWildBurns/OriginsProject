@@ -8,7 +8,8 @@
 		"jorigins:cureable",
 		"jorigins:passivezombie",
 		"jorigins:scraps",
-		"jorigins:testpowers"
+		"jorigins:testpowers",
+		"jorigins:soul/astral"
 		],
 	"icon": {
 		"id": "minecraft:brown_mushroom"
