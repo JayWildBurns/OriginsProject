@@ -1,1 +1,1 @@
-execute unless entity @e[type=minecraft:armor_stand,sort=nearest,limit=1, distance=..20, tag=HostBody] run function jorigins:astralend
+execute unless entity @e[type=minecraft:zombie,sort=nearest,limit=1, distance=..20, tag=HostBody] run function jorigins:astralend

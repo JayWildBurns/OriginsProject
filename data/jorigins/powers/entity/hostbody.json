@@ -1,72 +1,107 @@
 {
-    "name": "Host Body",
-    "description": "Granted to a specific entity. You should not have this power.",
-    "type": "origins:multiple",
-    "soul_look":{
+  "name": "Host Body",
+  "description": "Granted to a specific entity. You should not have this power.",
+  "type": "origins:multiple",
+  "soul_look": {
       "type": "origins:model_color",
       "red": 1,
       "green": 1,
       "blue": 1,
       "alpha": 0.8
   },
-  "ownerset":{
+  "ownerset": {
       "type": "origins:entity_set"
   },
-  "setup":
-	{
-		"type": "origins:action_on_callback",
-		"entity_action_gained": {
-      "type": "origins:and",
-    "actions": [
-    {
-			"type": "origins:selector_action",
-    		"selector": "@p",
-    		"bientity_action": {
-            	"type": "origins:add_to_entity_set",
-                "set": "jorigins:entity/hostbody_ownerset"
-    		}
+
+  "setup": {
+      "type": "origins:action_on_callback",
+      "entity_action_gained": {
+          "type": "origins:and",
+          "actions": [
+              {
+                  "type": "origins:selector_action",
+                  "selector": "@p",
+                  "bientity_action": {
+                      "type": "origins:add_to_entity_set",
+                      "set": "jorigins:entity/hostbody_ownerset"
+                  }
+              },
+              {
+                  "type": "origins:execute_command",
+                  "command": "attribute @s minecraft:generic.movement_speed base set 0",
+                  "permission_level": 4
+              }
+          ]
       },
-      {
-        "type": "origins:execute_command",
-      "command": "attribute @s minecraft:generic.movement_speed base set 0",
-      "permission_level": 4
-      }
-      ]
-		},
-		"execute_chosen_when_orb": false
-	},
-  "updateposition": {
-    "type": "origins:action_over_time",
-    "entity_action": {
-        "type": "origins:action_on_entity_set",
-        "set": "jorigins:entity/hostbody_ownerset",
-        "bientity_action": {
-        "type": "origins:target_action",
-          "action": {
-            
-            "type": "origins:and",
-    "actions": [
-    {
-            "type": "origins:execute_command",
-			      "command": "function jorigins:updatecoords",
-            "permission_level": 4
-    },
-    {
-      "type": "origins:execute_command",
-			      "command": "execute at @e[type=armor_stand,limit=1,tag=HostBody] run tp @e[limit=1,sort=nearest,type=item_display] ~ ~ ~ ~ 0",
-            "permission_level": 4
-    }
-  ]
-          }
-        }
-    },
-    "interval": 40
+      "execute_chosen_when_orb": false
   },
+
+  "updateposition": {
+      "type": "origins:action_over_time",
+      "entity_action": {
+          "type": "origins:action_on_entity_set",
+          "set": "jorigins:entity/hostbody_ownerset",
+          "bientity_action": {
+              "type": "origins:target_action",
+              "action": {
+                  "type": "origins:and",
+                  "actions": [
+                      {
+                          "type": "origins:execute_command",
+                          "command": "function jorigins:updatecoords",
+                          "permission_level": 4
+                      }
+                  ]
+              }
+          }
+      },
+      "interval": 40
+  },
+
   "revert": {
-    "type": "origins:action_when_damage_taken",
-    "entity_action": {
-					"type": "origins:execute_command",
-					"command": "function jorigins:astralend"
-				}
-	}
+      "type": "origins:action_when_damage_taken",
+      "entity_action": {
+          "type": "origins:action_on_entity_set",
+          "set": "jorigins:entity/hostbody_ownerset",
+          "bientity_action": {
+              "type": "origins:target_action",
+              "action": {
+                  "type": "origins:and",
+                  "actions": [
+                      {
+                          "type": "origins:execute_command",
+                          "command": "execute as @s run function jorigins:astralend",
+                          "permission_level": 4
+                      },
+                      {
+                        "type": "origins:execute_command",
+                        "command": "say DamageTaken",
+                        "permission_level": 4
+                    }
+                  ]
+              }
+          }
+      },
+      "cooldown": 1
+  },
+
+  "damage": {
+      "type": "origins:action_over_time",
+      "entity_action": {
+          "type": "origins:area_of_effect",
+          "radius": 10,
+          "shape": "sphere",
+          "bientity_action": {
+              "type": "origins:damage",
+              "damage_type": "minecraft:magic",
+              "modifier": {
+                  "operation": "set_total",
+                  "resource": "example:magic_damage",
+                  "value": 0
+              }
+          }
+      },
+      "interval": 200,
+      "include_actor": true
+  }
 }

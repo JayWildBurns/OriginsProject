@@ -75,7 +75,7 @@
         }
   },
   "spoiledfood_inventory":{
-    "type": "origins:action_over_time",
+    "type": "origins:action_on_wake_up",
     "entity_action": {
         "type": "origins:modify_inventory",
         "entity_action": {
@@ -95,7 +95,6 @@
                 "tag": "jorigins:spoilable"
             }
         }
-    },
-    "interval": 80
+    }
   }
 }
