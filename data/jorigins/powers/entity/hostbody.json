@@ -30,8 +30,19 @@
                   "type": "origins:execute_command",
                   "command": "attribute @s minecraft:generic.movement_speed base set 0",
                   "permission_level": 4
-              }
+              },
+              {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:entity_reach 0",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:jump_height 0",
+                "permission_level": 4
+            }
           ]
+
       },
       "execute_chosen_when_orb": false
   },
@@ -72,19 +83,13 @@
                           "type": "origins:execute_command",
                           "command": "execute as @s run function jorigins:astralend",
                           "permission_level": 4
-                      },
-                      {
-                        "type": "origins:execute_command",
-                        "command": "say DamageTaken",
-                        "permission_level": 4
-                    }
+                      }
                   ]
               }
           }
       },
       "cooldown": 1
   },
-
   "damage": {
       "type": "origins:action_over_time",
       "entity_action": {
@@ -103,5 +108,12 @@
       },
       "interval": 200,
       "include_actor": true
+  },
+  "nonhostile": {
+      "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "operation": "set_total",
+        "amount": 0
+    }
   }
 }

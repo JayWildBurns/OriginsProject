@@ -1,0 +1,37 @@
+{
+	"name": "Soul Flight",
+	"description": "You automatically slip through blocks and entities. However, you can fly by trying to jump.",
+	"type": "origins:multiple",
+  "flight":{
+    "type": "origins:creative_flight"
+},
+"slower":{
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "jorigins:decreased_speed",
+    "attribute": "minecraft:generic.movement_speed",
+    "operation": "add_multiplied_total",
+    "amount": 1
+  }
+},
+"uncollidable":
+{
+    "type": "origins:prevent_entity_collision"
+},
+"sprintless": {
+  "type": "origins:prevent_sprinting"
+},
+"phasing":{
+  "type": "origins:phasing",
+  "blacklist": true,
+  "render_type": "blindness",
+  "view_distance": 20,
+  "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "jorigins:soulblocked"
+  },
+  "phase_down_condition": {
+      "type": "origins:exists"
+  }
+  }
+}

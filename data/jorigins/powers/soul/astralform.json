@@ -1,6 +1,6 @@
 {
 	"name": "Astral Form",
-	"description": "While Disconnected from your body, you have limited capabilities.",
+	"description": "Disconnected from your body, you are forcibly brought back to it if you wander too far or it is damaged. You can return at will using your active ability.",
 	"type": "origins:multiple",
 	"togglepower": {
 		"type": "origins:active_self",
@@ -55,44 +55,17 @@
 		}
 		]
 		},
+    "entity_action_gained":{
+      "type": "origins:and",
+    "actions": [
+		{
+			"type": "origins:add_velocity",
+      "y": 1
+		}
+		]
+    },
 		"execute_chosen_when_orb": true
 	},
-	"uncollidable":
-  {
-      "type": "origins:prevent_entity_collision"
-  },
-  "sprintless": {
-    "type": "origins:prevent_sprinting"
-  },
-  "phasing":{
-    "type": "origins:phasing",
-    "blacklist": true,
-    "render_type": "blindness",
-    "view_distance": 20,
-    "block_condition": {
-        "type": "origins:in_tag",
-        "tag": "jorigins:soulblocked"
-    },
-    "phase_down_condition": {
-        "type": "origins:exists"
-    }
-  },
-  "unuseable":{
-      "type": "origins:prevent_item_use",
-      "item_condition": {
-        "type": "origins:ingredient",
-        "ingredient": {
-              "tag": "jorigins:nonsoulitem"
-         }
-      }
-  },
-  "damageless":{
-      "type": "origins:modify_damage_dealt",
-      "modifier": {
-          "operation": "set_total",
-          "amount": 0
-      }
-  },
   "nightvision": {
       "type": "origins:night_vision",
       "strength": 0.15,
@@ -101,17 +74,5 @@
         "comparison": "<=",
         "compare_to": 0.408
       }
-  },
-  "flight":{
-      "type": "origins:creative_flight"
-  },
-  "slower":{
-    "type": "origins:attribute",
-    "modifier": {
-      "id": "jorigins:decreased_speed",
-      "attribute": "minecraft:generic.movement_speed",
-      "operation": "add_multiplied_total",
-      "amount": 1
-    }
   }
 }

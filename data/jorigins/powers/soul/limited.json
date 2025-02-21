@@ -1,0 +1,88 @@
+{
+	"name": "Soul Strength",
+	"description": "While Disconnected from your body, you have limited capabilities. You deal no damage, cannot use some items, and breaking/placing blocks cost soul energy. Running out of this energy will damage you.",
+	"type": "origins:multiple",
+  "unuseable":{
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+            "tag": "jorigins:nonsoulitem"
+       }
+    }
+},
+"damageless":{
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "operation": "set_total",
+        "amount": 0
+    }
+},
+	"soul_strength": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 100,
+      "hud_render":
+          {
+              "sprite_location": "*:resourcecustom.png",
+              "bar_index": 1,
+              "should_render": true,
+              "inverted":true
+          }
+    },
+    "placecost":{
+      "type": "origins:action_on_block_place",
+      "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "jorigins:soul/limited_soul_strength",
+        "change": 5,
+        "operation": "add"
+      }
+    },
+    "breakcost":{
+      "type": "origins:action_on_block_break",
+      "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "jorigins:soul/limited_soul_strength",
+        "change": 5,
+        "operation": "add"
+      }
+    },
+    "usecost":{
+      "type": "origins:action_on_block_use",
+      "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "jorigins:soul/limited_soul_strength",
+        "change": 5,
+        "operation": "add"
+      }
+    },
+    "lowerhealth": {
+    "type": "origins:attribute",
+    "modifier": {
+        "id": "healthoverride",
+        "attribute": "minecraft:generic.max_health",
+        "amount": -8,
+        "operation": "ADD_VALUE"
+    }
+  },
+  "damage":{
+      "type": "origins:damage_over_time",
+      "interval": 20,
+      "onset_delay": 1,
+      "damage": 2,
+      "damage_easy": 1,
+      "damage_type": "origins:hurt_by_water",
+      "condition": {
+          "type": "origins:or",
+          "conditions": [
+              {
+                "type": "origins:resource",
+                "resource": "jorigins:soul/limited_soul_strength",
+                "comparison": ">=",
+                "compare_to": 100
+              }
+          ]
+      }
+  }
+}
