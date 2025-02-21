@@ -35,17 +35,17 @@
             "actions": [
                 {
                     "type": "origins:execute_command",
-                    "command": "team join ZombieMode @e[type=#zombies,distance=..25,team=!Unhappy]",
+                    "command": "team join ZombieMode @e[type=#jorigins:tricked,distance=..25,team=!Unhappy]",
                     "permission_level": 4
                 },
                 {
                   "type": "origins:execute_command",
-                  "command": "team leave ZombieMode @e[type=#zombies,distance=25..,team=!Unhappy]",
+                  "command": "team leave ZombieMode @e[type=#jorigins:tricked,distance=25..,team=!Unhappy]",
                   "permission_level": 4
               },
               {
                 "type": "origins:execute_command",
-                "command": "team leave Unhappy @e[type=#zombies,distance=25..]",
+                "command": "team leave Unhappy @e[type=#jorigins:tricked,distance=25..]",
                 "permission_level": 4
               }
             ]
@@ -55,7 +55,7 @@
         "type": "origins:target_action_on_hit",
         "entity_action": {
             "type": "origins:execute_command",
-            "command": "team join Unhappy @e[type=#zombies,distance=0..3]",
+            "command": "team join Unhappy @e[type=#jorigins:tricked,distance=0..3]",
             "permission_level": 4
         },
         "target_condition": {
@@ -76,10 +76,6 @@
               {
                 "type": "origins:entity_type",
                 "entity_type": "minecraft:zombie_villager"
-              },
-              {
-                "type": "origins:entity_type",
-                "entity_type": "minecraft:zombified_piglin"
               }
             ]
           }

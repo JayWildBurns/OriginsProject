@@ -74,5 +74,68 @@
         "comparison": "<=",
         "compare_to": 0.408
       }
-  }
+  },
+  "soul_look": {
+    "type": "origins:model_color",
+    "red": 1,
+    "green": 1,
+    "blue": 1,
+    "alpha": 0.7
+},
+"overlay_close": {
+    "type": "origins:overlay",
+    "hidden": true,
+    "sprite": "*:soulverlaya",
+    "strength": 0.5,
+    "draw_mode": "texture",
+    "draw_phase": "below_hud",
+    "visible_in_third_person": true,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "jorigins:soul/astralform_overlay_resource",
+        "compare_to": 0,
+        "comparison": "=="
+      }
+  },
+  "overlay_mid": {
+    "type": "origins:overlay",
+    "hidden": true,
+    "sprite": "*:soulverlayb",
+    "strength": 0.6,
+    "draw_mode": "texture",
+    "draw_phase": "below_hud",
+    "visible_in_third_person": true,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "jorigins:soul/astralform_overlay_resource",
+        "compare_to": 1,
+        "comparison": "=="
+      }
+  },
+  "overlay_edge": {
+    "type": "origins:overlay",
+    "hidden": true,
+    "sprite": "*:soulverlayc",
+    "strength": 0.7,
+    "draw_mode": "texture",
+    "draw_phase": "below_hud",
+    "visible_in_third_person": true,
+    "condition": {
+        "type": "origins:resource",
+        "resource": "jorigins:soul/astralform_overlay_resource",
+        "compare_to": 2,
+        "comparison": "=="
+      }
+  },
+  "overlay_resource": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 2,
+      "hud_render":
+          {
+              "sprite_location": "*:resourcecustom.png",
+              "bar_index": 1,
+              "should_render": false
+          }
+    }
 }

@@ -2,17 +2,16 @@
   "name": "Host Body",
   "description": "Granted to a specific entity. You should not have this power.",
   "type": "origins:multiple",
-  "soul_look": {
+  "body_look": {
       "type": "origins:model_color",
-      "red": 1,
-      "green": 1,
-      "blue": 1,
-      "alpha": 0.8
+      "red": 0.5,
+      "green": 0.5,
+      "blue": 0.5,
+      "alpha": 1
   },
   "ownerset": {
       "type": "origins:entity_set"
   },
-
   "setup": {
       "type": "origins:action_on_callback",
       "entity_action_gained": {
@@ -39,6 +38,11 @@
             {
                 "type": "origins:execute_command",
                 "command": "scale set pehkui:jump_height 0",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "attribute @s generic.follow_range base set 0",
                 "permission_level": 4
             }
           ]
@@ -104,7 +108,14 @@
                   "resource": "example:magic_damage",
                   "value": 0
               }
-          }
+          },
+          "bientity_condition": {
+             "type": "origins:target_condition",
+            "condition": {
+                "type": "origins:in_tag",
+                "tag": "jorigins:hostile"
+                }
+            }
       },
       "interval": 200,
       "include_actor": true
