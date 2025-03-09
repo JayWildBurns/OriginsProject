@@ -9,7 +9,7 @@
 	},
 	"order": 12,
 	"impact": 2,
-	"unchoosable": false,
+	"unchoosable": true,
 	"name": "Projection",
 	"description": "Test."
 }

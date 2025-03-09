@@ -16,6 +16,7 @@
 	},
 	"order": 12,
 	"impact": 2,
+	"unchoosable": false,
 	"name": "Vessel",
 	"description": "A Soul returned to the mortal plane, you inhabit a zombified body stitched together with a colony of mushrooms."
 }

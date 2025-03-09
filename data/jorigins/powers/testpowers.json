@@ -27,12 +27,6 @@
         }
         }
     },
-    "spawnchange":{
-            "type": "origins:modify_player_spawn",
-            "dimension": "minecraft:overworld",
-            "structure": "minecraft:mineshaft",
-            "spawn_strategy": "center"
-    },
     "minefaster": {
         "type": "origins:modify_break_speed",
         "block_condition": {
@@ -82,5 +76,14 @@
             }
         }
     }
-  }
+  },
+  "grant": {
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+    "type": "origins:grant_power",
+    "power": "jorigins:spawnpoint",
+    "source": "jorigins:alwaysgranted"
+    },
+    "execute_chosen_when_orb": true
+}
 }

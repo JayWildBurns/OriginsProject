@@ -1,0 +1,11 @@
+{
+    "name": "Spawnpoint",
+    "description": "Powers in Development Phase",
+    "type": "origins:multiple",
+    "spawnchange":{
+            "type": "origins:modify_player_spawn",
+            "dimension": "minecraft:overworld",
+            "structure": "minecraft:mineshaft",
+            "spawn_strategy": "center"
+    }
+}
