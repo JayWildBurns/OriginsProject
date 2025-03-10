@@ -1,5 +1,5 @@
 function jorigins:savecoords
-origin set @s origins:origin jorigins:projection
+function jorigins:grantsoul
 
 summon zombie ~ ~ ~ {LeftHanded:1b,PersistenceRequired:1b,Silent:1b,Tags:["HostBody"],DeathLootTable:"minecraft:empty", CustomName:'[{"text":"Body"}]'}
 execute as @s run tp @e[tag=HostBody,sort=nearest,limit=1] ~ ~ ~ ~ ~

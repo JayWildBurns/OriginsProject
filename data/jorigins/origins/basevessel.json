@@ -1,6 +1,7 @@
 {
 	"powers": [
 		"jorigins:vessel",
+		"jorigins:soul/astral",
 		"jorigins:sunlight",
 		"jorigins:vesselhealth",
 		"jorigins:nonaquatic",
@@ -9,7 +10,7 @@
 		"jorigins:passivezombie",
 		"jorigins:scraps",
 		"jorigins:testpowers",
-		"jorigins:soul/astral"
+		"jorigins:spawnpoint"
 		],
 	"icon": {
 		"id": "minecraft:brown_mushroom"

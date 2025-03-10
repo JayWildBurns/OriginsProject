@@ -76,14 +76,5 @@
             }
         }
     }
-  },
-  "grant": {
-    "type": "origins:action_on_callback",
-    "entity_action_chosen": {
-    "type": "origins:grant_power",
-    "power": "jorigins:spawnpoint",
-    "source": "jorigins:alwaysgranted"
-    },
-    "execute_chosen_when_orb": true
-}
+  }
 }
