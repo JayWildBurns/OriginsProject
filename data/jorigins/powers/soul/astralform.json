@@ -61,7 +61,16 @@
 		{
 			"type": "origins:add_velocity",
       "y": 1
-		}
+		},
+    {
+    "type": "origins:drop_inventory",
+    "slots": [
+        "armor.chest",
+        "armor.head",
+        "armor.legs",
+        "armor.feet"
+    ]
+    }
 		]
     },
 		"execute_chosen_when_orb": true
@@ -137,5 +146,28 @@
               "bar_index": 1,
               "should_render": false
           }
+  },
+  "prevent_armor":{
+    "type": "origins:restrict_armor",
+    "head": {
+        "type": "origins:armor_value",
+        "comparison": ">",
+        "compare_to": 0
+    },
+    "chest": {
+        "type": "origins:armor_value",
+        "comparison": ">",
+        "compare_to": 0
+    },
+    "legs": {
+        "type": "origins:armor_value",
+        "comparison": ">",
+        "compare_to": 0
+    },
+    "feet": {
+        "type": "origins:armor_value",
+        "comparison": ">",
+        "compare_to": 0
     }
+  }
 }

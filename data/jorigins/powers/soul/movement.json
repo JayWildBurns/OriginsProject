@@ -33,5 +33,10 @@
   "phase_down_condition": {
       "type": "origins:exists"
   }
+  },
+  "slowfall":{
+    "type": "origins:modify_falling",
+    "velocity": 0,
+    "take_fall_damage": false
   }
 }
