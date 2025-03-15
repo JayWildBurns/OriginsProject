@@ -36,7 +36,7 @@
   },
   "slowfall":{
     "type": "origins:modify_falling",
-    "velocity": 0,
+    "velocity": 0.05,
     "take_fall_damage": false
   }
 }

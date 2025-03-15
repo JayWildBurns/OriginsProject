@@ -1,1 +1,1 @@
-$execute in minecraft:overworld run tp @s $(x) $(y) $(z)
+$execute run tp @s $(x) $(y) $(z)
