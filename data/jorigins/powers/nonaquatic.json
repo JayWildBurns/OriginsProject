@@ -1,6 +1,6 @@
 {
     "name": "Non Aquatic",
-    "description": "Your body sinks in water",
+    "description": "Zombies don't need to breathe, but mushrooms do! You sink in water instead of swimming, and will drown if you stay underwater too long.",
     "type": "origins:multiple",
     "dense": {
       "type": "origins:ignore_water"

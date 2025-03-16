@@ -1,6 +1,6 @@
 {
     "name": "Feeding on Scraps",
-    "description": "Your unique biology means you lose hunger faster. However, you can eat most plant material as well, which also has a chance to heal you",
+    "description": "As well as using rotten flesh to heal yourself, you can feed your mushrooms with most plant material to heal. You can also eat bonemeal to grow excess mushrooms, but this causes you to hunger faster.",
     "type": "origins:multiple",
     "repair_low":{
       "type": "origins:edible_item",

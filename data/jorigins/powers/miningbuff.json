@@ -2,6 +2,7 @@
     "name": "MiningBuff",
     "description": "MoreTestPowers",
     "type": "origins:multiple",
+    "hidden":true,
     "minecartboost": {
         "type": "origins:active_self",
         "entity_action": {

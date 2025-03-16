@@ -1,6 +1,6 @@
 {
     "name": "Cureable",
-    "description": "You can revoke your zombie side...",
+    "description": "POWER NOT FINISHED",
     "type": "origins:multiple",
     "grantcure":{
             "type": "origins:edible_item",
