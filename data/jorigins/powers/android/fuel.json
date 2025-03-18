@@ -1,0 +1,72 @@
+{
+  "name": "Fuel",
+  "description": "Not finished",
+  "type": "origins:multiple",
+  "level": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 300,
+      "start_value": 300,
+      "hud_render": [
+          {
+              "sprite_location": "*:resourcecustom.png",
+              "bar_index": 0,
+              "should_render": true
+          }
+      ]
+  },
+  "drain": {
+      "type": "origins:action_over_time",
+      "entity_action": {
+          "type": "origins:if_else_list",
+          "actions": [
+              {
+                  "condition": {
+                      "type": "origins:sprinting"
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:android/fuel_level",
+                      "change": -5,
+                      "operation": "add"
+                  }
+              },
+              {
+                  "condition": {
+                      "type": "origins:sneaking"
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:android/fuel_level",
+                      "change": -2,
+                      "operation": "add"
+                  }
+              },
+              {
+                  "condition": {
+                      "type": "origins:moving",
+                      "inverted": true
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:android/fuel_level",
+                      "change": -1,
+                      "operation": "add"
+                  }
+              },
+              {
+                  "condition": {
+                      "type": "origins:exists"
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:android/fuel_level",
+                      "change": -1,
+                      "operation": "add"
+                  }
+              }
+          ]
+      },
+      "interval": 40
+  }
+}

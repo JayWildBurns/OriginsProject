@@ -1,0 +1,15 @@
+{
+	"powers": [
+			"jorigins:android/android",
+			"jorigins:android/fuel",
+			"jorigins:android/nonorganic"
+		],
+	"icon": {
+		"id": "minecraft:lightning_rod"
+	},
+	"order": 12,
+	"impact": 2,
+	"unchoosable": false,
+	"name": "Vessel",
+	"description": "An old-world android that has reactivated."
+}

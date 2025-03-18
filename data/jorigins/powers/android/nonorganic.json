@@ -1,0 +1,87 @@
+{
+  "name": "Non-Organic",
+  "description": "Your body does not heal in the way a normal person's does. Instead, you must consume ores to heal.",
+  "type": "origins:multiple",
+  "disableregen":{
+      "type": "origins:disable_regen"
+    },
+  "repair_smelt":{
+      "type": "origins:edible_item",
+      "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "tag": "jorigins:repairsmelt"
+         }
+      },
+      "food_component": {
+         "nutrition": 0.0,
+          "saturation": 0.0,
+          "eat_seconds": 3.0,
+          "can_always_eat": true
+      },
+      "use_action": "eat",
+      "consuming_time_modifier": {
+         "operation": "multiply_total_multiplicative",
+          "value": 50
+      },
+      "priority": 10,
+      "entity_action": {
+          "type": "origins:heal",
+          "amount": 2
+      }
+    },
+    "repair_raw":{
+      "type": "origins:edible_item",
+      "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "tag": "jorigins:repairraw"
+         }
+      },
+      "food_component": {
+         "nutrition": 0.0,
+          "saturation": 0.0,
+          "eat_seconds": 3.0,
+          "can_always_eat": true
+      },
+      "use_action": "eat",
+      "consuming_time_modifier": {
+         "operation": "multiply_total_multiplicative",
+          "value": 50
+      },
+      "priority": 10,
+      "entity_action": {
+          "type": "origins:heal",
+          "amount": 1
+      }
+    },
+    "repair_nugget":{
+      "type": "origins:edible_item",
+      "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+              "tag": "jorigins:repairnugget"
+         }
+      },
+      "food_component": {
+         "nutrition": 0.0,
+          "saturation": 0.0,
+          "eat_seconds": 1.0,
+          "can_always_eat": true
+      },
+      "use_action": "eat",
+      "consuming_time_modifier": {
+         "operation": "multiply_total_multiplicative",
+          "value": 10
+      },
+      "priority": 10,
+      "entity_action": {
+          "type": "origins:chance",
+        "success_action": {
+          "type": "origins:heal",
+          "amount": 1
+        },
+        "chance": 0.3
+      }
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Refueling",
+  "description": "Hmm",
+  "type": "origins:multiple",
+  "disableregen":{
+      "type": "origins:disable_regen"
+    }
+}

@@ -1,6 +1,6 @@
 {
-    "name": "Astral Projection",
-    "description": "Your soul is only loosely attached to your body. By using your active ability, you can project yourself a short distance away from your body. This allows you to fly, phase through blocks, and have some interaction with the world... but you must return to your body if it is damaged, you run out of energy, or if you want to move again.",
+    "name": "Heat Issue",
+    "description": "hmmm",
     "type": "origins:multiple",
     "projection": {
         "type": "origins:active_self",
