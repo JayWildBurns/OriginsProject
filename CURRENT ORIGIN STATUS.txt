@@ -1,0 +1,48 @@
+CURRENT ORIGIN STATUS
+
+Vessel (Evolution of Mycelium Zombie Concept)
+
+POWERS
+	Vessel - Night Vision, Zombie group abilities
+	Astral Projection
+	Sunlight - burn in daylight, exponential, helmet
+	Vessel Health - Only heal via rotten flesh. Craft rotten flesh.
+	Scraps - Heal via coal and two tiers of plant. Higher exhaust.
+	Cureable - can cure self to bypass some restrictions, extra life
+	Outcast - villagers/iron golem
+	Passive zombie - zombies in team
+	TestPowers - Mining buffs, Ribcage
+	Spawnpoint - Sets spawnpoint to a different location
+	
+KNOWN ISSUES
+	"Bug" - XP drops on Zombie death
+UPCOMING ADJUSTMENTS
+	Water debuff
+		Slipperiness in water?
+		Damage in water?
+		stacking status effect?
+			TLDR MUSHROOMS DONT DO WELL IN WATER
+	Cureable Rework
+	ADD SPIDER EYES TO SCRAPS
+	Astral - drown zombie if it falls in water too long
+	Soul Seep Damage
+	Mining Buff Finalization
+		Minecarts?
+		Mining ++?
+		Mining Beam?
+	Potential weird buff - craftable lingering potions (w/o Dragon's Breath?)
+
+-----
+A DIFFERENT ORIGIN IDEA
+
+ANDROID
+
+
+Lightning Rod - Can't wear helmets, must wear lightning rod receiver.
+Fuel
+	Can eat all fuel items and receive fuel from them
+	WHAT HAPPENS IF YOU RUN OUT? THINK, MARK, THINK!
+Repair health via Ores - Iron, gold, Copper mainly.
+Sink in water
+
+

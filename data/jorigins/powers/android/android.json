@@ -58,7 +58,7 @@
       "actions": [
         {
           "type": "origins:execute_command",
-          "command": "item replace entity WildMagicBurst armor.head with minecraft:lightning_rod",
+          "command": "function jorigins:equip",
           "permission_level": 4
         },
         {
