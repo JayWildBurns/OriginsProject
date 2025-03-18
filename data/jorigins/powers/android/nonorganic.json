@@ -10,7 +10,7 @@
       "item_condition": {
           "type": "origins:ingredient",
           "ingredient": {
-              "tag": "jorigins:repairsmelt"
+              "tag": "jorigins:android/repairsmelt"
          }
       },
       "food_component": {
@@ -35,7 +35,7 @@
       "item_condition": {
           "type": "origins:ingredient",
           "ingredient": {
-              "tag": "jorigins:repairraw"
+              "tag": "jorigins:android/repairraw"
          }
       },
       "food_component": {
@@ -60,7 +60,7 @@
       "item_condition": {
           "type": "origins:ingredient",
           "ingredient": {
-              "tag": "jorigins:repairnugget"
+              "tag": "jorigins:android/repairnugget"
          }
       },
       "food_component": {

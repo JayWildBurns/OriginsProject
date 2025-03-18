@@ -16,10 +16,10 @@
       "type": "origins:action_on_callback",
     "entity_action_respawned": {
         "type": "origins:execute_command",
-        "command": "item replace entity WildMagicBurst armor.head with minecraft:lightning_rod",
+        "command": "function jorigins:equip",
         "permission_level": 4
     },
-    "execute_chosen_when_orb": false
+    "execute_chosen_when_orb": true
     },
     "restrict":{
       "type": "origins:restrict_armor",

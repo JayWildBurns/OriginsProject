@@ -1,0 +1,1 @@
+item replace entity @s armor.head with minecraft:lightning_rod[custom_name='["",{"text":"Antenna","italic":false,"bold":true,"color":"gold"}]',lore=['["",{"text":"Maintains connection with a central server. Removal will result in ","italic":false,"color":"white"},{"text":"immediate shutdown","italic":false,"color":"dark_red"},{"text":".","italic":false,"color":"white"}]']]

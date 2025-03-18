@@ -5,15 +5,24 @@
   "level": {
       "type": "origins:resource",
       "min": 0,
-      "max": 300,
-      "start_value": 300,
+      "max": 800,
+      "start_value": 800,
       "hud_render": [
           {
               "sprite_location": "*:resourcecustom.png",
-              "bar_index": 0,
+              "bar_index": 2,
               "should_render": true
           }
       ]
+  },
+  "death":{
+    "type": "origins:action_on_callback",
+    "entity_action_respawned": {
+      "type": "origins:execute_command",
+      "command": "resource set @s jorigins:android/fuel_level 800",
+      "permission_level": 4
+    },
+    "execute_chosen_when_orb": false
   },
   "drain": {
       "type": "origins:action_over_time",
@@ -27,7 +36,7 @@
                   "action": {
                       "type": "origins:change_resource",
                       "resource": "jorigins:android/fuel_level",
-                      "change": -5,
+                      "change": -15,
                       "operation": "add"
                   }
               },
@@ -38,7 +47,7 @@
                   "action": {
                       "type": "origins:change_resource",
                       "resource": "jorigins:android/fuel_level",
-                      "change": -2,
+                      "change": -3,
                       "operation": "add"
                   }
               },
@@ -50,10 +59,19 @@
                   "action": {
                       "type": "origins:change_resource",
                       "resource": "jorigins:android/fuel_level",
-                      "change": -1,
+                      "change": -5,
                       "operation": "add"
                   }
-              },
+              }
+          ]
+      },
+      "interval": 80
+  },
+  "drain_slower": {
+      "type": "origins:action_over_time",
+      "entity_action": {
+          "type": "origins:if_else_list",
+          "actions": [
               {
                   "condition": {
                       "type": "origins:exists"
@@ -67,6 +85,6 @@
               }
           ]
       },
-      "interval": 40
+      "interval": 180
   }
 }

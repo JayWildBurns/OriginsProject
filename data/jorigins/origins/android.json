@@ -2,7 +2,10 @@
 	"powers": [
 			"jorigins:android/android",
 			"jorigins:android/fuel",
-			"jorigins:android/nonorganic"
+			"jorigins:android/nonorganic",
+			"jorigins:android/refuel",
+			"jorigins:nonaquatic",
+			"jorigins:android/extra_space"
 		],
 	"icon": {
 		"id": "minecraft:lightning_rod"
