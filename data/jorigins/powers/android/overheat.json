@@ -1,0 +1,25 @@
+{
+  "name": "Overheat",
+  "description": "Yaddayadda",
+  "type": "origins:multiple",
+  "heat": {
+      "type": "origins:resource",
+      "min": 0,
+      "max": 100,
+      "start_value": 0,
+      "hud_render": [
+          {
+              "should_render": false
+          }
+      ]
+  },
+  "death":{
+    "type": "origins:action_on_callback",
+    "entity_action_respawned": {
+      "type": "origins:execute_command",
+      "command": "resource set @s jorigins:android/Overheat_heat 0",
+      "permission_level": 4
+    },
+    "execute_chosen_when_orb": false
+  }
+}
