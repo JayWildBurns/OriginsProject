@@ -1,0 +1,92 @@
+{
+    "name": "Extra Space",
+    "description": "Larger inventory.",
+    "type": "origins:multiple",
+    "fuel_one": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_one"
+                            }
+                        },
+                        "slots": [
+                            "container.0"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.0"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "say consumed slot 1",
+                                "permission_level": 4
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_one"
+                            }
+                        },
+                        "slots": [
+                            "container.1"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.1"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "say consumed slot 2",
+                                "permission_level": 4
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "interval": 80
+    }
+}

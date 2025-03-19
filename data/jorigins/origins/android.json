@@ -7,7 +7,7 @@
 			"jorigins:nonaquatic",
 			"jorigins:spawnpoint",
 			"jorigins:android/extra_space",
-			"jorigins:android/test"
+			"jorigins:android/fuel_queue"
 		],
 	"icon": {
 		"id": "minecraft:lightning_rod"

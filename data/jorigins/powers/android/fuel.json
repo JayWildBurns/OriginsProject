@@ -54,7 +54,7 @@
               {
                   "condition": {
                       "type": "origins:moving",
-                      "inverted": true
+                      "inverted": false
                   },
                   "action": {
                       "type": "origins:change_resource",

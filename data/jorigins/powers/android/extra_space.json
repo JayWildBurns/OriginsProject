@@ -23,5 +23,14 @@
     "key": {
             "key": "key.hotbar.1"
         }
-}
+    },
+    "slot_three":{
+        "type": "origins:inventory",
+        "container_type": "generic_9x1",
+        "title": "Fuel queue",
+        "drop_on_death": true,
+        "key": {
+            "key": "key.hotbar.3"
+        }
+    }
 }

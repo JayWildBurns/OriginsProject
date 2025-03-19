@@ -20,6 +20,7 @@
           "can_always_eat": true
       },
       "use_action": "eat",
+      "consume_sound": "minecraft:block.copper.hit",
       "consuming_time_modifier": {
          "operation": "multiply_total_multiplicative",
           "value": 50
@@ -45,6 +46,7 @@
           "can_always_eat": true
       },
       "use_action": "eat",
+      "consume_sound": "minecraft:block.copper.step",
       "consuming_time_modifier": {
          "operation": "multiply_total_multiplicative",
           "value": 50
@@ -70,6 +72,7 @@
           "can_always_eat": true
       },
       "use_action": "eat",
+      "consume_sound": "minecraft:block.copper.place",
       "consuming_time_modifier": {
          "operation": "multiply_total_multiplicative",
           "value": 10

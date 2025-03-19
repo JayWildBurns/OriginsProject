@@ -140,60 +140,6 @@
         "operation": "add"
       }
     },
-    "thirty_six":{
-      "type": "origins:edible_item",
-      "item_condition": {
-          "type": "origins:ingredient",
-          "ingredient": {
-              "tag": "minecraft:boats"
-         }
-      },
-      "food_component": {
-         "nutrition": 1.0,
-          "saturation": 1.0,
-          "eat_seconds": 2.0,
-          "can_always_eat": true
-      },
-      "use_action": "eat",
-      "consuming_time_modifier": {
-         "operation": "multiply_total_multiplicative",
-          "value": 10
-      },
-      "priority": 10,
-      "entity_action": {
-        "type": "origins:change_resource",
-        "resource": "jorigins:android/fuel_level",
-        "change": 36,
-        "operation": "add"
-      }
-    },
-    "twenty_four":{
-      "type": "origins:edible_item",
-      "item_condition": {
-          "type": "origins:ingredient",
-          "ingredient": {
-              "tag": "minecraft:boats"
-         }
-      },
-      "food_component": {
-         "nutrition": 1.0,
-          "saturation": 1.0,
-          "eat_seconds": 2.0,
-          "can_always_eat": true
-      },
-      "use_action": "eat",
-      "consuming_time_modifier": {
-         "operation": "multiply_total_multiplicative",
-          "value": 10
-      },
-      "priority": 10,
-      "entity_action": {
-        "type": "origins:change_resource",
-        "resource": "jorigins:android/fuel_level",
-        "change": 24,
-        "operation": "add"
-      }
-    },
     "thirty_two":{
       "type": "origins:edible_item",
       "item_condition": {

@@ -17,9 +17,40 @@
     "type": "origins:action_on_callback",
     "entity_action_respawned": {
       "type": "origins:execute_command",
-      "command": "resource set @s jorigins:android/Overheat_heat 0",
+      "command": "resource set @s jorigins:android/overheat_heat 0",
       "permission_level": 4
     },
     "execute_chosen_when_orb": false
+  },
+  "gain": {
+      "type": "origins:action_over_time",
+      "entity_action": {
+          "type": "origins:if_else_list",
+          "actions": [
+              {
+                  "condition": {
+                      "type": "origins:dimension",
+                      "dimension": "minecraft:the_nether",
+                      "inverted": false
+                  },
+                  "action": {
+                      "type": "origins:change_resource",
+                      "resource": "jorigins:android/overheat_heat",
+                      "change": 5,
+                      "operation": "add"
+                  }
+              }
+          ]
+      },
+      "interval": 80
+  },
+  "nonflammable":{
+    "type": "origins:fire_immunity",
+    "condition": {
+        "type": "origins:resource",
+        "resource": "jorigins:android/overheat_heat",
+        "comparison": ">",
+        "compare_to": 90
+    }
   }
 }
