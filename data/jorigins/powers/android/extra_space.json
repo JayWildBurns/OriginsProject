@@ -2,77 +2,26 @@
   "name": "Extra Space",
   "description": "Larger inventory.",
   "type": "origins:multiple",
-  "slot_nine":{
-        "type": "origins:inventory",
-        "container_type": "generic_9x4",
-        "title": "Slot Nine",
-        "drop_on_death": false,
-        "key": {
-            "key": "key.hotbar.9"
-        }
-  },
-  "slot_eight":{
-        "type": "origins:inventory",
-        "container_type": "generic_9x4",
-        "drop_on_death": true,
-        "key": {
-            "key": "key.hotbar.8"
-        }
-  },
-  "slot_seven":{
-        "type": "origins:inventory",
-        "container_type": "generic_9x4",
-        "drop_on_death": true,
-        "key": {
-            "key": "key.hotbar.7"
-        }
-  },
-  "slot_six":{
-        "type": "origins:inventory",
-        "container_type": "generic_9x4",
-        "drop_on_death": true,
-        "key": {
-            "key": "key.hotbar.6"
-        }
-  },
-  "slot_five":{
-        "type": "origins:inventory",
-        "container_type": "generic_9x4",
-        "drop_on_death": true,
-        "key": {
-            "key": "key.hotbar.5"
-        }
-  },
-  "slot_four":{
-        "type": "origins:inventory",
-        "container_type": "generic_9x4",
-        "drop_on_death": true,
-        "key": {
-            "key": "key.hotbar.4"
-        }
-  },
-  "slot_three":{
-        "type": "origins:inventory",
-        "container_type": "generic_9x4",
-        "drop_on_death": true,
-        "key": {
-            "key": "key.hotbar.3"
-        }
-  },
   "slot_two":{
         "type": "origins:inventory",
         "container_type": "generic_9x4",
+        "title": "Extra Storage",
         "drop_on_death": true,
         "key": {
             "key": "key.hotbar.2"
         }
   },
-  "slot_one":{
-        "type": "origins:inventory",
-        "container_type": "generic_9x4",
-        "drop_on_death": true,
-        "key": {
+  "slot_one": {
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:crafting_table"
+    },
+    "cooldown": 0,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
             "key": "key.hotbar.1"
         }
-  }
+}
 }

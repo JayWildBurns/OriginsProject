@@ -5,7 +5,9 @@
 			"jorigins:android/nonorganic",
 			"jorigins:android/refuel",
 			"jorigins:nonaquatic",
-			"jorigins:android/extra_space"
+			"jorigins:spawnpoint",
+			"jorigins:android/extra_space",
+			"jorigins:android/test"
 		],
 	"icon": {
 		"id": "minecraft:lightning_rod"
