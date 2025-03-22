@@ -39,9 +39,10 @@
                                 }
                             },
                             {
-                                "type": "origins:execute_command",
-                                "command": "say consumed slot 1",
-                                "permission_level": 4
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 1,
+                                "operation": "add"
                             }
                         ]
                     }
@@ -78,9 +79,1766 @@
                                 }
                             },
                             {
-                                "type": "origins:execute_command",
-                                "command": "say consumed slot 2",
-                                "permission_level": 4
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_one"
+                            }
+                        },
+                        "slots": [
+                            "container.2"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.2"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_one"
+                            }
+                        },
+                        "slots": [
+                            "container.3"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.3"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_one"
+                            }
+                        },
+                        "slots": [
+                            "container.4"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.4"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_one"
+                            }
+                        },
+                        "slots": [
+                            "container.5"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.5"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_one"
+                            }
+                        },
+                        "slots": [
+                            "container.6"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.6"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_one"
+                            }
+                        },
+                        "slots": [
+                            "container.7"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.7"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_one"
+                            }
+                        },
+                        "slots": [
+                            "container.8"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.8"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "interval": 80
+    },
+    "fuel_two": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_two"
+                            }
+                        },
+                        "slots": [
+                            "container.0"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.0"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 2,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_two"
+                            }
+                        },
+                        "slots": [
+                            "container.1"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.1"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 2,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_two"
+                            }
+                        },
+                        "slots": [
+                            "container.2"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.2"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 2,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_two"
+                            }
+                        },
+                        "slots": [
+                            "container.3"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.3"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 2,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_two"
+                            }
+                        },
+                        "slots": [
+                            "container.4"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.4"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 2,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_two"
+                            }
+                        },
+                        "slots": [
+                            "container.5"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.5"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 2,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_two"
+                            }
+                        },
+                        "slots": [
+                            "container.6"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.6"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 2,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_two"
+                            }
+                        },
+                        "slots": [
+                            "container.7"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.7"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 2,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_two"
+                            }
+                        },
+                        "slots": [
+                            "container.8"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.8"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 2,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "interval": 80
+    },
+    "fuel_three": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_three"
+                            }
+                        },
+                        "slots": [
+                            "container.0"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.0"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 3,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_three"
+                            }
+                        },
+                        "slots": [
+                            "container.1"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.1"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 3,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_three"
+                            }
+                        },
+                        "slots": [
+                            "container.2"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.2"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 3,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_three"
+                            }
+                        },
+                        "slots": [
+                            "container.3"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.3"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 3,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_three"
+                            }
+                        },
+                        "slots": [
+                            "container.4"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.4"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 3,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_three"
+                            }
+                        },
+                        "slots": [
+                            "container.5"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.5"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 3,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_three"
+                            }
+                        },
+                        "slots": [
+                            "container.6"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.6"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 3,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_three"
+                            }
+                        },
+                        "slots": [
+                            "container.7"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.7"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 3,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_three"
+                            }
+                        },
+                        "slots": [
+                            "container.8"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.8"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 3,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "interval": 80
+    },
+    "fuel_four": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_four"
+                            }
+                        },
+                        "slots": [
+                            "container.0"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.0"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 4,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_four"
+                            }
+                        },
+                        "slots": [
+                            "container.1"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.1"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 4,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_four"
+                            }
+                        },
+                        "slots": [
+                            "container.2"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.2"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 4,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_four"
+                            }
+                        },
+                        "slots": [
+                            "container.3"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.3"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 4,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_four"
+                            }
+                        },
+                        "slots": [
+                            "container.4"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.4"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 4,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_four"
+                            }
+                        },
+                        "slots": [
+                            "container.5"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.5"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 4,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_four"
+                            }
+                        },
+                        "slots": [
+                            "container.6"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.6"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 4,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_four"
+                            }
+                        },
+                        "slots": [
+                            "container.7"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.7"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 4,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_four"
+                            }
+                        },
+                        "slots": [
+                            "container.8"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.8"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 4,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "interval": 80
+    },
+    "fuel_six": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_six"
+                            }
+                        },
+                        "slots": [
+                            "container.0"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.0"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 6,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_six"
+                            }
+                        },
+                        "slots": [
+                            "container.1"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.1"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 6,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_six"
+                            }
+                        },
+                        "slots": [
+                            "container.2"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.2"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 6,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_six"
+                            }
+                        },
+                        "slots": [
+                            "container.3"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.3"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 6,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_six"
+                            }
+                        },
+                        "slots": [
+                            "container.4"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.4"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 6,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_six"
+                            }
+                        },
+                        "slots": [
+                            "container.5"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.5"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 6,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_six"
+                            }
+                        },
+                        "slots": [
+                            "container.6"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.6"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 6,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_six"
+                            }
+                        },
+                        "slots": [
+                            "container.7"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.7"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 6,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_six"
+                            }
+                        },
+                        "slots": [
+                            "container.8"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.8"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 6,
+                                "operation": "add"
                             }
                         ]
                     }
