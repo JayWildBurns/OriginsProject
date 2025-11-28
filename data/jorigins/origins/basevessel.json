@@ -5,9 +5,9 @@
 		"jorigins:sunlight",
 		"jorigins:vesselhealth",
 		"jorigins:nonaquatic",
-		"jorigins:outcast",
+		"jorigins:behaviour/outcast",
 		"jorigins:cureable",
-		"jorigins:passivezombie",
+		"jorigins:behaviour/passivezombie",
 		"jorigins:scraps",
 		"jorigins:testpowers",
 		"jorigins:spawnpoint"

@@ -1,8 +1,8 @@
 power revoke @s jorigins:sunlight jorigins:basevessel
 power revoke @s jorigins:nonaquatic jorigins:basevessel
-power revoke @s jorigins:outcast jorigins:basevessel
+power revoke @s jorigins:behaviour/outcast jorigins:basevessel
 power revoke @s jorigins:cureable jorigins:basevessel
-power revoke @s jorigins:passivezombie jorigins:basevessel
+power revoke @s jorigins:behaviour/passivezombie jorigins:basevessel
 power revoke @s jorigins:scraps jorigins:basevessel
 power revoke @s jorigins:testpowers jorigins:basevessel
 power revoke @s jorigins:soul/astral jorigins:basevessel
