@@ -1,0 +1,13 @@
+{
+	"powers": [
+			
+		],
+	"icon": {
+		"id": "minecraft:rotten_flesh"
+	},
+	"order": 13,
+	"impact": 2,
+	"unchoosable": false,
+	"name": "Infected",
+	"description": "Weakened permanently by a zombie bite. Upon Death, transforms into a zombie."
+}

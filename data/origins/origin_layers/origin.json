@@ -3,6 +3,10 @@
   "origins": [
   "jorigins:basevessel",
   "jorigins:curedvessel",
-  "jorigins:android"
+  "jorigins:android",
+    "jorigins:full/zombie",
+    "jorigins:full/infected",
+    "jorigins:full/drowned",
+    "jorigins:full/husk"
   ]
 }

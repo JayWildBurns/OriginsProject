@@ -1,0 +1,13 @@
+{
+	"powers": [
+			
+		],
+	"icon": {
+		"id": "minecraft:cactus"
+	},
+	"order": 15,
+	"impact": 2,
+	"unchoosable": false,
+	"name": "Reawakened Husk",
+	"description": "Mumified and reawakened, cursed to wander the world once more..."
+}
