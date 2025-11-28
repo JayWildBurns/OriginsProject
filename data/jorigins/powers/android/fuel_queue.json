@@ -2,7 +2,7 @@
     "name": "Extra Space",
     "description": "Larger inventory.",
     "type": "origins:multiple",
-    "fuel_one": {
+    "slot_zero":{
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:if_else_list",
@@ -54,11 +54,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_one"
+                                "tag": "jorigins:android/fuel_two"
                             }
                         },
                         "slots": [
-                            "container.1"
+                            "container.0"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -72,7 +72,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.1"
+                                    "container.0"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -81,7 +81,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 1,
+                                "change": 2,
                                 "operation": "add"
                             }
                         ]
@@ -94,11 +94,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_one"
+                                "tag": "jorigins:android/fuel_three"
                             }
                         },
                         "slots": [
-                            "container.2"
+                            "container.0"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -112,7 +112,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.2"
+                                    "container.0"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -121,7 +121,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 1,
+                                "change": 3,
                                 "operation": "add"
                             }
                         ]
@@ -134,11 +134,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_one"
+                                "tag": "jorigins:android/fuel_four"
                             }
                         },
                         "slots": [
-                            "container.3"
+                            "container.0"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -152,7 +152,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.3"
+                                    "container.0"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -161,7 +161,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 1,
+                                "change": 4,
                                 "operation": "add"
                             }
                         ]
@@ -174,11 +174,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_one"
+                                "tag": "jorigins:android/fuel_six"
                             }
                         },
                         "slots": [
-                            "container.4"
+                            "container.0"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -192,7 +192,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.4"
+                                    "container.0"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -201,7 +201,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 1,
+                                "change": 6,
                                 "operation": "add"
                             }
                         ]
@@ -214,11 +214,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_one"
+                                "tag": "minecraft:coals"
                             }
                         },
                         "slots": [
-                            "container.5"
+                            "container.0"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -232,7 +232,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.5"
+                                    "container.0"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -241,7 +241,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 1,
+                                "change": 32,
                                 "operation": "add"
                             }
                         ]
@@ -252,13 +252,13 @@
                         "type": "origins:inventory",
                         "process_mode": "stacks",
                         "item_condition": {
-                            "type": "origins:ingredient",
-                            "ingredient": {
-                                "tag": "jorigins:android/fuel_one"
-                            }
-                        },
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:blaze_rod"
+                         }
+                      },
                         "slots": [
-                            "container.6"
+                            "container.0"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -272,7 +272,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.6"
+                                    "container.0"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -281,7 +281,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 1,
+                                "change": 48,
                                 "operation": "add"
                             }
                         ]
@@ -292,13 +292,13 @@
                         "type": "origins:inventory",
                         "process_mode": "stacks",
                         "item_condition": {
-                            "type": "origins:ingredient",
-                            "ingredient": {
-                                "tag": "jorigins:android/fuel_one"
-                            }
-                        },
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:dried_kelp_block"
+                         }
+                      },
                         "slots": [
-                            "container.7"
+                            "container.0"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -312,7 +312,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.7"
+                                    "container.0"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -321,47 +321,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 1,
-                                "operation": "add"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:inventory",
-                        "process_mode": "stacks",
-                        "item_condition": {
-                            "type": "origins:ingredient",
-                            "ingredient": {
-                                "tag": "jorigins:android/fuel_one"
-                            }
-                        },
-                        "slots": [
-                            "container.8"
-                        ],
-                        "power": "jorigins:android/extra_space_slot_three",
-                        "comparison": ">=",
-                        "compare_to": 1
-                    },
-                    "action": {
-                        "type": "origins:and",
-                        "actions": [
-                            {
-                                "type": "origins:modify_inventory",
-                                "inventory_type": "power",
-                                "power": "jorigins:android/extra_space_slot_three",
-                                "slots": [
-                                    "container.8"
-                                ],
-                                "item_action": {
-                                    "type": "origins:consume"
-                                }
-                            },
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "jorigins:android/fuel_level",
-                                "change": 1,
+                                "change": 48,
                                 "operation": "add"
                             }
                         ]
@@ -371,7 +331,7 @@
         },
         "interval": 80
     },
-    "fuel_two": {
+    "slot_one":{
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:if_else_list",
@@ -383,11 +343,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_two"
+                                "tag": "jorigins:android/fuel_one"
                             }
                         },
                         "slots": [
-                            "container.0"
+                            "container.1"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -401,7 +361,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.0"
+                                    "container.1"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -410,7 +370,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 2,
+                                "change": 1,
                                 "operation": "add"
                             }
                         ]
@@ -463,11 +423,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_two"
+                                "tag": "jorigins:android/fuel_three"
                             }
                         },
                         "slots": [
-                            "container.2"
+                            "container.1"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -481,7 +441,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.2"
+                                    "container.1"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -490,7 +450,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 2,
+                                "change": 3,
                                 "operation": "add"
                             }
                         ]
@@ -503,11 +463,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_two"
+                                "tag": "jorigins:android/fuel_four"
                             }
                         },
                         "slots": [
-                            "container.3"
+                            "container.1"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -521,7 +481,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.3"
+                                    "container.1"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -530,7 +490,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 2,
+                                "change": 4,
                                 "operation": "add"
                             }
                         ]
@@ -543,11 +503,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_two"
+                                "tag": "jorigins:android/fuel_six"
                             }
                         },
                         "slots": [
-                            "container.4"
+                            "container.1"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -561,7 +521,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.4"
+                                    "container.1"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -570,7 +530,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 2,
+                                "change": 6,
                                 "operation": "add"
                             }
                         ]
@@ -583,11 +543,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_two"
+                                "tag": "minecraft:coals"
                             }
                         },
                         "slots": [
-                            "container.5"
+                            "container.1"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -601,7 +561,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.5"
+                                    "container.1"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -610,7 +570,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 2,
+                                "change": 32,
                                 "operation": "add"
                             }
                         ]
@@ -621,13 +581,13 @@
                         "type": "origins:inventory",
                         "process_mode": "stacks",
                         "item_condition": {
-                            "type": "origins:ingredient",
-                            "ingredient": {
-                                "tag": "jorigins:android/fuel_two"
-                            }
-                        },
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:blaze_rod"
+                         }
+                      },
                         "slots": [
-                            "container.6"
+                            "container.1"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -641,7 +601,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.6"
+                                    "container.1"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -650,7 +610,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 2,
+                                "change": 48,
                                 "operation": "add"
                             }
                         ]
@@ -661,13 +621,13 @@
                         "type": "origins:inventory",
                         "process_mode": "stacks",
                         "item_condition": {
-                            "type": "origins:ingredient",
-                            "ingredient": {
-                                "tag": "jorigins:android/fuel_two"
-                            }
-                        },
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:dried_kelp_block"
+                         }
+                      },
                         "slots": [
-                            "container.7"
+                            "container.1"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -681,7 +641,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.7"
+                                    "container.1"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -690,47 +650,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 2,
-                                "operation": "add"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:inventory",
-                        "process_mode": "stacks",
-                        "item_condition": {
-                            "type": "origins:ingredient",
-                            "ingredient": {
-                                "tag": "jorigins:android/fuel_two"
-                            }
-                        },
-                        "slots": [
-                            "container.8"
-                        ],
-                        "power": "jorigins:android/extra_space_slot_three",
-                        "comparison": ">=",
-                        "compare_to": 1
-                    },
-                    "action": {
-                        "type": "origins:and",
-                        "actions": [
-                            {
-                                "type": "origins:modify_inventory",
-                                "inventory_type": "power",
-                                "power": "jorigins:android/extra_space_slot_three",
-                                "slots": [
-                                    "container.8"
-                                ],
-                                "item_action": {
-                                    "type": "origins:consume"
-                                }
-                            },
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "jorigins:android/fuel_level",
-                                "change": 2,
+                                "change": 48,
                                 "operation": "add"
                             }
                         ]
@@ -738,9 +658,23 @@
                 }
             ]
         },
-        "interval": 80
+        "interval": 80,
+        "condition": {
+            "type": "origins:inventory",
+            "process_mode": "stacks",
+            "item_condition": {
+                "type": "origins:empty",
+                "inverted": true
+            },
+            "slots": [
+                "container.0"
+            ],
+            "power": "jorigins:android/extra_space_slot_three",
+            "comparison": "<",
+            "compare_to": 1
+        }
     },
-    "fuel_three": {
+    "slot_two":{
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:if_else_list",
@@ -752,11 +686,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_three"
+                                "tag": "jorigins:android/fuel_one"
                             }
                         },
                         "slots": [
-                            "container.0"
+                            "container.2"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -770,7 +704,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.0"
+                                    "container.2"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -779,7 +713,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 3,
+                                "change": 1,
                                 "operation": "add"
                             }
                         ]
@@ -792,11 +726,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_three"
+                                "tag": "jorigins:android/fuel_two"
                             }
                         },
                         "slots": [
-                            "container.1"
+                            "container.2"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -810,7 +744,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.1"
+                                    "container.2"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -819,7 +753,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 3,
+                                "change": 2,
                                 "operation": "add"
                             }
                         ]
@@ -872,11 +806,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_three"
+                                "tag": "jorigins:android/fuel_four"
                             }
                         },
                         "slots": [
-                            "container.3"
+                            "container.2"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -890,7 +824,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.3"
+                                    "container.2"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -899,7 +833,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 3,
+                                "change": 4,
                                 "operation": "add"
                             }
                         ]
@@ -912,11 +846,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_three"
+                                "tag": "jorigins:android/fuel_six"
                             }
                         },
                         "slots": [
-                            "container.4"
+                            "container.2"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -930,7 +864,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.4"
+                                    "container.2"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -939,7 +873,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 3,
+                                "change": 6,
                                 "operation": "add"
                             }
                         ]
@@ -952,11 +886,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_three"
+                                "tag": "minecraft:coals"
                             }
                         },
                         "slots": [
-                            "container.5"
+                            "container.2"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -970,7 +904,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.5"
+                                    "container.2"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -979,7 +913,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 3,
+                                "change": 32,
                                 "operation": "add"
                             }
                         ]
@@ -990,13 +924,13 @@
                         "type": "origins:inventory",
                         "process_mode": "stacks",
                         "item_condition": {
-                            "type": "origins:ingredient",
-                            "ingredient": {
-                                "tag": "jorigins:android/fuel_three"
-                            }
-                        },
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:blaze_rod"
+                         }
+                      },
                         "slots": [
-                            "container.6"
+                            "container.2"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -1010,7 +944,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.6"
+                                    "container.2"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -1019,7 +953,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 3,
+                                "change": 48,
                                 "operation": "add"
                             }
                         ]
@@ -1030,13 +964,13 @@
                         "type": "origins:inventory",
                         "process_mode": "stacks",
                         "item_condition": {
-                            "type": "origins:ingredient",
-                            "ingredient": {
-                                "tag": "jorigins:android/fuel_three"
-                            }
-                        },
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:dried_kelp_block"
+                         }
+                      },
                         "slots": [
-                            "container.7"
+                            "container.2"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -1050,7 +984,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.7"
+                                    "container.2"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -1059,47 +993,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 3,
-                                "operation": "add"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:inventory",
-                        "process_mode": "stacks",
-                        "item_condition": {
-                            "type": "origins:ingredient",
-                            "ingredient": {
-                                "tag": "jorigins:android/fuel_three"
-                            }
-                        },
-                        "slots": [
-                            "container.8"
-                        ],
-                        "power": "jorigins:android/extra_space_slot_three",
-                        "comparison": ">=",
-                        "compare_to": 1
-                    },
-                    "action": {
-                        "type": "origins:and",
-                        "actions": [
-                            {
-                                "type": "origins:modify_inventory",
-                                "inventory_type": "power",
-                                "power": "jorigins:android/extra_space_slot_three",
-                                "slots": [
-                                    "container.8"
-                                ],
-                                "item_action": {
-                                    "type": "origins:consume"
-                                }
-                            },
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "jorigins:android/fuel_level",
-                                "change": 3,
+                                "change": 48,
                                 "operation": "add"
                             }
                         ]
@@ -1107,9 +1001,24 @@
                 }
             ]
         },
-        "interval": 80
+        "interval": 80,
+        "condition": {
+            "type": "origins:inventory",
+            "process_mode": "stacks",
+            "item_condition": {
+                "type": "origins:empty",
+                "inverted": true
+            },
+            "slots": [
+                "container.0",
+                "container.1"
+            ],
+            "power": "jorigins:android/extra_space_slot_three",
+            "comparison": "<",
+            "compare_to": 1
+        }
     },
-    "fuel_four": {
+    "slot_three":{
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:if_else_list",
@@ -1121,11 +1030,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_four"
+                                "tag": "jorigins:android/fuel_one"
                             }
                         },
                         "slots": [
-                            "container.0"
+                            "container.3"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -1139,7 +1048,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.0"
+                                    "container.3"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -1148,7 +1057,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 4,
+                                "change": 1,
                                 "operation": "add"
                             }
                         ]
@@ -1161,11 +1070,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_four"
+                                "tag": "jorigins:android/fuel_two"
                             }
                         },
                         "slots": [
-                            "container.1"
+                            "container.3"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -1179,7 +1088,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.1"
+                                    "container.3"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -1188,7 +1097,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 4,
+                                "change": 2,
                                 "operation": "add"
                             }
                         ]
@@ -1201,11 +1110,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_four"
+                                "tag": "jorigins:android/fuel_three"
                             }
                         },
                         "slots": [
-                            "container.2"
+                            "container.3"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -1219,7 +1128,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.2"
+                                    "container.3"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -1228,7 +1137,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 4,
+                                "change": 3,
                                 "operation": "add"
                             }
                         ]
@@ -1281,11 +1190,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_four"
+                                "tag": "jorigins:android/fuel_six"
                             }
                         },
                         "slots": [
-                            "container.4"
+                            "container.3"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -1299,7 +1208,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.4"
+                                    "container.3"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -1308,7 +1217,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 4,
+                                "change": 6,
                                 "operation": "add"
                             }
                         ]
@@ -1321,11 +1230,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_four"
+                                "tag": "minecraft:coals"
                             }
                         },
                         "slots": [
-                            "container.5"
+                            "container.3"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -1339,7 +1248,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.5"
+                                    "container.3"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -1348,7 +1257,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 4,
+                                "change": 32,
                                 "operation": "add"
                             }
                         ]
@@ -1359,13 +1268,13 @@
                         "type": "origins:inventory",
                         "process_mode": "stacks",
                         "item_condition": {
-                            "type": "origins:ingredient",
-                            "ingredient": {
-                                "tag": "jorigins:android/fuel_four"
-                            }
-                        },
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:blaze_rod"
+                         }
+                      },
                         "slots": [
-                            "container.6"
+                            "container.3"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -1379,7 +1288,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.6"
+                                    "container.3"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -1388,7 +1297,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 4,
+                                "change": 48,
                                 "operation": "add"
                             }
                         ]
@@ -1399,13 +1308,13 @@
                         "type": "origins:inventory",
                         "process_mode": "stacks",
                         "item_condition": {
-                            "type": "origins:ingredient",
-                            "ingredient": {
-                                "tag": "jorigins:android/fuel_four"
-                            }
-                        },
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:dried_kelp_block"
+                         }
+                      },
                         "slots": [
-                            "container.7"
+                            "container.3"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -1419,7 +1328,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.7"
+                                    "container.3"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -1428,47 +1337,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 4,
-                                "operation": "add"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "condition": {
-                        "type": "origins:inventory",
-                        "process_mode": "stacks",
-                        "item_condition": {
-                            "type": "origins:ingredient",
-                            "ingredient": {
-                                "tag": "jorigins:android/fuel_four"
-                            }
-                        },
-                        "slots": [
-                            "container.8"
-                        ],
-                        "power": "jorigins:android/extra_space_slot_three",
-                        "comparison": ">=",
-                        "compare_to": 1
-                    },
-                    "action": {
-                        "type": "origins:and",
-                        "actions": [
-                            {
-                                "type": "origins:modify_inventory",
-                                "inventory_type": "power",
-                                "power": "jorigins:android/extra_space_slot_three",
-                                "slots": [
-                                    "container.8"
-                                ],
-                                "item_action": {
-                                    "type": "origins:consume"
-                                }
-                            },
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "jorigins:android/fuel_level",
-                                "change": 4,
+                                "change": 48,
                                 "operation": "add"
                             }
                         ]
@@ -1476,9 +1345,25 @@
                 }
             ]
         },
-        "interval": 80
+        "interval": 80,
+        "condition": {
+            "type": "origins:inventory",
+            "process_mode": "stacks",
+            "item_condition": {
+                "type": "origins:empty",
+                "inverted": true
+            },
+            "slots": [
+                "container.0",
+                "container.1",
+                "container.2"
+            ],
+            "power": "jorigins:android/extra_space_slot_three",
+            "comparison": "<",
+            "compare_to": 1
+        }
     },
-    "fuel_six": {
+    "slot_four":{
         "type": "origins:action_over_time",
         "entity_action": {
             "type": "origins:if_else_list",
@@ -1490,11 +1375,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_six"
+                                "tag": "jorigins:android/fuel_one"
                             }
                         },
                         "slots": [
-                            "container.0"
+                            "container.4"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -1508,7 +1393,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.0"
+                                    "container.4"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -1517,7 +1402,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 6,
+                                "change": 1,
                                 "operation": "add"
                             }
                         ]
@@ -1530,11 +1415,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_six"
+                                "tag": "jorigins:android/fuel_two"
                             }
                         },
                         "slots": [
-                            "container.1"
+                            "container.4"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -1548,7 +1433,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.1"
+                                    "container.4"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -1557,7 +1442,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 6,
+                                "change": 2,
                                 "operation": "add"
                             }
                         ]
@@ -1570,11 +1455,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_six"
+                                "tag": "jorigins:android/fuel_three"
                             }
                         },
                         "slots": [
-                            "container.2"
+                            "container.4"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -1588,7 +1473,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.2"
+                                    "container.4"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -1597,7 +1482,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 6,
+                                "change": 3,
                                 "operation": "add"
                             }
                         ]
@@ -1610,11 +1495,11 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
-                                "tag": "jorigins:android/fuel_six"
+                                "tag": "jorigins:android/fuel_four"
                             }
                         },
                         "slots": [
-                            "container.3"
+                            "container.4"
                         ],
                         "power": "jorigins:android/extra_space_slot_three",
                         "comparison": ">=",
@@ -1628,7 +1513,7 @@
                                 "inventory_type": "power",
                                 "power": "jorigins:android/extra_space_slot_three",
                                 "slots": [
-                                    "container.3"
+                                    "container.4"
                                 ],
                                 "item_action": {
                                     "type": "origins:consume"
@@ -1637,7 +1522,7 @@
                             {
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
-                                "change": 6,
+                                "change": 4,
                                 "operation": "add"
                             }
                         ]
@@ -1690,6 +1575,312 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
+                                "tag": "minecraft:coals"
+                            }
+                        },
+                        "slots": [
+                            "container.4"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.4"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 32,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:blaze_rod"
+                         }
+                      },
+                        "slots": [
+                            "container.4"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.4"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 48,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:dried_kelp_block"
+                         }
+                      },
+                        "slots": [
+                            "container.4"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.4"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 48,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "interval": 80,
+        "condition": {
+            "type": "origins:inventory",
+            "process_mode": "stacks",
+            "item_condition": {
+                "type": "origins:empty",
+                "inverted": true
+            },
+            "slots": [
+                "container.0",
+                "container.1",
+                "container.2",
+                "container.3"
+            ],
+            "power": "jorigins:android/extra_space_slot_three",
+            "comparison": "<",
+            "compare_to": 1
+        }
+    },
+    "slot_five":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_one"
+                            }
+                        },
+                        "slots": [
+                            "container.5"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.5"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_two"
+                            }
+                        },
+                        "slots": [
+                            "container.5"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.5"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 2,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_three"
+                            }
+                        },
+                        "slots": [
+                            "container.5"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.5"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 3,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_four"
+                            }
+                        },
+                        "slots": [
+                            "container.5"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.5"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 4,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
                                 "tag": "jorigins:android/fuel_six"
                             }
                         },
@@ -1718,6 +1909,313 @@
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
                                 "change": 6,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "minecraft:coals"
+                            }
+                        },
+                        "slots": [
+                            "container.5"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.5"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 32,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:blaze_rod"
+                         }
+                      },
+                        "slots": [
+                            "container.5"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.5"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 48,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:dried_kelp_block"
+                         }
+                      },
+                        "slots": [
+                            "container.5"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.5"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 48,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "interval": 80,
+        "condition": {
+            "type": "origins:inventory",
+            "process_mode": "stacks",
+            "item_condition": {
+                "type": "origins:empty",
+                "inverted": true
+            },
+            "slots": [
+                "container.0",
+                "container.1",
+                "container.2",
+                "container.3",
+                "container.4"
+            ],
+            "power": "jorigins:android/extra_space_slot_three",
+            "comparison": "<",
+            "compare_to": 1
+        }
+    },
+    "slot_six":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_one"
+                            }
+                        },
+                        "slots": [
+                            "container.6"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.6"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_two"
+                            }
+                        },
+                        "slots": [
+                            "container.6"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.6"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 2,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_three"
+                            }
+                        },
+                        "slots": [
+                            "container.6"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.6"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 3,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_four"
+                            }
+                        },
+                        "slots": [
+                            "container.6"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.6"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 4,
                                 "operation": "add"
                             }
                         ]
@@ -1770,6 +2268,314 @@
                         "item_condition": {
                             "type": "origins:ingredient",
                             "ingredient": {
+                                "tag": "minecraft:coals"
+                            }
+                        },
+                        "slots": [
+                            "container.6"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.6"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 32,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:blaze_rod"
+                         }
+                      },
+                        "slots": [
+                            "container.6"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.6"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 48,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:dried_kelp_block"
+                         }
+                      },
+                        "slots": [
+                            "container.6"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.6"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 48,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "interval": 80,
+        "condition": {
+            "type": "origins:inventory",
+            "process_mode": "stacks",
+            "item_condition": {
+                "type": "origins:empty",
+                "inverted": true
+            },
+            "slots": [
+                "container.0",
+                "container.1",
+                "container.2",
+                "container.3",
+                "container.4",
+                "container.5"
+            ],
+            "power": "jorigins:android/extra_space_slot_three",
+            "comparison": "<",
+            "compare_to": 1
+        }
+    },
+    "slot_seven":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_one"
+                            }
+                        },
+                        "slots": [
+                            "container.7"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.7"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_two"
+                            }
+                        },
+                        "slots": [
+                            "container.7"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.7"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 2,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_three"
+                            }
+                        },
+                        "slots": [
+                            "container.7"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.7"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 3,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_four"
+                            }
+                        },
+                        "slots": [
+                            "container.7"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.7"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 4,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
                                 "tag": "jorigins:android/fuel_six"
                             }
                         },
@@ -1798,6 +2604,315 @@
                                 "type": "origins:change_resource",
                                 "resource": "jorigins:android/fuel_level",
                                 "change": 6,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "minecraft:coals"
+                            }
+                        },
+                        "slots": [
+                            "container.7"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.7"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 32,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:blaze_rod"
+                         }
+                      },
+                        "slots": [
+                            "container.7"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.7"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 48,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:dried_kelp_block"
+                         }
+                      },
+                        "slots": [
+                            "container.7"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.7"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 48,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "interval": 80,
+        "condition": {
+            "type": "origins:inventory",
+            "process_mode": "stacks",
+            "item_condition": {
+                "type": "origins:empty",
+                "inverted": true
+            },
+            "slots": [
+                "container.0",
+                "container.1",
+                "container.2",
+                "container.3",
+                "container.4",
+                "container.5",
+                "container.6"
+            ],
+            "power": "jorigins:android/extra_space_slot_three",
+            "comparison": "<",
+            "compare_to": 1
+        }
+    },
+    "slot_eight":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_one"
+                            }
+                        },
+                        "slots": [
+                            "container.8"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.8"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 1,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_two"
+                            }
+                        },
+                        "slots": [
+                            "container.8"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.8"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 2,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_three"
+                            }
+                        },
+                        "slots": [
+                            "container.8"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.8"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 3,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "jorigins:android/fuel_four"
+                            }
+                        },
+                        "slots": [
+                            "container.8"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.8"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 4,
                                 "operation": "add"
                             }
                         ]
@@ -1842,9 +2957,170 @@
                             }
                         ]
                     }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "minecraft:coals"
+                            }
+                        },
+                        "slots": [
+                            "container.8"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.8"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 32,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:blaze_rod"
+                         }
+                      },
+                        "slots": [
+                            "container.8"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.8"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 48,
+                                "operation": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:inventory",
+                        "process_mode": "stacks",
+                        "item_condition": {
+                          "type": "origins:ingredient",
+                          "ingredient": {
+                              "item": "minecraft:dried_kelp_block"
+                         }
+                      },
+                        "slots": [
+                            "container.8"
+                        ],
+                        "power": "jorigins:android/extra_space_slot_three",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:modify_inventory",
+                                "inventory_type": "power",
+                                "power": "jorigins:android/extra_space_slot_three",
+                                "slots": [
+                                    "container.8"
+                                ],
+                                "item_action": {
+                                    "type": "origins:consume"
+                                }
+                            },
+                            {
+                                "type": "origins:change_resource",
+                                "resource": "jorigins:android/fuel_level",
+                                "change": 48,
+                                "operation": "add"
+                            }
+                        ]
+                    }
                 }
             ]
         },
-        "interval": 80
+        "interval": 80,
+        "condition": {
+            "type": "origins:inventory",
+            "process_mode": "stacks",
+            "item_condition": {
+                "type": "origins:empty",
+                "inverted": true
+            },
+            "slots": [
+                "container.0",
+                "container.1",
+                "container.2",
+                "container.3",
+                "container.4",
+                "container.5",
+                "container.6",
+                "container.7"
+            ],
+            "power": "jorigins:android/extra_space_slot_three",
+            "comparison": "<",
+            "compare_to": 1
+        }
+    },
+    "slot_check":{
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "say check passed",
+            "permission_level": 4
+        },
+        "interval": 80,
+        "condition": {
+            "type": "origins:inventory",
+            "process_mode": "stacks",
+            "slots": [
+                "container.0",
+                "container.1"
+            ],
+            "power": "jorigins:android/extra_space_slot_three",
+            "comparison": "==",
+            "compare_to": 0
+        }
     }
 }
