@@ -22,8 +22,26 @@ Vessel Origin
 And potential for
 	NetherWart, Crimson, Warped, Sculk, Withered variants
 
+POWER STATUS
+Updates:
+Sunlight Sensitivity
+	Updated into vanilla and normal variants. Will possibly make a husk specific one later?
+Outcast, Passive Zombie - Same.
 
-==========================================================
+Still Outdated
+Cureable -> Easy and hard variant?
+Flavour
+MiningBuff
+Nonaquatic -> Regular and Drowned version?
+Scraps
+Souldeath
+spawnpoint
+testpowers
+vessel
+vesselhealth
+zombify
+
+===================================================
 PREVIOUS ORIGIN STATUS
 
 Vessel (Evolution of Mycelium Zombie Concept)

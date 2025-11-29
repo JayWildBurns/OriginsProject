@@ -2,7 +2,8 @@
 	"powers": [
 		"jorigins:vessel",
 		"jorigins:soul/astral",
-		"jorigins:sunlight",
+		"jorigins:sun/sunlight_resource",
+		"jorigins:sun/sunlight_normal",
 		"jorigins:vesselhealth",
 		"jorigins:nonaquatic",
 		"jorigins:behaviour/outcast",

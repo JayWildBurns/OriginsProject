@@ -2,7 +2,8 @@ power revoke @s jorigins:soul/astralform jorigins:basevessel
 power revoke @s jorigins:soul/limited jorigins:basevessel
 power revoke @s jorigins:soul/movement jorigins:basevessel
 
-power grant @s jorigins:sunlight jorigins:basevessel
+power grant @s jorigins:sun/sunlight_resource jorigins:basevessel
+power grant @s jorigins:sun/sunlight_normal jorigins:basevessel
 power grant @s jorigins:nonaquatic jorigins:basevessel
 power grant @s jorigins:behaviour/outcast jorigins:basevessel
 power grant @s jorigins:cureable jorigins:basevessel

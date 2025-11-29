@@ -1,4 +1,5 @@
-power revoke @s jorigins:sunlight jorigins:basevessel
+power revoke @s jorigins:sun/sunlight_resource jorigins:basevessel
+power revoke @s jorigins:sun/normal jorigins:basevessel
 power revoke @s jorigins:nonaquatic jorigins:basevessel
 power revoke @s jorigins:behaviour/outcast jorigins:basevessel
 power revoke @s jorigins:cureable jorigins:basevessel
