@@ -1,7 +1,7 @@
 {
 	"powers": [
 		"jorigins:vessel",
-		"jorigins:soul/astral",
+		"jorigins:grapple",
 		"jorigins:sun/sunlight_resource",
 		"jorigins:sun/sunlight_normal",
 		"jorigins:vesselhealth",
@@ -9,7 +9,7 @@
 		"jorigins:behaviour/outcast",
 		"jorigins:cureable",
 		"jorigins:behaviour/passivezombie",
-		"jorigins:scraps",
+		"jorigins:mushroomscraps",
 		"jorigins:testpowers",
 		"jorigins:spawnpoint"
 		],

@@ -54,7 +54,7 @@
         "color": "dark_red"
       } 
     },
-    "fleshrecipe":{
+  "fleshrecipe_raw":{
       "type": "origins:recipe",
     "recipe": {
         "id": "origins:vessel/fleshcraft",
@@ -62,6 +62,22 @@
         "ingredients": [
           {
             "tag": "jorigins:rawmeat"
+          }
+        ],
+        "result": {
+            "id": "minecraft:rotten_flesh",
+            "count": 1
+        }
+    }
+  },
+  "fleshrecipe_cooked":{
+      "type": "origins:recipe",
+    "recipe": {
+        "id": "origins:vessel/fleshcraft",
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "tag": "jorigins:cookedmeat"
           },
           {
             "tag": "jorigins:mushroom"
@@ -83,7 +99,7 @@
       },
       "text":
       {
-        "text": "Turns Raw meat into Rotten Flesh",
+        "text": "Turns Cooked Meat into Rotten Flesh",
         "color": "gold"
       } 
     }

@@ -28,10 +28,6 @@
                   "comparison": ">=",
                   "compare_to": 15
               }
-          },
-          {
-              "should_render": false,
-              "bar_index": 4
           }
       ]
   }

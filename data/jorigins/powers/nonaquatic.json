@@ -1,30 +1,29 @@
 {
-    "name": "Non Aquatic",
-    "description": "You sink in water, but can last for longer without air",
-    "type": "origins:multiple",
-    "dense": {
-      "type": "origins:ignore_water"
-    },
-    "airmodifications": {
-      "type": "origins:attribute",
-      "modifier": {
-          "id": "jorigins:breathless",
-          "attribute": "minecraft:generic.oxygen_bonus",
-          "amount": 10,
-          "operation": "add_value"
-      }
-    },
-    "fall":
-    {
-      "type": "origins:modify_falling",
-      "velocity": 0.01,
-      "take_fall_damage": false,
-      "condition": {
-        "type": "origins:in_block",
-        "block_condition": {
-          "type": "origins:block",
-          "block": "minecraft:water"
-        }
+  "name": "Non Aquatic",
+  "description": "You sink in water, but can last for longer without air",
+  "type": "origins:multiple",
+  "dense": {
+    "type": "origins:ignore_water"
+  },
+  "airmodifications": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "jorigins:breathless",
+      "attribute": "minecraft:generic.oxygen_bonus",
+      "amount": 10,
+      "operation": "add_value"
+    }
+  },
+  "fall": {
+    "type": "origins:modify_falling",
+    "velocity": 0.01,
+    "take_fall_damage": false,
+    "condition": {
+      "type": "origins:in_block",
+      "block_condition": {
+        "type": "origins:block",
+        "block": "minecraft:water"
       }
     }
   }
+}

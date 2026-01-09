@@ -64,28 +64,6 @@
           "inverted": true
       }
   },
-  "total_sunlight": {
-      "type": "origins:resource",
-      "min": 0,
-      "max": 105,
-      "hud_render": [
-          {
-              "sprite_location": "*:resourcecustom.png",
-              "bar_index": 0,
-              "should_render": true,
-              "condition": {
-                  "type": "origins:resource",
-                  "resource": "jorigins:sun/sunlight_resource_total_sunlight",
-                  "comparison": ">=",
-                  "compare_to": 15
-              }
-          },
-          {
-              "should_render": false,
-              "bar_index": 4
-          }
-      ]
-  },
   "sunlight_change": {
       "type": "origins:action_over_time",
       "entity_action": {
