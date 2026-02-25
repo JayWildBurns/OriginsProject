@@ -1,6 +1,6 @@
 {
     "name": "Outcast",
-    "description": "As an undead, you are not welcome among villager communities. Hiding your face with a pumpkin can bypass this.",
+    "description": "CAUSES CRASHES ATM As an undead, you are not welcome among villager communities. Hiding your face with a pumpkin can bypass this.",
     "type": "origins:multiple",
     "test": {
     "type": "origins:prevent_entity_use",

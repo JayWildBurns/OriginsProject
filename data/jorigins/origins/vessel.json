@@ -1,13 +1,11 @@
 {
 	"powers": [
 		"jorigins:vessel",
-		"jorigins:grapple",
 		"jorigins:sun/sunlight_resource",
 		"jorigins:sun/sunlight_normal",
 		"jorigins:vesselhealth",
 		"jorigins:nonaquatic",
 		"jorigins:behaviour/outcast",
-		"jorigins:cureable",
 		"jorigins:behaviour/passivezombie",
 		"jorigins:mushroomscraps",
 		"jorigins:testpowers",
@@ -16,9 +14,9 @@
 	"icon": {
 		"id": "minecraft:brown_mushroom"
 	},
-	"order": 12,
+	"order": 11,
 	"impact": 2,
 	"unchoosable": false,
-	"name": "[LEGACY] Vessel",
-	"description": "The corpse of a zombie became inhabited by a mushroom colony. Somehow, this brought it back to life, allowing your soul to walk the earth once more..."
+	"name": "[IN PROGRESS] Vessel",
+	"description": "Heavy Nerfs incoming. Several features disabled."
 }

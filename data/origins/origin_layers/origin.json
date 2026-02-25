@@ -1,6 +1,7 @@
 {
   "replace": false,
   "origins": [
-  "jorigins:basevessel"
+  "jorigins:basevessel",
+  "jorigins:vessel"
   ]
 }
