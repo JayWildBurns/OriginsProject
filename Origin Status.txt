@@ -1,113 +1,69 @@
-29 - 11 - 2025
+26 -02 - 2026
 
-Revisiting this origin concept. I'm going to be cutting out the new android content, and changing the datapack to instead focus on Zombies only.
+Throwing out the extended origins in this pack and the Android Origin. Focusing on reworking the main origin to make it much more cave-based than before.
 
-Planned Origins
-
-Basic Zombie Origin
-	A Challenge-based origin, where the player's end goal is to cure themselves. Weaker than a normal origin.
-Infected Origin
-	Variation of the Basic Zombie Origin. Starts as infected, turns into Zombie when killed. Can be cured to return back to infected.
-Drowned Origin
-	Aquatic based Zombie Origin
-Husk Origin
-	Zombie Origin with less sunlight debuffs and maybe some other powers?
-Convertible Zombie Origin
-	Can change between Drowned/Husk based on Enviromental Factors
-Mycelium Zombie Origin
-	Zombie With mushroom powers
-Vessel Origin
-	Zombie with soul/allay powers
-
-And potential for
-	NetherWart, Crimson, Warped, Sculk, Withered variants
-
-POWER STATUS
-Updates:
-Sunlight Sensitivity
-	Updated into vanilla and normal variants. Will possibly make a husk specific one later?
-Outcast, Passive Zombie - Same.
-
-Still Outdated
-Cureable -> Easy and hard variant?
-Flavour
-MiningBuff
-Nonaquatic -> Regular and Drowned version?
-Scraps
-Souldeath
-spawnpoint
-testpowers
-vessel
-vesselhealth
-zombify
-
-===================================================
-PREVIOUS ORIGIN STATUS
-
-Vessel (Evolution of Mycelium Zombie Concept)
-
-POWERS
-	Vessel - Night Vision, Zombie group abilities
-	Astral Projection
-	Sunlight - burn in daylight, exponential, helmet
-	Vessel Health - Only heal via rotten flesh. Craft rotten flesh.
-	Scraps - Heal via coal and two tiers of plant. Higher exhaust.
-	Cureable - can cure self to bypass some restrictions, extra life
-	Outcast - villagers/iron golem
-	Passive zombie - zombies in team
-	TestPowers - Mining buffs, Ribcage
-	Spawnpoint - Sets spawnpoint to a different location
-	
-KNOWN ISSUES
-	"Bug" - XP drops on Zombie death
-UPCOMING ADJUSTMENTS
-	Water debuff
-		Slipperiness in water?
-		Damage in water?
-		stacking status effect?
-			TLDR MUSHROOMS DONT DO WELL IN WATER
-	Cureable Rework
-	ADD SPIDER EYES TO SCRAPS
-	Astral - drown zombie if it falls in water too long
-	Soul Seep Damage
-	Mining Buff Finalization
-		Minecarts?
-		Mining ++?
-		Mining Beam?
-	Potential weird buff - craftable lingering potions (w/o Dragon's Breath?)
-
------
-A DIFFERENT ORIGIN IDEA
-
-ANDROID
+POWERS STAYING
 
 
-Lightning Rod - Can't wear helmets, must wear lightning rod receiver.
-Fuel
-	Can eat all fuel items and receive fuel from them
-	WHAT HAPPENS IF YOU RUN OUT? THINK, MARK, THINK!
-Repair health via Ores - Iron, gold, Copper mainly.
-Sink in water
+POWERS IN PROGRESS
 
-----
-Test run
-Okay. Bug #1. Didn't activate it on origin chosen
-Coal - great. But, noticeably, the higher up values are unbalanced - coal block is much too strong if I want a constant struggle for resources. Consider equalizing the variables. Possibly just block them.
-Low Power mode toggle - for when I'm chilling waiting for things to smelt
+- Mining buffs
+	Minor buffs to improve cave-based gameplay in the early game. 
+- Death changes
+	I'm thinking about it... I like the idea of the zombie being built somewhat around dying alot.
+	Two options:
+		A: Fake death using on-death
+		B: Real death, but a keep-inventory inventory slot and a way to conserve XP.
+			Issue with conserving XP is that you cannot subtract XP. hmm.
+- XP Storing (TestPowers)
+	- At the cost of 11 xp, I can create an xp bottle (which can have 3-11 xp in it).
+
+PREVIOUS POWERS ON HOLD FOR RECONSIDERING
+- Grapple
+	Eating a mushroom grants you a grapple, for extra cave traversal.
+	Problem: Saves from fall damage, not easy for mining higher materials (main appeal)
+- Planted
+	Plant a 'body' that you can return to via key-bind instead of dying.
+- Astral Projection
+	Active power - allows for phasing through walls and flight in a short radius around the original body.
+- Disattaching Head
+	Problem: No real appeal to having a head follow you around.
+- Transforming between zombies
+	Problem: massive Scaling issues.
+- Curing
+	Cure several zombie effects to avoid issues until next death.
+	Problem: needs a reason to be a zombie compared to curing
+- Mushroom based Effects
+	Part of the same idea as Transforming, but with mushroom based changes too.
+- Dig
+	Phasing but for dirt/ dropping into dirt.
+----------------------------------------------------
+Development thoughts
+
+What's the appeal for some of these powers?
+Grapple - Get blocks up high, nether/cave traversal.
+Astral Projection - Get Blocks up high, X-Ray for caving
+Transforming - can make things harder.
+Death based - storing XP, keep inventory.
 
 
-HEAT
+Major problems to solve:
 
-Increases over time in the nether or near lava.
-Decreases over time otherwise
-But how would you counteract it?
-	Vent - Sneak + button to blast hot air, pushing entities away? idk
-		Which could be counted as an explosion, perhaps.
+Sunlight.
+Sleeping.
+Staying underwater.
 
-Inventory slot 3: Refuel inventory
-	Items in here are automatically consumed for fuel
-Inventory slot 4: Smelting inventory
-	Items in here are automatically cooked
+So... Death. The appeal is being able to just... jump off a cliff and die if I want to, which would save some of my gear. Hmm.
 
-REMOVE BOATS
-	
+-----------------------------------------------------------
+BRAINSTORM
+
+So. You are some kind of spirit or something inhabiting a zombie body.
+
+You can only heal via eating mushrooms or rotten flesh. 
+You need a carved pumpkin to go near villagers. 
+You burn in the daylight. Wearing a helmet reduces this a bit at the moment.
+You can't sleep during the night.
+
+So. Ideas behind the XP Storing - Love it.
+Idea behind the inventory - ehhhhh.... maybe instead it should be the enderchest. idfk.

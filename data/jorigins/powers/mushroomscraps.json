@@ -1,6 +1,6 @@
 {
   "name": "Feeding on Scraps",
-  "description": "As well as using rotten flesh to heal yourself, you can feed your mushrooms with most plant material to heal. You can also eat bonemeal to grow excess mushrooms, but this causes you to hunger faster.",
+  "description": "As well as using rotten flesh to heal yourself, you can also eat mushrooms to heal and bonemeal to grow mushrooms.",
   "type": "origins:multiple",
   "eat_mushroom": {
     "type": "origins:edible_item",

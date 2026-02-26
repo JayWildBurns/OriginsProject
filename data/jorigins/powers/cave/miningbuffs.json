@@ -1,0 +1,56 @@
+{
+    "name": "Underground Dweller",
+    "description": "You're built for underground living. You can mine natural stones slightly faster.",
+    "type": "origins:multiple",
+    "minefaster": {
+        "type": "origins:modify_break_speed",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:base_stone_overworld"
+        },
+        "modifier": {
+            "operation": "multiply_base_additive",
+            "amount": 0.5
+        }
+    },
+    "cobblestone":{
+        "type": "origins:modify_harvest",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:stone"
+        },
+        "allow": true
+    },
+    "deepslate":{
+        "type": "origins:modify_harvest",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:deepslate"
+        },
+        "allow": true
+    },
+    "andesite":{
+        "type": "origins:modify_harvest",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:andesite"
+        },
+        "allow": true
+    },
+    "diorite":{
+        "type": "origins:modify_harvest",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:diorite"
+        },
+        "allow": true
+    },
+    "granite":{
+        "type": "origins:modify_harvest",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:granite"
+        },
+        "allow": true
+    }
+  }

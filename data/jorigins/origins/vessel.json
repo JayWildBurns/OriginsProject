@@ -8,8 +8,10 @@
 		"jorigins:behaviour/outcast",
 		"jorigins:behaviour/passivezombie",
 		"jorigins:mushroomscraps",
+		"jorigins:cave/miningbuffs",
 		"jorigins:testpowers",
-		"jorigins:spawnpoint"
+		"jorigins:spawnpoint",
+		"jorigins:return"
 		],
 	"icon": {
 		"id": "minecraft:brown_mushroom"
