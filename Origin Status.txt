@@ -15,6 +15,9 @@ POWERS IN PROGRESS
 		A: Fake death using on-death
 		B: Real death, but a keep-inventory inventory slot and a way to conserve XP.
 			Issue with conserving XP is that you cannot subtract XP. hmm.
+	On-Death approach: Currently a resource (that auto-sets to one on death).
+	I need a way to recover it, and a way to set the spawnpoint. Spawnpoint also resets on actual death.
+	
 - XP Storing (TestPowers)
 	- At the cost of 11 xp, I can create an xp bottle (which can have 3-11 xp in it).
 

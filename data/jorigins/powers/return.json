@@ -10,6 +10,10 @@
         {
           "type": "origins:execute_command",
           "command": "function jorigins:savecoords"
+        },
+        {
+          "type": "origins:trigger_cooldown",
+          "power": "jorigins:temporarypowers/returndebuff_cooldown"
         }
       ]
     },
@@ -66,6 +70,10 @@
           "type": "origins:change_resource",
           "resource": "jorigins:return_liferesource",
           "change": -1
+        },
+        {
+          "type": "origins:trigger_cooldown",
+        "power": "jorigins:return_returncooldown"
         }
       ]
     },
@@ -79,10 +87,82 @@
   "reset": {
     "type": "origins:action_on_callback",
     "entity_action_respawned": {
-      "type": "origins:change_resource",
-      "resource": "jorigins:return_liferesource",
-      "change": 1
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "function jorigins:savecoords"
+        },
+        {
+          "type": "origins:change_resource",
+          "resource": "jorigins:return_liferesource",
+          "change": 1
+        }
+      ]
     },
     "execute_chosen_when_orb": false
+  },
+  "returncooldown": {
+    "type": "origins:cooldown",
+    "cooldown": 1200,
+    "hud_render": {
+      "should_render": false,
+      "bar_index": 3
+    }
+  },
+  "recover": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:change_resource",
+          "resource": "jorigins:return_liferesource",
+          "change": 1
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "jorigins:return_returncooldown",
+          "comparison": "<=",
+          "compare_to": 10
+        },
+        {
+          "type": "origins:resource",
+          "resource": "jorigins:return_liferesource",
+          "comparison": "==",
+          "compare_to": 0
+        }
+      ]
+    }
+  },
+  "shaking": {
+    "type": "origins:shaking",
+    "condition": {
+      "type": "origins:resource",
+      "resource": "jorigins:return_liferesource",
+      "comparison": "==",
+      "compare_to": 0
+    }
+  },
+  "overlay_dead": {
+    "type": "origins:overlay",
+    "hidden": true,
+    "sprite": "*:dirt",
+    "strength": 0.7,
+    "draw_mode": "texture",
+    "draw_phase": "below_hud",
+    "visible_in_third_person": true,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "jorigins:return_liferesource",
+      "compare_to": 0,
+      "comparison": "=="
+    }
   }
 }
