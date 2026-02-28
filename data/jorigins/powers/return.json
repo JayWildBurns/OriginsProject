@@ -73,7 +73,7 @@
         },
         {
           "type": "origins:trigger_cooldown",
-        "power": "jorigins:return_returncooldown"
+          "power": "jorigins:return_returncooldown"
         }
       ]
     },

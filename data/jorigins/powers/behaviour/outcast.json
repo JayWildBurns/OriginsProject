@@ -1,8 +1,8 @@
 {
     "name": "Outcast",
-    "description": "CAUSES CRASHES ATM As an undead, you are not welcome among villager communities. Hiding your face with a pumpkin can bypass this.",
+    "description": "As an undead, you are not welcome among villager communities. Hiding your face with a pumpkin can bypass this.",
     "type": "origins:multiple",
-    "test": {
+    "villagerignored": {
     "type": "origins:prevent_entity_use",
     "bientity_action": {
       "type": "origins:choice",
@@ -117,24 +117,5 @@
             }
             
         
-    },
-    "iron_golem_no": {
-        "type": "origins:action_over_time",
-        "interval": 10,
-        "entity_action": {
-            "type": "origins:and",
-            "actions": [
-                {
-                    "type": "origins:execute_command",
-                    "command": "execute at @s as @e[type=minecraft:iron_golem,distance=10..20] run data modify entity @s AngryAt set from entity @s UUID",
-                    "permission_level": 2
-                },
-                {
-                    "type": "origins:execute_command",
-                    "command": "execute at @s as @e[type=minecraft:iron_golem,distance=10..20] run data modify entity @s AngerTime set value 0",
-                    "permission_level": 2
-                }
-            ]
-        }
     }
   }

@@ -11,15 +11,10 @@ POWERS IN PROGRESS
 	Minor buffs to improve cave-based gameplay in the early game. 
 - Death changes
 	I'm thinking about it... I like the idea of the zombie being built somewhat around dying alot.
-	Two options:
-		A: Fake death using on-death
-		B: Real death, but a keep-inventory inventory slot and a way to conserve XP.
-			Issue with conserving XP is that you cannot subtract XP. hmm.
-	On-Death approach: Currently a resource (that auto-sets to one on death).
-	I need a way to recover it, and a way to set the spawnpoint. Spawnpoint also resets on actual death.
-	
 - XP Storing (TestPowers)
 	- At the cost of 11 xp, I can create an xp bottle (which can have 3-11 xp in it).
+
+
 
 PREVIOUS POWERS ON HOLD FOR RECONSIDERING
 - Grapple
@@ -50,6 +45,21 @@ Transforming - can make things harder.
 Death based - storing XP, keep inventory.
 
 
+CURRENT PROGRESS on IN DEVELOPMENT POWERS
+
+Return By Death:
+	I need to modify the way I select a spawnpoint.
+	There are currently no debuffs to return by death.
+
+XP Storage
+	Still in TestPowers. 
+Extra Inventory
+	I'm going to approve this one, just need to move it into a power.
+
+Outcast
+	Currently broken.
+	
+
 Major problems to solve:
 
 Sunlight.
@@ -58,15 +68,4 @@ Staying underwater.
 
 So... Death. The appeal is being able to just... jump off a cliff and die if I want to, which would save some of my gear. Hmm.
 
------------------------------------------------------------
-BRAINSTORM
 
-So. You are some kind of spirit or something inhabiting a zombie body.
-
-You can only heal via eating mushrooms or rotten flesh. 
-You need a carved pumpkin to go near villagers. 
-You burn in the daylight. Wearing a helmet reduces this a bit at the moment.
-You can't sleep during the night.
-
-So. Ideas behind the XP Storing - Love it.
-Idea behind the inventory - ehhhhh.... maybe instead it should be the enderchest. idfk.
