@@ -8,6 +8,30 @@
       "type": "origins:and",
       "actions": [
         {
+          "type": "origins:if_else",
+          "condition": {
+            "type": "origins:target_condition",
+            "condition": {
+              "type": "origins:nbt",
+              "nbt": "{IsBaby:1b}"
+            }
+          },
+          "if_action": {
+            "type": "origins:actor_action",
+            "action": {
+              "type": "origins:execute_command",
+              "command": "function jorigins:setbaby"
+            }
+          },
+          "else_action": {
+            "type": "origins:actor_action",
+            "action": {
+              "type": "origins:execute_command",
+              "command": "scale reset @s"
+            }
+          }
+        },
+        {
           "type": "origins:target_action",
           "action": {
             "type": "origins:damage",
@@ -55,6 +79,30 @@
       "type": "origins:and",
       "actions": [
         {
+          "type": "origins:if_else",
+          "condition": {
+            "type": "origins:target_condition",
+            "condition": {
+              "type": "origins:nbt",
+              "nbt": "{IsBaby:1b}"
+            }
+          },
+          "if_action": {
+            "type": "origins:actor_action",
+            "action": {
+              "type": "origins:execute_command",
+              "command": "function jorigins:setbaby"
+            }
+          },
+          "else_action": {
+            "type": "origins:actor_action",
+            "action": {
+              "type": "origins:execute_command",
+              "command": "scale reset @s"
+            }
+          }
+        },
+        {
           "type": "origins:target_action",
           "action": {
             "type": "origins:damage",
@@ -101,6 +149,30 @@
     "bientity_action": {
       "type": "origins:and",
       "actions": [
+        {
+          "type": "origins:if_else",
+          "condition": {
+            "type": "origins:target_condition",
+            "condition": {
+              "type": "origins:nbt",
+              "nbt": "{IsBaby:1b}"
+            }
+          },
+          "if_action": {
+            "type": "origins:actor_action",
+            "action": {
+              "type": "origins:execute_command",
+              "command": "function jorigins:setbaby"
+            }
+          },
+          "else_action": {
+            "type": "origins:actor_action",
+            "action": {
+              "type": "origins:execute_command",
+              "command": "scale reset @s"
+            }
+          }
+        },
         {
           "type": "origins:target_action",
           "action": {

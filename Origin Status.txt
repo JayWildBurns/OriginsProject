@@ -26,12 +26,15 @@ Return
 XP Bottling
 	Allows the player to store XP in XP bottles.
 	Was intended for a keep-inventory but actually die approach to return, which was scrapped.
+	Could still fit in a 'master of death' power which would combine return with this- once I finish return, that is.
 
 Ribcage
 	Classic inventory buff, currently disabled due to predicted issues with swapping origins.
+	Sure enough, causes them to drop. I think it's a fine mini-buff and can be it's own power or built into one of the other main powers.
 
 Sleep-based changes
-	Zombies can't sleep.
+	Zombies can't sleep. Still in testing phase, would need a different way to set a spawnpoint.
+
 
 POWERS THAT MAY RETURN 
 
