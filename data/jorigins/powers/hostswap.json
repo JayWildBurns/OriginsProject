@@ -1,0 +1,146 @@
+{
+  "name": "Host Swap",
+  "description": "Swap your form by right-clicking a zombie",
+  "type": "origins:multiple",
+  "drowned": {
+    "type": "origins:action_on_entity_use",
+    "bientity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:damage",
+            "amount": 20,
+            "damage_type": "minecraft:magic"
+          }
+        },
+        {
+          "type": "origins:actor_action",
+          "action": {
+            "type": "origins:execute_command",
+            "command": "origin set @s origins:origin jorigins:vessel_drowned"
+          }
+        }
+      ]
+    },
+    "bientity_condition": {
+      "type": "origins:target_condition",
+      "condition": {
+        "type": "origins:entity_type",
+        "entity_type": "minecraft:drowned"
+      }
+    },
+    "item_condition": {
+      "type": "origins:empty"
+    },
+    "hands": ["main_hand"],
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:origin",
+          "origin": "jorigins:vessel_husk"
+        },
+        {
+          "type": "origins:origin",
+          "origin": "jorigins:vessel_zombie"
+        }
+      ]
+    }
+  },
+  "zombie": {
+    "type": "origins:action_on_entity_use",
+    "bientity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:damage",
+            "amount": 20,
+            "damage_type": "minecraft:magic"
+          }
+        },
+        {
+          "type": "origins:actor_action",
+          "action": {
+            "type": "origins:execute_command",
+            "command": "origin set @s origins:origin jorigins:vessel_zombie"
+          }
+        }
+      ]
+    },
+    "bientity_condition": {
+      "type": "origins:target_condition",
+      "condition": {
+        "type": "origins:entity_type",
+        "entity_type": "minecraft:zombie"
+      }
+    },
+    "item_condition": {
+      "type": "origins:empty"
+    },
+    "hands": ["main_hand"],
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:origin",
+          "origin": "jorigins:vessel_drowned"
+        },
+        {
+          "type": "origins:origin",
+          "origin": "jorigins:vessel_husk"
+        }
+      ]
+    }
+  },
+  "husk": {
+    "type": "origins:action_on_entity_use",
+    "bientity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:damage",
+            "amount": 20,
+            "damage_type": "minecraft:magic"
+          }
+        },
+        {
+          "type": "origins:actor_action",
+          "action": {
+            "type": "origins:execute_command",
+            "command": "origin set @s origins:origin jorigins:vessel_husk"
+          }
+        }
+      ]
+    },
+    "bientity_condition": {
+      "type": "origins:target_condition",
+      "condition": {
+        "type": "origins:entity_type",
+        "entity_type": "minecraft:husk"
+      }
+    },
+    "item_condition": {
+      "type": "origins:empty"
+    },
+    "hands": ["main_hand"],
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:origin",
+          "origin": "jorigins:vessel_drowned"
+        },
+        {
+          "type": "origins:origin",
+          "origin": "jorigins:vessel_zombie"
+        }
+      ]
+    }
+  }
+}

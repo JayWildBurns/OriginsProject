@@ -10,7 +10,7 @@
     "modifier": {
       "id": "jorigins:breathless",
       "attribute": "minecraft:generic.oxygen_bonus",
-      "amount": 10,
+      "amount": 3,
       "operation": "add_value"
     }
   },

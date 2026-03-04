@@ -83,5 +83,12 @@
         "should_render": false
     }
 
-  }
+  },
+    "sleepless":{
+        "type": "origins:prevent_block_use",
+            "block_condition": {
+                "type": "origins:in_tag",
+                "tag": "minecraft:beds"
+            }
+    }
 }

@@ -1,0 +1,11 @@
+{
+    "name": "Mineshaft",
+    "description": "Your World Spawnpoint is at cold ocean ruins.",
+    "type": "origins:multiple",
+    "spawnchange":{
+        "type": "origins:modify_player_spawn",
+        "dimension": "minecraft:overworld",
+        "structure": "minecraft:ocean_ruin_cold",
+        "spawn_strategy": "center"
+    }
+}

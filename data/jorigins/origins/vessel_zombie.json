@@ -1,0 +1,24 @@
+{
+	"order": 11,
+	"impact": 2,
+	"unchoosable": false,
+	"name": "Zombie Vessel",
+	"description": "A sentient colony of mushrooms inhabiting the corpse of a zombie. Burns in daylight and can only heal via rotten flesh",
+	"powers": [
+		"jorigins:base/vessel",
+		"jorigins:base/vesselhealth",
+		"jorigins:hostswap",
+		"jorigins:spawn/mineshaft",
+		"jorigins:sun/sunlight_resource",
+		"jorigins:sun/sunlight_normal",
+		"jorigins:behaviour/outcast",
+		"jorigins:behaviour/passivezombie",
+		"jorigins:mushroomscraps",
+		"jorigins:cave/miningbuffs",
+		"jorigins:testpowers",
+		"jorigins:water/nonaquatic"
+		],
+	"icon": {
+		"id": "minecraft:brown_mushroom"
+	}
+}

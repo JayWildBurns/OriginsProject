@@ -1,0 +1,11 @@
+{
+    "name": "Mineshaft",
+    "description": "Your World Spawnpoint is at a mineshaft.",
+    "type": "origins:multiple",
+    "spawnchange":{
+        "type": "origins:modify_player_spawn",
+        "dimension": "minecraft:overworld",
+        "structure": "minecraft:mineshaft",
+        "spawn_strategy": "center"
+    }
+}

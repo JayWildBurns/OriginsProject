@@ -40,9 +40,6 @@
           "dimension": "minecraft:overworld"
         }
       ]
-    },
-    "hud_render": {
-      "should_render": false
     }
   },
   "liferesource": {

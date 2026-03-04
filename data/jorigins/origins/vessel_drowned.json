@@ -1,0 +1,23 @@
+{
+	"order": 11,
+	"impact": 2,
+	"unchoosable": true,
+	"name": "Drowned Vessel",
+	"description": "A sentient colony of mushrooms inhabiting the corpse of a drowned. Cannot breathe outside of water.",
+	"powers": [
+		"jorigins:base/vessel",
+		"jorigins:base/vesselhealth",
+		"jorigins:hostswap",
+		"jorigins:spawn/ruins",
+		"jorigins:sun/sunlight_resource",
+		"jorigins:sun/sunlight_normal",
+		"jorigins:behaviour/outcast",
+		"jorigins:behaviour/passivezombie",
+		"jorigins:mushroomscraps",
+		"jorigins:water/drowned",
+		"origins:water_breathing"
+		],
+	"icon": {
+		"id": "minecraft:brown_mushroom"
+	}
+}

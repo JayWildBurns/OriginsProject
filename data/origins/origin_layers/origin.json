@@ -1,7 +1,8 @@
 {
   "replace": false,
   "origins": [
-  "jorigins:basevessel",
-  "jorigins:vessel"
+  "jorigins:vessel_zombie",
+  "jorigins:vessel_drowned",
+  "jorigins:vessel_husk"
   ]
 }

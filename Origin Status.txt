@@ -1,71 +1,47 @@
-26 -02 - 2026
+4-03 - 2026
 
-Throwing out the extended origins in this pack and the Android Origin. Focusing on reworking the main origin to make it much more cave-based than before.
+Focusing on the Main Origin.
+Powers and origins from previous explorations have been moved to Legacy folders.
+These powers will be removed once I confirm the powers aren't returning.
 
-POWERS STAYING
+LAST UPDATE:
+HostSwap
+	Introduced new Vessel_Drowned and Vessel_Husk Origins.
+	Changed Vessel Origin to Vessel_Zombie.
+
+	Player can switch between these origins by right-clicking the associated zombie type.
+
+	Introduced drowned power - Alternative to nonaquatic. Allows for a toggleable swimming behaviour and removes sinking during normal swimming.
+
+Spawnpoint Powers
+	Moved into it's own folder. One power per Zombie type.
 
 
 POWERS IN PROGRESS
 
-- Mining buffs
-	Minor buffs to improve cave-based gameplay in the early game. 
-- Death changes
-	I'm thinking about it... I like the idea of the zombie being built somewhat around dying alot.
-- XP Storing (TestPowers)
-	- At the cost of 11 xp, I can create an xp bottle (which can have 3-11 xp in it).
+Return
+	A power allowing the player to set a point they can return to on death. Currently works, but needs a way to set the point.
+	As well as significant debuffs before resetting.
 
+XP Bottling
+	Allows the player to store XP in XP bottles.
+	Was intended for a keep-inventory but actually die approach to return, which was scrapped.
 
+Ribcage
+	Classic inventory buff, currently disabled due to predicted issues with swapping origins.
 
-PREVIOUS POWERS ON HOLD FOR RECONSIDERING
-- Grapple
-	Eating a mushroom grants you a grapple, for extra cave traversal.
-	Problem: Saves from fall damage, not easy for mining higher materials (main appeal)
-- Planted
-	Plant a 'body' that you can return to via key-bind instead of dying.
-- Astral Projection
-	Active power - allows for phasing through walls and flight in a short radius around the original body.
-- Disattaching Head
-	Problem: No real appeal to having a head follow you around.
-- Transforming between zombies
-	Problem: massive Scaling issues.
-- Curing
-	Cure several zombie effects to avoid issues until next death.
-	Problem: needs a reason to be a zombie compared to curing
-- Mushroom based Effects
-	Part of the same idea as Transforming, but with mushroom based changes too.
-- Dig
-	Phasing but for dirt/ dropping into dirt.
-----------------------------------------------------
-Development thoughts
+Sleep-based changes
+	Zombies can't sleep.
 
-What's the appeal for some of these powers?
-Grapple - Get blocks up high, nether/cave traversal.
-Astral Projection - Get Blocks up high, X-Ray for caving
-Transforming - can make things harder.
-Death based - storing XP, keep inventory.
+POWERS THAT MAY RETURN 
 
+Planted: This is the original version of the Return Power. I may adjust Return to allow for 'planting' the body to be the setup.
+Curing: ability to 'cure' the zombie form as a fourth state.
+Mushroom-based States
+Nether-based states
 
-CURRENT PROGRESS on IN DEVELOPMENT POWERS
-
-Return By Death:
-	I need to modify the way I select a spawnpoint.
-	There are currently no debuffs to return by death.
-
-XP Storage
-	Still in TestPowers. 
-Extra Inventory
-	I'm going to approve this one, just need to move it into a power.
-
-Outcast
-	Currently broken.
-	
-
-Major problems to solve:
-
-Sunlight.
-Sleeping.
-Staying underwater.
-
-So... Death. The appeal is being able to just... jump off a cliff and die if I want to, which would save some of my gear. Hmm.
-
-
+POWERS GONE FOR GOOD
+Grapple - not originally my code, and kind of OP
+Disattaching Head - no mechanical advantage or disadvantage.
+Dig - Phasing through dirt.
+Astral Projection - I would consider it for a different approach to the origin, but not at this time.
