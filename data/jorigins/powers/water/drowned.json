@@ -37,5 +37,12 @@
         }
       ]
     }
+  },
+  "blue":{
+    "type": "origins:model_color",
+    "blue": 1,
+    "green": 0.8,
+    "red": 0.8,
+    "alpha": 1
   }
 }
