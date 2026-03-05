@@ -7,13 +7,13 @@
 	"powers": [
 		"jorigins:base/vessel",
 		"jorigins:base/vesselhealth",
+		"jorigins:base/mushroomscraps",
 		"jorigins:hostswap",
 		"jorigins:spawn/mineshaft",
 		"jorigins:sun/sunlight_resource",
 		"jorigins:sun/sunlight_normal",
 		"jorigins:behaviour/outcast",
 		"jorigins:behaviour/passivezombie",
-		"jorigins:mushroomscraps",
 		"jorigins:cave/miningbuffs",
 		"jorigins:testpowers",
 		"jorigins:water/nonaquatic"

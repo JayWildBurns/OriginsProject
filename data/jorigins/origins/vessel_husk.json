@@ -7,12 +7,12 @@
 	"powers": [
 		"jorigins:base/vessel",
 		"jorigins:base/vesselhealth",
+		"jorigins:base/mushroomscraps",
 		"jorigins:hostswap",
 		"jorigins:husk",
 		"jorigins:spawn/desert",
 		"jorigins:behaviour/outcast",
 		"jorigins:behaviour/passivezombie",
-		"jorigins:mushroomscraps",
 		"jorigins:testpowers",
 		"jorigins:water/nonaquatic"
 		],
