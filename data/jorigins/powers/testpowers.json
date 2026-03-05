@@ -1,94 +1,60 @@
 {
-    "name": "Test Powers",
-    "description": "Powers in Development Phase",
-    "type": "origins:multiple",
-    "bonetostonepick":{
-    "type": "origins:recipe",
-    "recipe":
-    {
-        "id": "jorigins:vessel/headcraft",
-        "type": "minecraft:crafting_shaped",
-        "pattern": [
-        "&&&",
-        " $ ",
-        " $ "
-        ],
-        "key":{
-            "&":{
-                "tag": "minecraft:stone_tool_materials"
-            },
-            "$":{
-                "item": "minecraft:bone"
-            }
-        },
-        "result": {
-            "id": "minecraft:stone_pickaxe",
-            "count": 1
-        }
-        }
-    },
-  "ribcage":{
-        "type": "origins:inventory",
-        "title": "Ribcage",
-        "container_type": "generic_9x2",
-        "drop_on_death": false,
-        "recoverable": true,
-        "key": {
-            "key": "key.hotbar.9"
-        }
+  "name": "Test Powers",
+  "description": "Powers in Development Phase",
+  "type": "origins:multiple",
+  "ribcage": {
+    "type": "origins:inventory",
+    "title": "Ribcage",
+    "container_type": "generic_9x2",
+    "drop_on_death": false,
+    "recoverable": true,
+    "key": {
+      "key": "key.hotbar.9"
+    }
   },
   "xp": {
     "type": "origins:active_self",
     "entity_action": {
-        "type": "origins:and",
-    "actions": [
+      "type": "origins:and",
+      "actions": [
         {
-            "type": "origins:add_xp",
-            "points": -11
+          "type": "origins:add_xp",
+          "points": -11
         },
-        {    
-            "type": "origins:give",
-            "stack": {
-                "id": "minecraft:experience_bottle",
-                "count": 1
-            }
+        {
+          "type": "origins:give",
+          "stack": {
+            "id": "minecraft:experience_bottle",
+            "count": 1
+          }
         }
-    ]
-        
+      ]
     },
     "cooldown": 1,
     "hud_render": {
-        "should_render": false
+      "should_render": false
     },
     "key": {
-        "key": "key.origins.secondary_active",
-        "continuous": true
+      "key": "key.origins.secondary_active",
+      "continuous": true
     },
     "condition": {
-        "type": "origins:or",
-    "conditions": [
+      "type": "origins:or",
+      "conditions": [
         {
-            "type": "origins:xp_points",
-        "comparison": ">=",
-        "compare_to": 11
+          "type": "origins:xp_points",
+          "comparison": ">=",
+          "compare_to": 11
         },
-        {    
-            "type": "origins:xp_levels",
-        "comparison": ">=",
-        "compare_to": 1
+        {
+          "type": "origins:xp_levels",
+          "comparison": ">=",
+          "compare_to": 1
         }
-    ]
-    },  
+      ]
+    },
     "hud_render": {
-        "should_render": false
+      "should_render": false
     }
-
-  },
-    "sleepless":{
-        "type": "origins:prevent_block_use",
-            "block_condition": {
-                "type": "origins:in_tag",
-                "tag": "minecraft:beds"
-            }
-    }
+  }
 }

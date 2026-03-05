@@ -48,3 +48,70 @@ Grapple - not originally my code, and kind of OP
 Disattaching Head - no mechanical advantage or disadvantage.
 Dig - Phasing through dirt.
 Astral Projection - I would consider it for a different approach to the origin, but not at this time.
+
+------Playtest results---------
+
+Mushroom Scraps inactive, should be base/mushroomscraps to restore
+Crafting rotten flesh without mushrooms might be a bit strong. I like the slower burn/gameplay that comes from rotten flesh being harder to get.
+So- make mushrooms easier to get (restore mushroomscraps) but don't heal. Change recipe to meat + mushroom = rotten flesh.
+
+Sunlight playstyle is fine in forests, but not in open spaces - pretty good.
+
+Husk not tested yet, will find one
+Drowned not tested yet, will find one.
+Ribcage is fantastic as a minor buff
+
+
+Summary: Vessel Origin works well as a slower, more challenging origin than basic minecraft gameplay.
+There's no safety in daytime or nighttime, Damage is a lot harder to heal and so fighting is heavily discouraged.
+However, this heavily decreases the ability to explore or travel long-distance, which is something I like doing in minecraft.
+Additionally: Since rotten flesh is hard to get-
+	This is too hard.
+	I have to legitamately buff it.
+	Goddammit.
+
+
+
+Sunlight concept changes
+
+So...
+We want to allow for quick trips between bits of shade. So...
+
+Sunlight resource A 
+Builds up each second or half second, to about X seconds. Once it's hit that point, ignition is now active.
+
+Ignition: If you're wearing a helmet, it's chance-based.
+If you're not wearing a helmet, it's instant.
+
+
+
+
+
+----Testpowers Code temporarily removed
+  "sleepless": {
+    "type": "origins:prevent_block_use",
+    "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "minecraft:beds"
+    }
+  },
+  "bonetostonepick": {
+    "type": "origins:recipe",
+    "recipe": {
+      "id": "jorigins:vessel/headcraft",
+      "type": "minecraft:crafting_shaped",
+      "pattern": ["&&&", " $ ", " $ "],
+      "key": {
+        "&": {
+          "tag": "minecraft:stone_tool_materials"
+        },
+        "$": {
+          "item": "minecraft:bone"
+        }
+      },
+      "result": {
+        "id": "minecraft:stone_pickaxe",
+        "count": 1
+      }
+    }
+  }

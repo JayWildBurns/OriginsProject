@@ -11,7 +11,7 @@
 		"jorigins:hostswap",
 		"jorigins:spawn/mineshaft",
 		"jorigins:sun/sunlight_resource",
-		"jorigins:sun/sunlight_normal",
+		"jorigins:sun/sunlight_simple",
 		"jorigins:behaviour/outcast",
 		"jorigins:behaviour/passivezombie",
 		"jorigins:cave/miningbuffs",
