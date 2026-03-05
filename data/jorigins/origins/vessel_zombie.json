@@ -16,7 +16,8 @@
 		"jorigins:behaviour/passivezombie",
 		"jorigins:cave/miningbuffs",
 		"jorigins:testpowers",
-		"jorigins:water/nonaquatic"
+		"jorigins:water/nonaquatic",
+		"jorigins:return"
 		],
 	"icon": {
 		"id": "minecraft:brown_mushroom"

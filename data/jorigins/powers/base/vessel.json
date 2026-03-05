@@ -22,7 +22,7 @@
     },
     "nightvision": {
       "type": "origins:night_vision",
-      "strength": 0.15,
+      "strength": 0.20,
       "condition": {
         "type": "origins:brightness",
         "comparison": "<=",

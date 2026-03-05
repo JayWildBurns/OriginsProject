@@ -5,16 +5,11 @@ Powers and origins from previous explorations have been moved to Legacy folders.
 These powers will be removed once I confirm the powers aren't returning.
 
 LAST UPDATE:
-HostSwap
-	Introduced new Vessel_Drowned and Vessel_Husk Origins.
-	Changed Vessel Origin to Vessel_Zombie.
 
-	Player can switch between these origins by right-clicking the associated zombie type.
-
-	Introduced drowned power - Alternative to nonaquatic. Allows for a toggleable swimming behaviour and removes sinking during normal swimming.
-
-Spawnpoint Powers
-	Moved into it's own folder. One power per Zombie type.
+Sunlight Simple
+  Sunlight rebuilt to be simpler.
+Return Renabled
+  Return power is fixed and re-enabled.
 
 
 POWERS IN PROGRESS
@@ -35,6 +30,10 @@ Ribcage
 Sleep-based changes
 	Zombies can't sleep. Still in testing phase, would need a different way to set a spawnpoint.
 
+Flavour Based Powers
+  Advancements
+  Sounds/Particles for existing powers
+  
 
 POWERS THAT MAY RETURN 
 
@@ -71,17 +70,6 @@ Additionally: Since rotten flesh is hard to get-
 	Goddammit.
 
 
-
-Sunlight concept changes
-
-So...
-We want to allow for quick trips between bits of shade. So...
-
-Sunlight resource A 
-Builds up each second or half second, to about X seconds. Once it's hit that point, ignition is now active.
-
-Ignition: If you're wearing a helmet, it's chance-based.
-If you're not wearing a helmet, it's instant.
 
 
 

@@ -26,12 +26,6 @@
       "type": "origins:and",
       "actions": [
         {
-          "type": "origins:change_resource",
-          "resource": "jorigins:grapple_grapplecount",
-          "change": 1,
-          "operation": "add"
-        },
-        {
           "type": "origins:chance",
           "success_action": {
             "type": "origins:heal",
