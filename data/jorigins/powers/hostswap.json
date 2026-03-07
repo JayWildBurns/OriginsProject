@@ -1,6 +1,6 @@
 {
-  "name": "Host Swap",
-  "description": "Swap your form by right-clicking a zombie",
+  "name": "Corpse Host",
+  "description": "You can switch bodies into a different type of humanoid zombie. (Husk, Drowned or Zombie). This can include Baby Zombies.",
   "type": "origins:multiple",
   "drowned": {
     "type": "origins:action_on_entity_use",
@@ -214,5 +214,28 @@
         }
       ]
     }
+  },
+  "callback": {
+    "type": "origins:action_on_callback",
+    "entity_action_respawned": {
+      "type": "origins:choice",
+      "actions": [
+        {
+          "element": {
+            "type": "origins:execute_command",
+            "command": "scale reset @s"
+          },
+          "weight": 19
+        },
+        {
+          "element": {
+            "type": "origins:execute_command",
+            "command": "function jorigins:setbaby"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    "execute_chosen_when_orb": false
   }
 }
