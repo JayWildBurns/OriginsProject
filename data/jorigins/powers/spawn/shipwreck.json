@@ -1,11 +1,11 @@
 {
-    "name": "Mineshaft",
-    "description": "Your World Spawnpoint is at cold ocean ruins.",
+    "name": "Shipwrecked Corpse",
+    "description": "Your World Spawnpoint is at a shipwreck.",
     "type": "origins:multiple",
     "spawnchange":{
         "type": "origins:modify_player_spawn",
         "dimension": "minecraft:overworld",
-        "structure": "minecraft:ocean_ruin_cold",
+        "structure": "minecraft:shipwreck",
         "spawn_strategy": "center"
     }
 }

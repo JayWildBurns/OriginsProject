@@ -1,6 +1,6 @@
 {
-    "name": "Mineshaft",
-    "description": "Your World Spawnpoint is at cold ocean ruins.",
+    "name": "Deserted Corpse",
+    "description": "Your World Spawnpoint is in a desert.",
     "type": "origins:multiple",
     "spawnchange":{
         "type": "origins:modify_player_spawn",

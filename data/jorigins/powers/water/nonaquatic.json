@@ -1,6 +1,6 @@
 {
   "name": "Non Aquatic",
-  "description": "You sink in water, but can last for longer without air",
+  "description": "You sink in water, but can last for longer without air. You can climb kelp.",
   "type": "origins:multiple",
   "dense": {
     "type": "origins:ignore_water"
@@ -24,6 +24,22 @@
         "type": "origins:block",
         "block": "minecraft:water"
       }
+    }
+  },
+  "kelpclimb":{"type": "origins:climbing",
+    "condition": {
+        "type": "origins:in_block_anywhere",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "jorigins:kelp"
+        }
+    },
+    "hold_condition": {
+        "type": "origins:in_block_anywhere",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "jorigins:kelp"
+        }
     }
   }
 }

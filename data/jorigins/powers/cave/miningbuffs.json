@@ -1,6 +1,6 @@
 {
     "name": "Underground Dweller",
-    "description": "You're built for underground living. You can mine natural stones slightly faster.",
+    "description": "You're built for underground living. You can mine natural stones slightly faster without a pickaxe.",
     "type": "origins:multiple",
     "minefaster": {
         "type": "origins:modify_break_speed",

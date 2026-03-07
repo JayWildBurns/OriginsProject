@@ -1,34 +1,48 @@
-4-03 - 2026
+8 - 03 - 2026
 
-Focusing on the Main Origin.
-Powers and origins from previous explorations have been moved to Legacy folders.
-These powers will be removed once I confirm the powers aren't returning.
+CURRENT STATUS
+From solo tests and test with friends, I have determined the following changes:
 
-LAST UPDATE:
+Flavour
+  Can set hit targets on fire when you are on fire
+  Mobs could drop inventory if you right-click them to swap into them
+  Chance to spawn with zombie gear
 
-Sunlight Simple
-  Sunlight rebuilt to be simpler.
-Return Renabled
-  Return power is fixed and re-enabled.
+Rebirth
+  It's actually too powerful. The issues are a regenning totem of undying is too powerful, and having debuffs for the entire period of recharging also sucks.
 
+------------------------------------------------------------------------------------------------------------------------
+LAST MAJOR UPDATE:
+
+HostSwap:
+  On respawn, return to normal size or become a baby. Baby Forms correctly increase motion scale.
+
+Legacy Powers 
+  Removed
+
+Drowned:
+  Change swim mode toggled on Sneak instead
+  Mining speed underwater increased by 1
+
+NonAquatic
+  Player can climb Kelp
+
+Spawn Powers
+  Ocean Ruins replaced with Shipwreck
+  Descriptions and titles updated
+------------------------------------------------------------------------------------------------------------------------
 
 POWERS IN PROGRESS
 
 Return
-	A power allowing the player to set a point they can return to on death. Currently works, but needs a way to set the point.
-	As well as significant debuffs before resetting.
+	See above - Works, but is too powerful. Extended debuffs do not feel good, but fast recharge of a cheat death doesn't either.
 
-XP Bottling
-	Allows the player to store XP in XP bottles.
-	Was intended for a keep-inventory but actually die approach to return, which was scrapped.
-	Could still fit in a 'master of death' power which would combine return with this- once I finish return, that is.
 
 Ribcage
-	Classic inventory buff, currently disabled due to predicted issues with swapping origins.
-	Sure enough, causes them to drop. I think it's a fine mini-buff and can be it's own power or built into one of the other main powers.
+	Classic inventory buff. Would drop on origin swap. I like it a lot as it can extend caving time significantly.
 
 Sleep-based changes
-	Zombies can't sleep. Still in testing phase, would need a different way to set a spawnpoint.
+	Not a good idea.
 
 Flavour Based Powers
   Advancements
@@ -48,58 +62,4 @@ Disattaching Head - no mechanical advantage or disadvantage.
 Dig - Phasing through dirt.
 Astral Projection - I would consider it for a different approach to the origin, but not at this time.
 
-------Playtest results---------
 
-Mushroom Scraps inactive, should be base/mushroomscraps to restore
-Crafting rotten flesh without mushrooms might be a bit strong. I like the slower burn/gameplay that comes from rotten flesh being harder to get.
-So- make mushrooms easier to get (restore mushroomscraps) but don't heal. Change recipe to meat + mushroom = rotten flesh.
-
-Sunlight playstyle is fine in forests, but not in open spaces - pretty good.
-
-Husk not tested yet, will find one
-Drowned not tested yet, will find one.
-Ribcage is fantastic as a minor buff
-
-
-Summary: Vessel Origin works well as a slower, more challenging origin than basic minecraft gameplay.
-There's no safety in daytime or nighttime, Damage is a lot harder to heal and so fighting is heavily discouraged.
-However, this heavily decreases the ability to explore or travel long-distance, which is something I like doing in minecraft.
-Additionally: Since rotten flesh is hard to get-
-	This is too hard.
-	I have to legitamately buff it.
-	Goddammit.
-
-
-
-
-
-
-
-----Testpowers Code temporarily removed
-  "sleepless": {
-    "type": "origins:prevent_block_use",
-    "block_condition": {
-      "type": "origins:in_tag",
-      "tag": "minecraft:beds"
-    }
-  },
-  "bonetostonepick": {
-    "type": "origins:recipe",
-    "recipe": {
-      "id": "jorigins:vessel/headcraft",
-      "type": "minecraft:crafting_shaped",
-      "pattern": ["&&&", " $ ", " $ "],
-      "key": {
-        "&": {
-          "tag": "minecraft:stone_tool_materials"
-        },
-        "$": {
-          "item": "minecraft:bone"
-        }
-      },
-      "result": {
-        "id": "minecraft:stone_pickaxe",
-        "count": 1
-      }
-    }
-  }
