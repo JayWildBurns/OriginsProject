@@ -10,6 +10,15 @@ Flavour
 Rebirth
   It's actually too powerful. The issues are a regenning totem of undying is too powerful, and having debuffs for the entire period of recharging also sucks.
 
+  effect clear, extinguish, gain air needs to be added
+
+
+Option 1:
+  Rebirth is removed. There is no way to cheat teleport back to a previous point or save yourself from death.
+Option 2:
+  Rebirth is manually set-up with a resource instead. Think 'Planted' power, just now death-based.
+Option 3: You are turned into a ghost. Which is more interesting at least.
+
 ------------------------------------------------------------------------------------------------------------------------
 LAST MAJOR UPDATE:
 
