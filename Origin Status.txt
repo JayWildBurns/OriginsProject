@@ -4,7 +4,6 @@ CURRENT STATUS
 From solo tests and test with friends, I have determined the following changes:
 
 Flavour
-  Can set hit targets on fire when you are on fire
   Mobs could drop inventory if you right-click them to swap into them
   Chance to spawn with zombie gear
 
@@ -14,11 +13,17 @@ Rebirth
 ------------------------------------------------------------------------------------------------------------------------
 LAST MAJOR UPDATE:
 
+
 HostSwap:
+  Zombies drop all equipment on conversion, random damage is applied to said equipment
+  Health drops to 3 hearts on a swap 
+  Swap can only happen every 5 seconds
+  You can swap to the same zombie type
+  
   On respawn, return to normal size or become a baby. Baby Forms correctly increase motion scale.
 
-Legacy Powers 
-  Removed
+Testpowers
+  Added SpreadFire Power.
 
 Drowned:
   Change swim mode toggled on Sneak instead
@@ -30,6 +35,13 @@ NonAquatic
 Spawn Powers
   Ocean Ruins replaced with Shipwreck
   Descriptions and titles updated
+
+Legacy Powers 
+  Removed
+
+
+
+
 ------------------------------------------------------------------------------------------------------------------------
 
 POWERS IN PROGRESS

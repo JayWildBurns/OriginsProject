@@ -1,0 +1,12 @@
+{
+  "name": "Drop inventory",
+  "description": "Forces an entity to drop all inventory",
+  "type": "origins:multiple",
+  "powergain": {
+    "type": "origins:action_on_callback",
+    "entity_action_gained": {
+      "type": "origins:drop_inventory"
+    },
+    "execute_chosen_when_orb": true
+  }
+}

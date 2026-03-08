@@ -2,7 +2,7 @@
   "name": "Corpse Host",
   "description": "You can switch bodies into a different type of humanoid zombie. (Husk, Drowned or Zombie). This can include Baby Zombies.",
   "type": "origins:multiple",
-  "drowned": {
+  "swap_host": {
     "type": "origins:action_on_entity_use",
     "bientity_action": {
       "type": "origins:and",
@@ -20,7 +20,7 @@
             "type": "origins:actor_action",
             "action": {
               "type": "origins:execute_command",
-              "command": "function jorigins:setbaby"
+              "command": "function jorigins:sethostbody_baby"
             }
           },
           "else_action": {
@@ -34,72 +34,15 @@
         {
           "type": "origins:target_action",
           "action": {
-            "type": "origins:damage",
-            "amount": 20,
-            "damage_type": "minecraft:magic"
+            "type": "origins:execute_command",
+            "command": "function jorigins:damage_item"
           }
         },
         {
-          "type": "origins:actor_action",
+          "type": "origins:target_action",
           "action": {
             "type": "origins:execute_command",
-            "command": "origin set @s origins:origin jorigins:vessel_drowned"
-          }
-        }
-      ]
-    },
-    "bientity_condition": {
-      "type": "origins:target_condition",
-      "condition": {
-        "type": "origins:entity_type",
-        "entity_type": "minecraft:drowned"
-      }
-    },
-    "item_condition": {
-      "type": "origins:empty"
-    },
-    "hands": ["main_hand"],
-    "condition": {
-      "type": "origins:or",
-      "conditions": [
-        {
-          "type": "origins:origin",
-          "origin": "jorigins:vessel_husk"
-        },
-        {
-          "type": "origins:origin",
-          "origin": "jorigins:vessel_zombie"
-        }
-      ]
-    }
-  },
-  "zombie": {
-    "type": "origins:action_on_entity_use",
-    "bientity_action": {
-      "type": "origins:and",
-      "actions": [
-        {
-          "type": "origins:if_else",
-          "condition": {
-            "type": "origins:target_condition",
-            "condition": {
-              "type": "origins:nbt",
-              "nbt": "{IsBaby:1b}"
-            }
-          },
-          "if_action": {
-            "type": "origins:actor_action",
-            "action": {
-              "type": "origins:execute_command",
-              "command": "function jorigins:setbaby"
-            }
-          },
-          "else_action": {
-            "type": "origins:actor_action",
-            "action": {
-              "type": "origins:execute_command",
-              "command": "scale reset @s"
-            }
+            "command": "power grant @s jorigins:entity/dropinventory"
           }
         },
         {
@@ -111,10 +54,81 @@
           }
         },
         {
+          "type": "origins:if_else_list",
+          "actions": [
+            {
+              "condition": {
+                "type": "origins:target_condition",
+                "condition": {
+                  "type": "origins:entity_type",
+                  "entity_type": "minecraft:husk"
+                }
+              },
+              "action": {
+                "type": "origins:actor_action",
+                "action": {
+                  "type": "origins:execute_command",
+                  "command": "origin set @s origins:origin jorigins:vessel_husk"
+                }
+              }
+            },
+            {
+              "condition": {
+                "type": "origins:target_condition",
+                "condition": {
+                  "type": "origins:entity_type",
+                  "entity_type": "minecraft:drowned"
+                }
+              },
+              "action": {
+                "type": "origins:actor_action",
+                "action": {
+                  "type": "origins:execute_command",
+                  "command": "origin set @s origins:origin jorigins:vessel_drowned"
+                }
+              }
+            },
+            {
+              "condition": {
+                "type": "origins:target_condition",
+                "condition": {
+                  "type": "origins:entity_type",
+                  "entity_type": "minecraft:zombie"
+                }
+              },
+              "action": {
+                "type": "origins:actor_action",
+                "action": {
+                  "type": "origins:execute_command",
+                  "command": "origin set @s origins:origin jorigins:vessel_zombie"
+                }
+              }
+            }
+          ]
+        },
+        {
           "type": "origins:actor_action",
           "action": {
             "type": "origins:execute_command",
-            "command": "origin set @s origins:origin jorigins:vessel_zombie"
+            "command": "attribute @s minecraft:generic.max_health base set 6"
+          }
+        },
+        {
+          "type": "origins:actor_action",
+          "action": {
+            "type": "origins:delay",
+            "ticks": 5,
+            "action": {
+              "type": "origins:execute_command",
+              "command": "attribute @s minecraft:generic.max_health base set 20"
+            }
+          }
+        },
+        {
+          "type": "origins:actor_action",
+          "action": {
+            "type": "origins:trigger_cooldown",
+            "power": "jorigins:hostswap_cooldown"
           }
         }
       ]
@@ -122,8 +136,8 @@
     "bientity_condition": {
       "type": "origins:target_condition",
       "condition": {
-        "type": "origins:entity_type",
-        "entity_type": "minecraft:zombie"
+        "type": "origins:in_tag",
+        "tag": "jorigins:hostable"
       }
     },
     "item_condition": {
@@ -131,88 +145,10 @@
     },
     "hands": ["main_hand"],
     "condition": {
-      "type": "origins:or",
-      "conditions": [
-        {
-          "type": "origins:origin",
-          "origin": "jorigins:vessel_drowned"
-        },
-        {
-          "type": "origins:origin",
-          "origin": "jorigins:vessel_husk"
-        }
-      ]
-    }
-  },
-  "husk": {
-    "type": "origins:action_on_entity_use",
-    "bientity_action": {
-      "type": "origins:and",
-      "actions": [
-        {
-          "type": "origins:if_else",
-          "condition": {
-            "type": "origins:target_condition",
-            "condition": {
-              "type": "origins:nbt",
-              "nbt": "{IsBaby:1b}"
-            }
-          },
-          "if_action": {
-            "type": "origins:actor_action",
-            "action": {
-              "type": "origins:execute_command",
-              "command": "function jorigins:setbaby"
-            }
-          },
-          "else_action": {
-            "type": "origins:actor_action",
-            "action": {
-              "type": "origins:execute_command",
-              "command": "scale reset @s"
-            }
-          }
-        },
-        {
-          "type": "origins:target_action",
-          "action": {
-            "type": "origins:damage",
-            "amount": 20,
-            "damage_type": "minecraft:magic"
-          }
-        },
-        {
-          "type": "origins:actor_action",
-          "action": {
-            "type": "origins:execute_command",
-            "command": "origin set @s origins:origin jorigins:vessel_husk"
-          }
-        }
-      ]
-    },
-    "bientity_condition": {
-      "type": "origins:target_condition",
-      "condition": {
-        "type": "origins:entity_type",
-        "entity_type": "minecraft:husk"
-      }
-    },
-    "item_condition": {
-      "type": "origins:empty"
-    },
-    "hands": ["main_hand"],
-    "condition": {
-      "type": "origins:or",
-      "conditions": [
-        {
-          "type": "origins:origin",
-          "origin": "jorigins:vessel_drowned"
-        },
-        {
-          "type": "origins:origin",
-          "origin": "jorigins:vessel_zombie"
-        }
-      ]
+      "type": "origins:resource",
+      "resource": "jorigins:hostswap_cooldown",
+      "comparison": "==",
+      "compare_to": 0
     }
   },
   "callback": {
@@ -230,12 +166,20 @@
         {
           "element": {
             "type": "origins:execute_command",
-            "command": "function jorigins:setbaby"
+            "command": "function jorigins:sethostbody_baby"
           },
           "weight": 1
         }
       ]
     },
     "execute_chosen_when_orb": false
+  },
+  "cooldown": {
+    "type": "origins:cooldown",
+    "cooldown": 200,
+    "hud_render": {
+      "should_render": false,
+      "bar_index": 3
+    }
   }
 }

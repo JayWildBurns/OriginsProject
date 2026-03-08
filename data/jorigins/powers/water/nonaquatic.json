@@ -30,15 +30,15 @@
     "condition": {
         "type": "origins:in_block_anywhere",
         "block_condition": {
-            "type": "origins:in_tag",
-            "tag": "jorigins:kelp"
+        "type": "origins:block",
+        "block": "minecraft:kelp_plant"
         }
     },
     "hold_condition": {
         "type": "origins:in_block_anywhere",
         "block_condition": {
-            "type": "origins:in_tag",
-            "tag": "jorigins:kelp"
+        "type": "origins:block",
+        "block": "minecraft:kelp_plant"
         }
     }
   }
