@@ -1,0 +1,15 @@
+{
+	"order": 11,
+	"impact": 2,
+	"unchoosable": false,
+	"name": "Vessel Projection",
+	"description": "Test Version of new Ghost/Astral Projection Mashup",
+	"powers": [
+		"jorigins:soul/astralform",
+		"jorigins:soul/limited",
+		"jorigins:soul/movement"
+		],
+	"icon": {
+		"id": "minecraft:brown_mushroom"
+	}
+}

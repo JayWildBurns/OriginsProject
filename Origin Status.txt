@@ -1,33 +1,47 @@
-8 - 03 - 2026
+24 - 03 - 2026
 
-CURRENT STATUS
-From solo tests and test with friends, I have determined the following changes:
+CURRENT DEV STATUS
+------------------
 
-Flavour
-  Mobs could drop inventory if you right-click them to swap into them
+Rebirth is being removed - currently removed from origins, powers will be deleted later.
+
+Astral Projection power has been re-added and is planning to be reworked.
+
+Rework of Origin Status.txt
+
+
+UPCOMING CHANGES 
+-----------------
+Flavouring
   Chance to spawn with zombie gear
+  Advancements
 
-Rebirth
-  It's actually too powerful. The issues are a regenning totem of undying is too powerful, and having debuffs for the entire period of recharging also sucks.
+Astral Projection V2
+  Name still pending. Allows player to 'exit' their body and temporarily become a ghost.
+  During this time, they are tethered to their host, and re-activating the power will warp them back to that body
+  If the body is killed OR if they go too far, then they must instead right-click a new zombie to get a new host.
+  'tether' should be visible
+  resource/cooldown should be used for how long the soul can last untethered.
+  Armor/weapons should be dropped on activation. 
 
-  effect clear, extinguish, gain air needs to be added
+Sleeping changes
+  A Possibility, currently unplanned
 
-
-Option 1:
-  Rebirth is removed. There is no way to cheat teleport back to a previous point or save yourself from death.
-Option 2:
-  Rebirth is manually set-up with a resource instead. Think 'Planted' power, just now death-based.
-Option 3: You are turned into a ghost. Which is more interesting at least.
+Ribcage
+  An extra-inventory power I still want to keep for long mining sessions, but will still need to be workshopped. 
+  Currently would result in item drops when using astral projection or swapping host body.
+  I'll make it a power that gets granted to the player when the original origin is selected, 
+  and will auto-remove itself if the origin is not a vessel origin.
 
 ------------------------------------------------------------------------------------------------------------------------
-LAST MAJOR UPDATE:
-
+LAST CHANGES TO POWERS
 
 HostSwap:
   Zombies drop all equipment on conversion, random damage is applied to said equipment
   Health drops to 3 hearts on a swap 
   Swap can only happen every 5 seconds
   You can swap to the same zombie type
+  Mobs drop inventory if you right-click them to swap into them
   
   On respawn, return to normal size or become a baby. Baby Forms correctly increase motion scale.
 
@@ -45,42 +59,15 @@ Spawn Powers
   Ocean Ruins replaced with Shipwreck
   Descriptions and titles updated
 
-Legacy Powers 
-  Removed
-
-
-
 
 ------------------------------------------------------------------------------------------------------------------------
-
-POWERS IN PROGRESS
-
-Return
-	See above - Works, but is too powerful. Extended debuffs do not feel good, but fast recharge of a cheat death doesn't either.
-
-
-Ribcage
-	Classic inventory buff. Would drop on origin swap. I like it a lot as it can extend caving time significantly.
-
-Sleep-based changes
-	Not a good idea.
-
-Flavour Based Powers
-  Advancements
-  Sounds/Particles for existing powers
-  
-
-POWERS THAT MAY RETURN 
+PREVIOUS POWER BRAINSTORM AREA
 
 Planted: This is the original version of the Return Power. I may adjust Return to allow for 'planting' the body to be the setup.
 Curing: ability to 'cure' the zombie form as a fourth state.
 Mushroom-based States
 Nether-based states
-
-POWERS GONE FOR GOOD
-Grapple - not originally my code, and kind of OP
+Grapple - not originally my code. Makes fall damage trivial, and doesn't quite fit the origin.
 Disattaching Head - no mechanical advantage or disadvantage.
 Dig - Phasing through dirt.
-Astral Projection - I would consider it for a different approach to the origin, but not at this time.
-
-
+Astral Projection V1 - A solid contender but making the zombie be targetted by mobs didn't feel right to me.

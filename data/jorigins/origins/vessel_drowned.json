@@ -16,8 +16,7 @@
 		"jorigins:behaviour/passivezombie",
 		"jorigins:testpowers",
 		"jorigins:water/drowned",
-		"origins:water_breathing",
-		"jorigins:return"
+		"origins:water_breathing"
 		],
 	"icon": {
 		"id": "minecraft:brown_mushroom"

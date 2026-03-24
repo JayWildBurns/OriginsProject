@@ -14,8 +14,7 @@
 		"jorigins:behaviour/outcast",
 		"jorigins:behaviour/passivezombie",
 		"jorigins:testpowers",
-		"jorigins:water/nonaquatic",
-		"jorigins:return"
+		"jorigins:water/nonaquatic"
 		],
 	"icon": {
 		"id": "minecraft:brown_mushroom"

@@ -3,6 +3,7 @@
   "origins": [
   "jorigins:vessel_zombie",
   "jorigins:vessel_drowned",
-  "jorigins:vessel_husk"
+  "jorigins:vessel_husk",
+  "jorigins:vessel_projection"
   ]
 }
