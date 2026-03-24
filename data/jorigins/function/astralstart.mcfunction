@@ -1,5 +1,6 @@
 function jorigins:savecoords
 origin set @s origins:origin jorigins:vessel_projection
+resource set WildMagicBurst jorigins:soul/astralform_tetherresource 1
 
 summon zombie ~ ~ ~ {LeftHanded:1b,PersistenceRequired:1b,Silent:1b,Tags:["HostBody"],DeathLootTable:"minecraft:empty", CustomName:'[{"text":"WildMagicBurst"}]'}
 execute as @s run tp @e[tag=HostBody,sort=nearest,limit=1] ~ ~ ~ ~ ~

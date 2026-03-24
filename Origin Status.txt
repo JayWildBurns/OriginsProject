@@ -24,6 +24,10 @@ Astral Projection V2
   resource/cooldown should be used for how long the soul can last untethered.
   Armor/weapons should be dropped on activation. 
 
+  KNOWN BUG - Quitting Via 'G' will cause the savecoords function to be rerun.
+  This is possibly due to the zombie being damaged and therefore running a command? I'll have to recheck the entity power.
+
+
 Sleeping changes
   A Possibility, currently unplanned
 

@@ -1,0 +1,1 @@
+execute facing entity @e[type=minecraft:zombie,limit=1,sort=nearest,tag=HostBody] eyes run function jorigins:tether/raycast
