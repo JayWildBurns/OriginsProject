@@ -24,8 +24,10 @@ Astral Projection V2
   resource/cooldown should be used for how long the soul can last untethered.
   Armor/weapons should be dropped on activation. 
 
-  KNOWN BUG - Quitting Via 'G' will cause the savecoords function to be rerun.
-  This is possibly due to the zombie being damaged and therefore running a command? I'll have to recheck the entity power.
+  KNOWN BUG - Quitting Via 'G' will cause the savecoords function to be rerun... but only if in creative flight mode?
+  nvm it's not that
+
+  Hostbody has an issue - it's selector action currently applies to all players. Every player is added to the set. Specific stuff will need to be removed.
 
 
 Sleeping changes
@@ -75,3 +77,19 @@ Grapple - not originally my code. Makes fall damage trivial, and doesn't quite f
 Disattaching Head - no mechanical advantage or disadvantage.
 Dig - Phasing through dirt.
 Astral Projection V1 - A solid contender but making the zombie be targetted by mobs didn't feel right to me.
+
+
+
+
+workshopping
+
+Okay. So. We can make the Hostbody entity have 1/2 heart (so everything kills it).
+If the body dies, you're ejected not respawned - so the entity set can be removed.
+Modify setup later to remove commands and make it an actual power instead.
+
+execute as @e[tag=HostBody] run tag @s remove HostBody
+
+execute unless entity @e[type=minecraft:zombie,sort=nearest,limit=1, distance=..20, tag=HostBody] run execute as execute as @e[tag=HostBody] run tag @s remove HostBody
+
+Okay... make two new functions for the zombie. First one sets it as hostbody values,
+second one makes it a regular zombie.

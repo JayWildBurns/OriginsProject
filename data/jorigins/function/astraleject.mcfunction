@@ -1,1 +1,0 @@
-resource set WildMagicBurst jorigins:soul/astralform_tetherresource 0

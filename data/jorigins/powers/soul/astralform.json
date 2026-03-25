@@ -5,9 +5,22 @@
   "togglepower": {
     "type": "origins:active_self",
     "entity_action": {
-      "type": "origins:execute_command",
-      "command": "function jorigins:astralend",
-      "permission_level": 4
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:resource",
+        "resource": "jorigins:soul/astralform_tetherresource",
+        "comparison": "==",
+        "compare_to": 1
+      },
+      "if_action": {
+        "type": "origins:execute_command",
+        "command": "function jorigins:soul/playerend",
+        "permission_level": 4
+      },
+      "else_action": {
+        "type": "origins:swing_hand",
+        "hand": "OFF_HAND"
+      }
     },
     "cooldown": 20,
     "hud_render": {
@@ -24,7 +37,7 @@
       "action": [
         {
           "type": "origins:execute_command",
-          "command": "function jorigins:astralend",
+          "command": "function jorigins:soul/playerend",
           "permission_level": 4
         }
       ]
@@ -34,7 +47,7 @@
     "type": "origins:action_over_time",
     "entity_action": {
       "type": "origins:execute_command",
-      "command": "function jorigins:soulcheck",
+      "command": "function jorigins:soul/distance",
       "permission_level": 4
     },
     "interval": 10,
@@ -158,7 +171,7 @@
       "permission_level": 4
     },
     "interval": 5,
-        "condition": {
+    "condition": {
       "type": "origins:resource",
       "resource": "jorigins:soul/astralform_tetherresource",
       "comparison": "==",
