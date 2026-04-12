@@ -24,32 +24,6 @@
       },
       "execute_chosen_when_orb": false
   },
-  "damage": {
-      "type": "origins:action_over_time",
-      "entity_action": {
-          "type": "origins:area_of_effect",
-          "radius": 10,
-          "shape": "sphere",
-          "bientity_action": {
-              "type": "origins:damage",
-              "damage_type": "minecraft:magic",
-              "modifier": {
-                  "operation": "set_total",
-                  "resource": "example:magic_damage",
-                  "value": 0
-              }
-          },
-          "bientity_condition": {
-             "type": "origins:target_condition",
-            "condition": {
-                "type": "origins:in_tag",
-                "tag": "jorigins:hostile"
-                }
-            }
-      },
-      "interval": 200,
-      "include_actor": true
-  },
   "nonhostile": {
       "type": "origins:modify_damage_dealt",
     "modifier": {

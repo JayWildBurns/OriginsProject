@@ -3,6 +3,9 @@
 CURRENT DEV STATUS
 ------------------
 
+READY FOR PLAYTEST
+
+
 Rebirth is being removed - currently removed from origins, powers will be deleted later.
 
 Astral Projection power has been re-added and is planning to be reworked.
@@ -23,10 +26,6 @@ Astral Projection V2
   'tether' should be visible
   resource/cooldown should be used for how long the soul can last untethered.
   Armor/weapons should be dropped on activation. 
-
-  KNOWN BUG - Quitting Via 'G' will cause the savecoords function to be rerun... but only if in creative flight mode?
-  nvm it's not that
-  Known bug 2 - disabling it via 'g' is not using the tetherresource as a condition as it's supposed to. Will try something else.
 
   Function changes implemented
 

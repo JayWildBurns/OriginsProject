@@ -30,6 +30,19 @@
       "key": "key.origins.primary_active"
     }
   },
+  "revert": {
+    "type": "origins:action_on_death",
+    "bientity_action": {
+      "type": "origins:target_action",
+      "action": [
+        {
+          "type": "origins:execute_command",
+          "command": "function jorigins:soul/playerend",
+          "permission_level": 4
+        }
+      ]
+    }
+  },
   "distance_check": {
     "type": "origins:action_over_time",
     "entity_action": {
@@ -91,7 +104,7 @@
     "type": "origins:overlay",
     "hidden": true,
     "sprite": "*:soulverlaya",
-    "strength": 0.5,
+    "strength": 0.6,
     "draw_mode": "texture",
     "draw_phase": "below_hud",
     "visible_in_third_person": true,
@@ -106,7 +119,7 @@
     "type": "origins:overlay",
     "hidden": true,
     "sprite": "*:soulverlayb",
-    "strength": 0.6,
+    "strength": 0.7,
     "draw_mode": "texture",
     "draw_phase": "below_hud",
     "visible_in_third_person": true,
@@ -121,7 +134,7 @@
     "type": "origins:overlay",
     "hidden": true,
     "sprite": "*:soulverlayc",
-    "strength": 0.7,
+    "strength": 1,
     "draw_mode": "texture",
     "draw_phase": "below_hud",
     "visible_in_third_person": true,
