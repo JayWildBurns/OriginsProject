@@ -3,7 +3,23 @@
 CURRENT DEV STATUS
 ------------------
 
-READY FOR PLAYTEST
+EARLY GAME PLAYTEST COMPLETED
+Results
+
+NEW IDEAS
+  Staying underwater too long should automatically convert into a drowned.
+  Similar process for hot biomes - specifically Nether/Desert should turn into Husk.
+  To encourage Crop growing - Crops should allow for duplicating mushrooms
+BALANCE CHANGES
+  Soul needs regen removed to prevent using it to heal. - DONE
+  Soul prevent Armor Pickup to make swapping hosts have consequences, or allow the body to pick up items.
+  Tether is decently long, but I should adjust the actual overlay to be more obvious.
+FLAVOR FOR LATER
+  SFX on Tether break, Particles + SFX on soul/hostswap, custom damage type.
+ISSUES
+  Player can cheese drowning by converting to soul - prevent using soul if body is underwater.
+
+
 
 
 Rebirth is being removed - currently removed from origins, powers will be deleted later.
