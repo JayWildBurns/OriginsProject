@@ -1,9 +1,28 @@
-24 - 03 - 2026
 
-CURRENT DEV STATUS
+24 - 08 - 2026
+-----------------
+I'm revisiting this project after some time away. 
+After a quick playtest, I'm second guessing the more advanced Vessel Origin, will experiment with some other options.
+
+
+------------------
+MYCELIUM ZOMBIE REBUILD
+Phase 1:
+Grabbing the core features of the origin and putting them in seperate powers to allow for editing later
+Mushroom Scraps Removed. Soul Removed. Keeping other powers mostly the same for now.
+
+Climbing based on resource... problem is climbing requires sneaking to hold it. I need actual touching-block conditions
+
+Custom movement - 
+I can crawl across ceilings (no gravity) and prevent walking off edges, but climbing is an issue.
+Base climbing logic doesn't allow me to pause moving.
+Basically any movement with zero-gravity causes gliding - will need to fix this, especially as climbing becomes a catapault without gravity.
+Also, FOV... can I modify that? No. I cannot. Rats.
+
+
 ------------------
 
-EARLY GAME PLAYTEST COMPLETED
+VESSEL ORIGIN PLAYTEST RESULTS/ CURRENT STATUS
 Results
 
 NEW IDEAS
@@ -11,22 +30,15 @@ NEW IDEAS
   Similar process for hot biomes - specifically Nether/Desert should turn into Husk.
   To encourage Crop growing - Crops should allow for duplicating mushrooms
 BALANCE CHANGES
-  Soul needs regen removed to prevent using it to heal. - DONE
+  Soul needs regen removed to prevent using it to heal.
+    DONE. 
   Soul prevent Armor Pickup to make swapping hosts have consequences, or allow the body to pick up items.
+    MADE PICK UP LOOT, NO RESTRICTION YET
   Tether is decently long, but I should adjust the actual overlay to be more obvious.
 FLAVOR FOR LATER
   SFX on Tether break, Particles + SFX on soul/hostswap, custom damage type.
 ISSUES
   Player can cheese drowning by converting to soul - prevent using soul if body is underwater.
-
-
-
-
-Rebirth is being removed - currently removed from origins, powers will be deleted later.
-
-Astral Projection power has been re-added and is planning to be reworked.
-
-Rework of Origin Status.txt
 
 
 UPCOMING CHANGES 

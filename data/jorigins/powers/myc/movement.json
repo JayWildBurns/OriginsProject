@@ -1,0 +1,310 @@
+{
+  "name": "Movement",
+  "description": "Cave movement buff, test 1",
+  "type": "origins:multiple",
+  "switch": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:resource",
+        "resource": "jorigins:myc/movement_resource",
+        "comparison": "==",
+        "compare_to": 0
+      },
+      "if_action": {
+        "type": "origins:change_resource",
+        "resource": "jorigins:myc/movement_resource",
+        "change": 1,
+        "operation": "set"
+      },
+      "else_action": {
+        "type": "origins:change_resource",
+        "resource": "jorigins:myc/movement_resource",
+        "change": 0,
+        "operation": "set"
+      }
+    },
+    "cooldown": 10,
+    "hud_render": {
+      "should_render": false
+    },
+    "key": {
+      "key": "key.origins.primary_active"
+    }
+  },
+  "resource": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "hud_render": [
+      {
+        "should_render": false
+      }
+    ],
+    "min_action": {
+      "type": "origins:execute_command",
+      "command": "function jorigins:myc/reset",
+      "permission_level": 4
+    },
+    "max_action": {
+      "type": "origins:execute_command",
+      "command": "function jorigins:myc/setup",
+      "permission_level": 4
+    }
+  },
+  "nojump": {
+    "type": "origins:modify_jump",
+    "modifier": {
+      "id": "jorigins:nojump",
+      "operation": "set_total",
+      "amount": 0
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "jorigins:myc/movement_resource",
+      "comparison": "==",
+      "compare_to": 1
+    }
+  },
+  "nosprint": {
+    "type": "origins:prevent_sprinting",
+    "condition": {
+      "type": "origins:resource",
+      "resource": "jorigins:myc/movement_resource",
+      "comparison": "==",
+      "compare_to": 1
+    }
+  },
+  "noairspeed": {
+    "type": "origins:modify_air_speed",
+    "modifier": {
+      "id": "jorigins:noair",
+      "operation": "set_total",
+      "amount": 0
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "jorigins:myc/movement_resource",
+      "comparison": "==",
+      "compare_to": 1
+    }
+  },
+  "forward": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:on_block"
+      },
+      "if_action": {
+        "type": "origins:add_velocity",
+        "z": 0.1,
+        "space": "local_horizontal_normalized"
+      },
+      "else_action": {
+        "type": "origins:add_velocity",
+        "z": 0.05,
+        "space": "local_horizontal_normalized"
+      }
+    },
+    "cooldown": 1,
+    "hud_render": {
+      "should_render": false
+    },
+    "key": {
+      "key": "key.forward",
+      "continuous": true
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "jorigins:myc/movement_resource",
+          "comparison": "==",
+          "compare_to": 1
+        },
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:raycast",
+              "block": true,
+              "entity": true,
+              "shape_type": "visual",
+              "fluid_handling": "any",
+              "direction": {
+                "x": 0,
+                "y": -1,
+                "z": 0.2
+              },
+              "space": "local_horizontal_normalized"
+            },
+            {
+              "type": "origins:raycast",
+              "block": true,
+              "entity": true,
+              "shape_type": "visual",
+              "fluid_handling": "any",
+              "direction": {
+                "x": 0,
+                "y": 1,
+                "z": 0.2
+              },
+              "space": "local_horizontal_normalized"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "climb": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:add_velocity",
+      "y": 0.1,
+      "space": "local_horizontal_normalized"
+    },
+    "cooldown": 1,
+    "hud_render": {
+      "should_render": false
+    },
+    "key": {
+      "key": "key.jump",
+      "continuous": true
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "jorigins:myc/movement_resource",
+          "comparison": "==",
+          "compare_to": 1
+        },
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:raycast",
+              "block": true,
+              "entity": true,
+              "shape_type": "visual",
+              "distance": 0.5,
+              "fluid_handling": "any",
+              "direction": {
+                "x": 0,
+                "y": 0,
+                "z": 0.5
+              },
+              "space": "local_horizontal_normalized"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "nofall": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.gravity",
+      "operation": "ADD_MULTIPLIED_TOTAL",
+      "amount": -1,
+      "id": "jorigins:cling"
+    },
+    "tick_rate": 20,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "jorigins:myc/movement_resource",
+          "comparison": "==",
+          "compare_to": 1
+        },
+        {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:and",
+              "conditions": [
+                {
+                  "type": "origins:raycast",
+                  "block": true,
+                  "entity": true,
+                  "distance": 0.5,
+                  "shape_type": "visual",
+                  "fluid_handling": "any",
+                  "direction": {
+                    "x": 0,
+                    "y": 1,
+                    "z": 0
+                  },
+                  "space": "local_horizontal_normalized"
+                },
+                {
+                  "type": "origins:raycast",
+                  "block": true,
+                  "entity": true,
+                  "distance": 0.5,
+                  "shape_type": "visual",
+                  "fluid_handling": "any",
+                  "direction": {
+                    "x": 0,
+                    "y": -1,
+                    "z": 0
+                  },
+                  "space": "local_horizontal_normalized",
+                  "inverted": true
+                },
+                {
+                  "type": "origins:sneaking",
+                  "inverted": true
+                }
+              ]
+            },
+            {
+              "type": "origins:and",
+              "conditions": [
+                {
+                  "type": "origins:raycast",
+                  "block": true,
+                  "entity": true,
+                  "distance": 0.5,
+                  "shape_type": "visual",
+                  "fluid_handling": "any",
+                  "direction": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                  },
+                  "space": "local_horizontal_normalized"
+                },
+                {
+                  "type": "origins:raycast",
+                  "block": true,
+                  "entity": true,
+                  "distance": 0.5,
+                  "shape_type": "visual",
+                  "fluid_handling": "any",
+                  "direction": {
+                    "x": 0,
+                    "y": -1,
+                    "z": 0
+                  },
+                  "space": "local_horizontal_normalized",
+                  "inverted": true
+                },
+                {
+                  "type": "origins:sneaking",
+                  "inverted": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
