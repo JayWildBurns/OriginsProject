@@ -19,6 +19,13 @@ Base climbing logic doesn't allow me to pause moving.
 Basically any movement with zero-gravity causes gliding - will need to fix this, especially as climbing becomes a catapault without gravity.
 Also, FOV... can I modify that? No. I cannot. Rats.
 
+Creative Flight - Can limit movement via airspeed! There's a condition for it too. 
+Only problem is I can't enable/disable it via an action/command.
+
+Grounded - also works well in theory, but in practice applying y velocity causes issues.
+
+Switch to commands to raycast from feet?
+Raycast function now exists, will need some more logic. Raycast in multiple directions and change resources depending
 
 ------------------
 
@@ -107,3 +114,7 @@ Dig - Phasing through dirt.
 Astral Projection V1 - A solid contender but making the zombie be targetted by mobs didn't feel right to me.
 
 
+
+,
+
+  

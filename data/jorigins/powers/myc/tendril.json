@@ -1,0 +1,35 @@
+{
+  "name": "Tendril",
+  "description": "In-Progress Seperation of movement resources",
+  "type": "origins:multiple",
+  "blockahead": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "hud_render": [
+      {
+        "should_render": false
+      }
+    ]
+  },
+    "blockbelow": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "hud_render": [
+      {
+        "should_render": false
+      }
+    ]
+  },
+    "blockabove": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "hud_render": [
+      {
+        "should_render": false
+      }
+    ]
+  }
+}
