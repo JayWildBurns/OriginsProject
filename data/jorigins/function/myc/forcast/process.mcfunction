@@ -1,4 +1,4 @@
-scoreboard players set @s steps 5
+scoreboard players set @s steps 3
 
 execute at @s run function jorigins:myc/forcast/move
 

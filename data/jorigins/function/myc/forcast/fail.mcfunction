@@ -1,1 +1,1 @@
-say raycast fail
+resource set @s jorigins:myc/tendril_blockahead 0

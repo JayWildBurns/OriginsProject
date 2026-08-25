@@ -140,32 +140,16 @@
           "type": "origins:or",
           "conditions": [
             {
-              "type": "origins:raycast",
-              "block": true,
-              "entity": true,
-              "distance": 2,
-              "shape_type": "visual",
-              "fluid_handling": "any",
-              "direction": {
-                "x": 0,
-                "y": -1,
-                "z": 0.2
-              },
-              "space": "local_horizontal_normalized"
+              "type": "origins:resource",
+              "resource": "jorigins:myc/tendril_blockabove",
+              "comparison": "==",
+              "compare_to": 1
             },
             {
-              "type": "origins:raycast",
-              "block": true,
-              "distance": 2,
-              "entity": true,
-              "shape_type": "visual",
-              "fluid_handling": "any",
-              "direction": {
-                "x": 0,
-                "y": 1,
-                "z": 0.2
-              },
-              "space": "local_horizontal_normalized"
+              "type": "origins:resource",
+              "resource": "jorigins:myc/tendril_floorahead",
+              "comparison": "==",
+              "compare_to": 1
             }
           ]
         }
@@ -275,8 +259,23 @@
           "type": "origins:power_active",
           "power": "jorigins:myc/moveb_drop",
           "inverted": true
+        },
+        {
+          "type": "origins:resource",
+          "resource": "jorigins:myc/tendril_blockbelow",
+          "comparison": "==",
+          "compare_to": 0
         }
       ]
+    }
+  },
+  "ground": {
+    "type": "origins:grounded",
+    "condition": {
+      "type": "origins:resource",
+      "resource": "jorigins:myc/moveb_resource",
+      "comparison": "==",
+      "compare_to": 1
     }
   }
 }

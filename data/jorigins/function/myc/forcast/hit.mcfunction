@@ -1,1 +1,1 @@
-say raycast hit
+resource set @s jorigins:myc/tendril_blockahead 1
