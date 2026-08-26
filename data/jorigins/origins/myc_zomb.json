@@ -16,8 +16,7 @@
 		"jorigins:cave/miningbuffs",
 		"jorigins:testpowers",
 		"jorigins:water/nonaquatic",
-		"jorigins:myc/moveb",
-		"jorigins:myc/tendril"
+		"jorigins:myc/movec"
 		],
 	"icon": {
 		"id": "minecraft:brown_mushroom"
